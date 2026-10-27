@@ -1,6 +1,6 @@
 # Verify it yourself
 
-Every documented figure here comes from public pages and public API endpoints that anyone can open in a browser, without logging in, except the rows marked "signed in" (their wording is also in the site's public JavaScript). Values may have changed since 27 October 2026.
+Every documented figure here comes from public pages and public API endpoints that anyone can open in a browser, without logging in, except the rows marked "signed in" (their wording is also in the site's public JavaScript) and the Discord row, which needs you to join the server. Values may have changed since 27 October 2026.
 
 ## Pages (open normally)
 
@@ -18,6 +18,7 @@ Every documented figure here comes from public pages and public API endpoints th
 | <https://find-and-update.company-information.service.gov.uk/company/16970676> | THE DINO DEN LTD company record |
 | <https://www.patreon.com/TheDinoDen> | current tier prices and stated perks (compare with `/patreon/tiers`) |
 | <https://thespoofingisle.com> | third-party player-count analysis (search "DINO DEN") |
+| The Dino Den Discord (join through the site's Discord link) | public channels `#wall-of-shame` and `#sent-to-hell` |
 
 These pages load their content with JavaScript, so use a normal browser.
 

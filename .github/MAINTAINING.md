@@ -26,8 +26,8 @@ Search the whole repository for the topic (for example `grep -rn "jackpot" .`) a
 |---|---|
 | Patreon tiers, prices, perks, multiplier | README (short version, key findings, why it matters), DISCREPANCIES §1, §2, §5, §11, evidence/01, community-reports, verify-yourself, reports-filed |
 | Games, jackpot, poker, raffle, crates, Lucky Bags, gambling wording | README (short version, key findings), DISCREPANCIES §4, §6, evidence/02, evidence/03, verify-yourself |
-| Terms, FAQ, age rule, moderation and appeals | README (staff section, key findings, why it matters), DISCREPANCIES §3, §5, §9, §10, evidence/03 |
-| Staff and owner conduct | README (staff section, key findings), community-reports, CONTRIBUTING, CODE_OF_CONDUCT, evidence/03 |
+| Terms, FAQ, age rule, moderation and appeals | README (staff section, key findings, why it matters), DISCREPANCIES §3, §5, §9, §10, §12, evidence/03, evidence/05 |
+| Staff and owner conduct | README (staff section, key findings), DISCREPANCIES §12, evidence/05, community-reports, CONTRIBUTING, CODE_OF_CONDUCT, evidence/03 |
 | Player counts | README (key findings), DISCREPANCIES §7, community-reports |
 | Client app | README (key findings), DISCREPANCIES §8, evidence/04 |
 | Submission and privacy rules | README (submit section, "does not include"), CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS (policy), .github/ISSUE_TEMPLATE/evidence.yml, this file (.github/MAINTAINING.md) |

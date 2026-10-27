@@ -44,7 +44,13 @@ What is documented so far comes from the operator's own rules:
 - The FAQ tells banned players to *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* Reports and appeals go through Discord tickets only.
 - The January 2026 Terms said only: *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."*
 
-Players have reported a ban after criticising the server in a Steam discussion, a former trial admin who says he was stripped of his role and muted after criticising the owner in staff chat, and cheaters not being dealt with. Other players say admins have treated them reasonably. These are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). No verified evidence about an individual owner's or staff member's conduct has been published here yet. If you have some, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
+What the owner and staff have done in Dino Den's own public Discord channels ([evidence/05](evidence/05-staff-conduct.md)):
+
+- A `#wall-of-shame` channel, started on 15 Aug 2026, where the owner, Vire, and another member post other people's messages, including private messages and support-ticket messages, for the server to react to. The owner told a banned player who had asked for a refund: *"You deserve the #wall-of-shame tbh xD"*.
+- In that exchange the owner refused the refund (*"We dont refund for players breaking rules"*) while saying *"I got no clue what you did to get banned."* He lifted another player's permanent ban by private message: *"Dw i will unban you."*
+- A `#sent-to-hell` "ban trap" that instantly bans anyone who posts in it (*"No warnings. No second chances."*); its description reads *"Souls claimed: 403 🔥 Type here and join them 😈"*.
+
+Players have reported a ban after criticising the server in a Steam discussion, a former trial admin who says he was stripped of his role and muted after criticising the owner in staff chat, and cheaters not being dealt with. Other players say admins have treated them reasonably. These player reports are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). If you have evidence, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
 
 ## Key findings
 
@@ -70,6 +76,8 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
 | Terms let staff suspend accounts "with or without reason" and call moderation decisions "final", while the FAQ promises appeals "the exact reason" | **Documented** | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) |
+| The owner and another member post players' private and support-ticket messages in a public `#wall-of-shame` channel; the owner refused a refund for "breaking rules" while saying he had "no clue" why the player was banned, and lifted a permanent ban by private message | **Documented** (Dino Den's public Discord; screenshots) | [evidence/05](evidence/05-staff-conduct.md) |
+| A `#sent-to-hell` channel instantly bans anyone who posts in it ("No warnings"), while its description invites people to post; "Souls claimed: 403" | **Documented** (Dino Den's public Discord; screenshot) | [DISCREPANCIES.md §12](DISCREPANCIES.md#12-moderation-in-practice-vs-the-terms-and-faq) |
 | Staff conduct: a ban after criticism in a Steam discussion, a former trial admin removed and muted after criticising the owner, cheaters not dealt with and admins absent | **Player claims**, unverified, with counterpoints (evidence wanted) | [community-reports.md](community-reports.md#bans-after-criticism) |
 | Patreon perks advertised but not delivered | **Player claim**, one source (a former trial admin, Nov 2025), unverified | [community-reports.md](community-reports.md#patreon-perks-advertised-but-not-delivered) |
 
@@ -96,6 +104,7 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 - [evidence/02-casino-games-and-raffle.md](evidence/02-casino-games-and-raffle.md) — games, jackpot, raffle, crates, Lucky Bags, patron-only coin flip
 - [evidence/03-operator-statements.md](evidence/03-operator-statements.md) — FAQ and Terms of Service, and where they conflict with the evidence
 - [evidence/04-client-analysis.md](evidence/04-client-analysis.md) — what the DinoDen Client does and does not do
+- [evidence/05-staff-conduct.md](evidence/05-staff-conduct.md) — how the owner and staff treat players, from Dino Den's own public Discord channels
 - [evidence/snapshots/2026-10-27/api-snapshot.json](evidence/snapshots/2026-10-27/api-snapshot.json) — the raw data behind the figures, personal data removed
 - [community-reports.md](community-reports.md) — player complaints, including reports about staff conduct, with sources and counterpoints
 - [reports-filed.md](reports-filed.md) — reports made to platforms

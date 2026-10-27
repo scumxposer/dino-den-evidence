@@ -170,6 +170,20 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 "Locked" refers to Dino Den's own per-server species caps, not to the game. The perk is still offered: the site's patron-only page lets patrons unlock species on a server for a limited time, in a patron's screenshot from October 2026 Tyrannosaurus is marked as needing the Apex tier, and on 9 October 2026 a Senior Admin stated that Allosaurus and Tyrannosaurus *"can be unlock if you are APEX patreon, otherwise its popcontrol on them."*
 **Cannot be concluded:** exactly how the unlock interacts with the cap (that logic runs on Dino Den's servers), the current unlock length and cooldown (shown only to patrons), or whether the perks always worked as advertised.
 
+
+## 12. Moderation in practice vs the Terms and FAQ
+
+| Source | Says |
+|---|---|
+| Current Terms §5 — <https://main.dinoden.gg/tos> | *"Moderation decisions are made at our sole discretion and are final."*; accounts may be suspended *"with or without reason, and without prior notice or compensation"* |
+| FAQ — <https://main.dinoden.gg/faq> ("Bans & Strikes") | *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* |
+| The owner, Vire, to a banned player asking for a refund (screenshot posted in the public `#wall-of-shame` channel, 18 Aug 2026; held by the author) | *"We dont refund for players breaking rules"*, then *"I got no clue what you did to get banned"*, then *"You deserve the #wall-of-shame tbh xD"* |
+| The owner to a permanently banned player who said he had been an Apex patron for about a year (private messages, 16 Aug 2026; shown in the same channel) | three laughing emojis, then *"Dw i will unban you"* |
+| `#sent-to-hell` channel, notice by Dino Den's bot, 15 Aug 2026 | *"This is a ban trap… No warnings. No second chances."*; channel description: *"Souls claimed: 403 🔥 Type here and join them 😈"* |
+
+**Can be concluded:** in these cases, the owner refused a refund for "breaking rules" while saying he did not know why the player was banned, and he reversed a permanent ban through private messages rather than the appeal-ticket process, despite the Terms calling decisions "final." Dino Den also runs a channel that bans anyone who posts in it, while its description invites people to post. Details and a counterpoint: [evidence/05](evidence/05-staff-conduct.md).
+**Cannot be concluded:** how typical these cases are, why the refund player was banned, or whether the refund concerned a Patreon payment.
+
 ---
 
 ## Checked, no discrepancy found
