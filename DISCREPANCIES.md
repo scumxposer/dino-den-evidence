@@ -108,6 +108,32 @@ Every place where two sources disagree, side by side. Each item names both sourc
 **Can be concluded:** the operator's own January Terms acknowledged DSA duties (an EU contact point and a possible EU legal representative); the June Terms removed the DSA contact and email address and no representative is published.
 **Cannot be concluded:** whether The Dino Den is legally required to meet these obligations, or whether its Discord channel satisfies them. That is for regulators to decide. The company's size (relevant to the Art. 19 exemption) cannot be checked until its first accounts are filed (due October 2027, per [Companies House](https://find-and-update.company-information.service.gov.uk/company/16970676)). This is not legal advice.
 
+## 10. UK Online Safety Act: 18+ rule with no age check; reporting and complaints
+
+THE DINO DEN LTD is registered in England ([Companies House](https://find-and-update.company-information.service.gov.uk/company/16970676)).
+
+| Source | Says |
+|---|---|
+| Current Terms §1 — <https://main.dinoden.gg/tos> | *"You must be at least 18 years old to use the service."* |
+| Terms last updated 2026-01-20 — [archived copy](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms), §4 | *"If you are a minor, you may use the Service only with the consent of a parent or legal guardian (where required by law)."* |
+| The author's sign-ins to the website (October 2026; re-checked 27 Oct 2026) | No age verification or age estimation step before reaching the games, shop and Marketplace |
+| Current Terms §5 | *"Moderation decisions are made at our sole discretion and are final."*; accounts may be suspended *"with or without reason, and without prior notice"* |
+| Current Terms §12 | Contact through Discord or by post only |
+| The site's code and pages (searched 27 Oct 2026) | No published process for reporting illegal content or for complaining about moderation decisions |
+| User-generated content on the service ([evidence/01](evidence/01-patreon-to-casino.md), [evidence/02](evidence/02-casino-games-and-raffle.md)) | Marketplace listings, player-made crates, profiles; chat on the game servers |
+
+**Relevant provisions of the Online Safety Act 2023:**
+- [s.4](https://www.legislation.gov.uk/ukpga/2023/50/section/4): user-to-user services are regulated if they have *"links with the United Kingdom"*, which includes a significant number of UK users or the UK being *"one of the target markets for the service."*
+- [s.20](https://www.legislation.gov.uk/ukpga/2023/50/section/20): services must have *"systems and processes that allow users and affected persons to easily report content"*, including illegal content.
+- [s.21](https://www.legislation.gov.uk/ukpga/2023/50/section/21): services must have a complaints procedure that is *"easy to access, easy to use (including by children) and transparent"*, which covers users who are warned, suspended or banned. The Terms must set out how complaints are handled.
+- [s.35(2)](https://www.legislation.gov.uk/ukpga/2023/50/section/35): a provider may conclude that children cannot access a service *only* if age verification or age estimation is used so that *"children are not normally able to access the service."* Ofcom's age assurance guidance (January 2025) says *"self-declaration of age… [is] not highly effective"* ([summary](https://www.lewissilkin.com/insights/2025/01/16/a-new-age-ofcom-publishes-final-version-of-age-assurance-guidance-102ju6k)).
+- Ofcom deadlines ([source](https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/important-dates-for-online-safety-compliance)): illegal content risk assessments by 16 March 2025; children's access assessments by 16 April 2025; children's risk assessments, for services likely to be accessed by children, by 24 July 2025. These apply to all in-scope services; there is no small-service exemption for them.
+
+**Can be concluded:** the Terms set an 18+ rule, but no age verification or estimation step was seen at sign-in. Under s.35(2), a rule in the Terms is not by itself enough to conclude that children cannot access a service. Until June 2026, the operator's own Terms allowed minors. No public reporting or complaints process was found; the Terms describe moderation decisions as final.
+**Cannot be concluded:** whether the Online Safety Act applies to The Dino Den or whether it complies. Risk and access assessments do not have to be published, so their absence from the site proves nothing. Whether "a significant number of children" use the service is a question of evidence for Ofcom. Ofcom says it *"cannot respond to or investigate individual complaints"* but uses them to decide whether to act ([Ofcom](https://www.ofcom.org.uk/complaints/online-services-sites-apps/sites-and-apps/safety-measures)). This is not legal advice.
+
+**UK gambling law, for completeness:** under the [Gambling Act 2005, s.6](https://www.legislation.gov.uk/ukpga/2005/19/section/6), a gaming prize must be *"money or money's worth."* The Gambling Commission treats virtual currency as money's worth when it *"can be exchanged for cash or traded for items of value"* ([Gambling Commission](https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/digital-and-virtual-currencies)). Dino Den has no cash-out, and its Terms ban real-money trading between players. Whether trading Patreon-funded dinosaurs for ClawCoins on the operator's own Marketplace counts as "traded for items of value" has not been decided by any authority found. Loot boxes are covered only by a voluntary 2023 industry code. Patreon's own Commerce Guidelines, which cover gambling for an exchange of value including digital currencies (see [README](README.md#why-it-matters)), are broader than UK law.
+
 ---
 
 ## Checked, no discrepancy found
