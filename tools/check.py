@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Consistency checks for this repository (see MAINTAINING.md).
+"""Consistency checks for this repository (see .github/MAINTAINING.md).
 
 Checks every Markdown file for:
   - internal links that point to missing files or missing heading anchors
@@ -26,7 +26,7 @@ def cells(line):
 
 
 def main():
-    files = sorted(glob.glob("**/*.md", recursive=True))
+    files = sorted(glob.glob("**/*.md", recursive=True, include_hidden=True))
     anchors = {
         f: {slug(m) for m in re.findall(r"^#+ (.+)$", open(f, encoding="utf-8").read(), re.M)}
         for f in files

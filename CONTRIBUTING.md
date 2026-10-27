@@ -38,7 +38,7 @@ In scope: how the owners and staff use their powers and treat players. For examp
 2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data, terms or official announcements, or evidence anyone can check directly), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints) or **Unconfirmed**.
 3. Conflicts between sources go in [DISCREPANCIES.md](DISCREPANCIES.md), with both sources and what can and cannot be concluded.
 4. Every change is logged in [CORRECTIONS.md](CORRECTIONS.md), including mistakes in earlier versions.
-5. Every change follows the same procedure, written down in [MAINTAINING.md](MAINTAINING.md).
+5. Every change follows the same procedure, written down in [.github/MAINTAINING.md](.github/MAINTAINING.md).
 
 Submissions that can't be checked are not added, but they may be kept open in case more evidence turns up.
 
