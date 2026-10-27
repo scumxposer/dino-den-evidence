@@ -1,0 +1,142 @@
+{
+  "capturedAtUTC": "2026-10-27T08:33:18.329Z",
+  "method": "Unauthenticated GET requests to https://api.dinoden.gg from a normal browser session (no login). Values the site stores in hundredths (cents) have been divided by 100 where noted. Seller names, avatars, user IDs and raffle entrant names have been removed.",
+  "patreonTiers": {
+    "source": "https://api.dinoden.gg/patreon/tiers",
+    "note": "minCents = minimum pledge in US cents; amberShardsBiWeekly is stored in hundredths (1800000 = 18,000 AmberShards).",
+    "tiers": [
+      {"key": "JUVIE", "name": "Juvie", "description": "Start your journey as a Juvie supporter! Get a Clawcoin boost and bi-weekly AmberShard rewards.", "minCents": 1200, "amberShardsBiWeekly": 1800000, "clawcoinBoost": 1.5, "dinoSlots": 5},
+      {"key": "SUB", "name": "Sub", "description": "The Sub-Adult tier — double your Clawcoin earnings and earn more AmberShards every two weeks.", "minCents": 2200, "amberShardsBiWeekly": 2800000, "clawcoinBoost": 2, "dinoSlots": 10},
+      {"key": "ADULT", "name": "Adult", "description": "Full-grown supporter! Enjoy a 2.5x Clawcoin multiplier and generous AmberShard rewards.", "minCents": 3300, "amberShardsBiWeekly": 4000000, "clawcoinBoost": 2.5, "dinoSlots": 15},
+      {"key": "ELDER", "name": "Elder", "description": "Elder status — triple your Clawcoin earnings with massive bi-weekly AmberShard drops.", "minCents": 4400, "amberShardsBiWeekly": 6000000, "clawcoinBoost": 3, "dinoSlots": 25},
+      {"key": "APEX", "name": "Apex", "description": "The ultimate Apex predator tier! Maximum 3.5x Clawcoin boost and the highest AmberShard rewards.", "minCents": 5500, "amberShardsBiWeekly": 8000000, "clawcoinBoost": 4.5, "dinoSlots": 50}
+    ],
+    "parking": {"slotsEnabled": false}
+  },
+  "features": {
+    "source": "https://api.dinoden.gg/features",
+    "enabled": ["currency.ambershards", "game.blackjack", "game.coinflip", "game.crash", "game.crates", "game.jackpot", "game.poker", "game.roll", "rcon.multiServer", "liveDino.pauseGrowth", "liveDino.setPrime", "auctions", "market", "clans", "client", "events", "faq", "leaderboard", "twitch", "raffle", "raffle.commentary", "shop", "voice"],
+    "disabled": ["crates.rainbowGag", "game.mines", "game.slots", "game.viking", "liveDino.bodyDrop", "clans.adminOnly", "client.adminOnly", "client.patreonOnly", "raffle.commentary.chat", "security.adminDiscordConfirm", "voice.adminOnly"]
+  },
+  "platformConfig": {
+    "source": "https://api.dinoden.gg/platform-config",
+    "clawcoinsLabel": "Clawcoins",
+    "ambershardsLabel": "AmberShards",
+    "ambershardsEnabled": true,
+    "patreonUrl": "https://www.patreon.com/TheDinoDen",
+    "pumpkinsLabel": "Pumpkins",
+    "halloweenActive": true,
+    "halloweenStartsAt": "2026-09-28T15:22:00.000Z",
+    "halloweenEndsAt": "2026-11-06T16:22:00.000Z",
+    "candyCanesLabel": "Candy Canes",
+    "newYearGiftClawcoins_hundredths": 10000000
+  },
+  "clientVersion": {
+    "source": "https://api.dinoden.gg/client/version",
+    "version": "0.2.0",
+    "releaseDate": "2026-09-29T14:51:22.645Z",
+    "file": "DinoDen-Client-Setup-0.2.0.exe",
+    "disabled": false
+  },
+  "shopDinos": {
+    "source": "https://api.dinoden.gg/shop/dinos",
+    "note": "Prices converted to whole AmberShards (AS).",
+    "items": [
+      {"offerId": 21, "dinoClass": "Tyrannosaurus", "rarity": "legendary", "priceNormalAS": 6000, "pricePrimeAS": 7000},
+      {"offerId": 22, "dinoClass": "Triceratops", "rarity": "legendary", "priceNormalAS": 6000, "pricePrimeAS": 7000},
+      {"offerId": 23, "dinoClass": "Allosaurus", "rarity": "epic", "priceNormalAS": 5000, "pricePrimeAS": 6000},
+      {"offerId": 24, "dinoClass": "Deinosuchus", "rarity": "epic", "priceNormalAS": 5000, "pricePrimeAS": 6000},
+      {"offerId": 25, "dinoClass": "Stegosaurus", "rarity": "epic", "priceNormalAS": 5000, "pricePrimeAS": 6000},
+      {"offerId": 26, "dinoClass": "Maiasaura", "rarity": "rare", "priceNormalAS": 4000, "pricePrimeAS": 5000},
+      {"offerId": 27, "dinoClass": "Diabloceratops", "rarity": "rare", "priceNormalAS": 4000, "pricePrimeAS": 5000},
+      {"offerId": 28, "dinoClass": "Carnotaurus", "rarity": "rare", "priceNormalAS": 3000, "pricePrimeAS": 4000},
+      {"offerId": 29, "dinoClass": "Ceratosaurus", "rarity": "rare", "priceNormalAS": 3000, "pricePrimeAS": 4000},
+      {"offerId": 30, "dinoClass": "Tenontosaurus", "rarity": "rare", "priceNormalAS": 3000, "pricePrimeAS": 4000},
+      {"offerId": 31, "dinoClass": "Pachycephalosaurus", "rarity": "uncommon", "priceNormalAS": 2000, "pricePrimeAS": 3000},
+      {"offerId": 32, "dinoClass": "Gallimimus", "rarity": "uncommon", "priceNormalAS": 2000, "pricePrimeAS": 3000},
+      {"offerId": 33, "dinoClass": "Dilophosaurus", "rarity": "uncommon", "priceNormalAS": 3000, "pricePrimeAS": 4000},
+      {"offerId": 34, "dinoClass": "Omniraptor", "rarity": "uncommon", "priceNormalAS": 2000, "pricePrimeAS": 3000},
+      {"offerId": 35, "dinoClass": "Herrerasaurus", "rarity": "uncommon", "priceNormalAS": 2000, "pricePrimeAS": 3000},
+      {"offerId": 36, "dinoClass": "Dryosaurus", "rarity": "common", "priceNormalAS": 1000, "pricePrimeAS": 2000},
+      {"offerId": 37, "dinoClass": "Hypsilophodon", "rarity": "common", "priceNormalAS": 1000, "pricePrimeAS": 2000},
+      {"offerId": 38, "dinoClass": "Troodon", "rarity": "common", "priceNormalAS": 1000, "pricePrimeAS": 2000},
+      {"offerId": 39, "dinoClass": "Pteranodon", "rarity": "common", "priceNormalAS": 1000, "pricePrimeAS": 2000},
+      {"offerId": 40, "dinoClass": "Beipiaosaurus", "rarity": "common", "priceNormalAS": 1000, "pricePrimeAS": 2000},
+      {"offerId": 42, "dinoClass": "Kentrosaurus", "rarity": "common", "priceNormalAS": 5000, "pricePrimeAS": 6000},
+      {"offerId": 43, "dinoClass": "Austroraptor", "rarity": "common", "priceNormalAS": 2000, "pricePrimeAS": 3000}
+    ]
+  },
+  "raffle": {
+    "source": "https://api.dinoden.gg/raffle/current",
+    "open": {
+      "id": 5,
+      "startsAt": "2026-10-25T19:46:21.928Z",
+      "endsAt": "2026-11-01T19:46:20.778Z",
+      "prizePoolClawCoins": 100000000,
+      "prizesClawCoins": [25000000, 15000000, 10000000, 8000000, 6000000, 5000000, 4500000, 4000000, 3500000, 3000000, 2500000, 2250000, 2000000, 1750000, 1500000, 1400000, 1300000, 1200000, 1100000, 1000000],
+      "rates": {"ticketsPerHour": 10, "wagerPerTicket_hundredths": 10000000, "wagerPerTicketClawCoins": 100000, "maxPlaytimeTickets": 0, "maxWagerTickets": 0},
+      "ratesNote": "The site's own code only applies a cap when max*Tickets > 0, so 0 means no cap.",
+      "entrantCount": 12206,
+      "totalTickets": 737023
+    },
+    "last": {"id": 4, "startsAt": "2026-10-18T19:46:23.775Z", "endsAt": "2026-10-25T19:46:20.778Z", "entrantCount": 22908, "totalTickets": 3708647}
+  },
+  "crates": {
+    "source": "https://api.dinoden.gg/games/crates",
+    "note": "Prices converted to whole currency units. communityCrate = made by a player who receives creatorRevenueShareBps (50 = 0.5%). Creator names removed.",
+    "items": [
+      {"name": "Hidden In Plain Sight", "price": 25000, "currency": "CLAWCOINS", "timesOpened": 5423186, "communityCrate": false},
+      {"name": "I'm only loooosing", "price": 9999.99, "currency": "CLAWCOINS", "timesOpened": 4281490, "communityCrate": false},
+      {"name": "Irie's Crate 2", "price": 69148.43, "currency": "CLAWCOINS", "timesOpened": 379195, "communityCrate": true},
+      {"name": "1 in 1000", "price": 19058.31, "currency": "CLAWCOINS", "timesOpened": 121008, "communityCrate": true},
+      {"name": "Money Money Money!", "price": 70718.97, "currency": "CLAWCOINS", "timesOpened": 111198, "communityCrate": true},
+      {"name": "Herds Bounty", "price": 51887.39, "currency": "CLAWCOINS", "timesOpened": 97597, "communityCrate": true},
+      {"name": "Get Even Or Get Even Worse", "price": 40104.52, "currency": "CLAWCOINS", "timesOpened": 73659, "communityCrate": true},
+      {"name": "I am Broke But Need Money", "price": 44450.14, "currency": "CLAWCOINS", "timesOpened": 56801, "communityCrate": true},
+      {"name": "1 in 100", "price": 86565.67, "currency": "CLAWCOINS", "timesOpened": 53667, "communityCrate": true},
+      {"name": "Chicken Dinner?", "price": 212946.93, "currency": "CLAWCOINS", "timesOpened": 50950, "communityCrate": true},
+      {"name": "Pandora's Box", "price": 90510.55, "currency": "CLAWCOINS", "timesOpened": 48411, "communityCrate": true},
+      {"name": "Haunted Crate", "price": 20, "currency": "PUMPKINS", "timesOpened": 38891, "communityCrate": false},
+      {"name": "10k or 100k", "price": 63566.25, "currency": "CLAWCOINS", "timesOpened": 31042, "communityCrate": true},
+      {"name": "all good skin", "price": 471834.93, "currency": "CLAWCOINS", "timesOpened": 17782, "communityCrate": true},
+      {"name": "Cursed Crate", "price": 60, "currency": "PUMPKINS", "timesOpened": 10252, "communityCrate": false},
+      {"name": "Irie's Crate", "price": 625439.57, "currency": "CLAWCOINS", "timesOpened": 9215, "communityCrate": true},
+      {"name": "Go Big or Go Broke", "price": 544069.31, "currency": "CLAWCOINS", "timesOpened": 7865, "communityCrate": true},
+      {"name": "The Pandemic", "price": 508015.92, "currency": "CLAWCOINS", "timesOpened": 7524, "communityCrate": true},
+      {"name": "Legend Skins", "price": 1548705, "currency": "CLAWCOINS", "timesOpened": 6928, "communityCrate": true},
+      {"name": "Nightmare Crate", "price": 150, "currency": "PUMPKINS", "timesOpened": 6024, "communityCrate": false},
+      {"name": "Hex's Crate :D", "price": 238204.58, "currency": "CLAWCOINS", "timesOpened": 5914, "communityCrate": true},
+      {"name": "pops poms", "price": 649531.5, "currency": "CLAWCOINS", "timesOpened": 4216, "communityCrate": true},
+      {"name": "Primeval Crate", "price": 137396.85, "currency": "CLAWCOINS", "timesOpened": 2789, "communityCrate": true},
+      {"name": "HeresJohny", "price": 105173.25, "currency": "CLAWCOINS", "timesOpened": 2586, "communityCrate": true},
+      {"name": "Toxic Vault", "price": 166081.27, "currency": "CLAWCOINS", "timesOpened": 2268, "communityCrate": true}
+    ]
+  },
+  "marketplace": {
+    "source": "https://api.dinoden.gg/market/listings (all pages)",
+    "activeListings": 877,
+    "listingsWithShopIds": 117,
+    "shopIdNote": "Dinosaurs bought from the Dino Shop carry a uniqueID beginning 'shop-<shop offer id>-'. The offer ids match /shop/dinos. Interpretation is the author's; see evidence/01.",
+    "byShopOffer": [
+      {"offerId": 21, "dinoClass": "Tyrannosaurus", "listings": 37},
+      {"offerId": 38, "dinoClass": "Troodon", "listings": 37},
+      {"offerId": 24, "dinoClass": "Deinosuchus", "listings": 8},
+      {"offerId": 34, "dinoClass": "Omniraptor", "listings": 6},
+      {"offerId": 39, "dinoClass": "Pteranodon", "listings": 6},
+      {"offerId": 40, "dinoClass": "Beipiaosaurus", "listings": 4},
+      {"offerId": 22, "dinoClass": "Triceratops", "listings": 3},
+      {"offerId": 23, "dinoClass": "Allosaurus", "listings": 2},
+      {"offerId": 29, "dinoClass": "Ceratosaurus", "listings": 2},
+      {"offerId": 30, "dinoClass": "Tenontosaurus", "listings": 2},
+      {"offerId": 32, "dinoClass": "Gallimimus", "listings": 2},
+      {"offerId": 35, "dinoClass": "Herrerasaurus", "listings": 2},
+      {"offerId": 36, "dinoClass": "Dryosaurus", "listings": 2},
+      {"offerId": 33, "dinoClass": "Dilophosaurus", "listings": 1},
+      {"offerId": 37, "dinoClass": "Hypsilophodon", "listings": 1},
+      {"offerId": 41, "dinoClass": "Beipiaosaurus", "listings": 1},
+      {"offerId": 42, "dinoClass": "Kentrosaurus", "listings": 1}
+    ],
+    "feePctValuesSeen": [10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 25],
+    "exampleListingIds": [913987, 913986, 913976, 913963, 913906, 913905, 913904, 913903, 913902, 913900]
+  }
+}
