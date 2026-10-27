@@ -15,7 +15,6 @@ Every documented figure here comes from public pages and public API endpoints th
 | <https://main.dinoden.gg/dinoden-client> | client claims (no injection, free) |
 | <https://main.dinoden.gg/patreon> | tier prices in £, perks, and the Apex card showing both 3.5x and 4.5x |
 | <https://main.dinoden.gg/games/jackpot> | rooms and limits; "How it works" (2.5% tax) |
-| <https://api.dinoden.gg/auctions> | dinosaur auctions; look for `dino.uniqueID` values starting `shop-` |
 | <https://find-and-update.company-information.service.gov.uk/company/16970676> | THE DINO DEN LTD company record |
 | <https://www.patreon.com/TheDinoDen> | current tier prices and stated perks (compare with `/patreon/tiers`) |
 | <https://thespoofingisle.com> | third-party player-count analysis (search "DINO DEN") |
@@ -33,6 +32,7 @@ These pages load their content with JavaScript, so use a normal browser.
 | <https://api.dinoden.gg/raffle/current> | Raffle ticket rates (`wagerPerTicket` ÷ 100 = ClawCoins), prize pool, entrants |
 | <https://api.dinoden.gg/games/crates> | Crate prices (÷ 100) and how often each was opened (`_count.openings`) |
 | <https://api.dinoden.gg/platform-config> | Currency names, Patreon URL |
+| <https://api.dinoden.gg/auctions> | Dinosaur auctions; look for `dino.uniqueID` values starting `shop-` |
 
 ## Units
 

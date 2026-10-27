@@ -2,7 +2,7 @@
 
 A sourced, one-stop record of how **The Dino Den** — a large unofficial server network for *The Isle: Evrima*, operated by THE DINO DEN LTD (Company No. 16970676, England) — links paid Patreon memberships to casino-style games on its website, and of how its owners and staff treat players. It collects evidence of abuse of moderation powers, harassment of players and retaliation for criticism, held to the same standards as everything else here.
 
-Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations (sign-in checks, Patreon page screenshots and a Discord screenshot), which are labelled as such wherever they are used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints, including reports about staff conduct, are kept separately, labelled as claims, with their sources and counterpoints.
+Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations and screenshots shared with the author (sign-in checks, Patreon page screenshots, Discord screenshots and a patron's screenshot), each labelled where it is used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints, including reports about staff conduct, are kept separately, labelled as claims, with their sources and counterpoints.
 
 > This repository is not affiliated with The Dino Den, Afterthought LLC (developer of *The Isle*), or Patreon. It is not legal advice. Corrections and responses from The Dino Den are welcome — see [CORRECTIONS.md](CORRECTIONS.md).
 
@@ -32,6 +32,8 @@ Patreon pledge (5 tiers, £12–£55 a month as shown on the site)
 Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second, direct route)
 ```
 
+Patreon is not the only way in: ClawCoins are earned by playing, and smaller amounts of AmberShards come from free login rewards and Twitch watching (a few hundred AmberShards a week from login rewards, against 18,000–80,000 every two weeks from Patreon; see [evidence/01](evidence/01-patreon-to-casino.md#other-ways-to-get-ambershards-for-balance)). This repository is about the paid route.
+
 On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs whose IDs match Dino Shop purchases (interpretation explained in [evidence/01](evidence/01-patreon-to-casino.md)), listed for sale in ClawCoins — 37 of them Tyrannosaurus.
 
 ## Staff and owner conduct
@@ -42,7 +44,7 @@ What is documented so far comes from the operator's own rules:
 - The FAQ tells banned players to *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* Reports and appeals go through Discord tickets only.
 - The January 2026 Terms said only: *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."*
 
-Players have reported bans after posting critical reviews, a trial admin removed and muted after criticising senior staff (disputed by other players), and cheaters not being dealt with. These are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). No verified evidence about an individual owner's or staff member's conduct has been published here yet. If you have some, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
+Players have reported a ban after criticising the server in a Steam discussion, a former trial admin who says he was stripped of his role and muted after criticising the owner in staff chat, and cheaters not being dealt with. Other players say admins have treated them reasonably. These are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). No verified evidence about an individual owner's or staff member's conduct has been published here yet. If you have some, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
 
 ## Key findings
 
@@ -63,13 +65,13 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Player-vs-player jackpot with rooms up to 25,000,000 ClawCoins a round; the site takes 2.5% of each pot | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md#jackpot) |
 | Poker (Texas Hold'em) is built and switched on but limited to high-role (apparently staff) accounts | **Documented** (site code) | [DISCREPANCIES.md §6](DISCREPANCIES.md#6-games-menu-vs-games-switched-on) |
 | Dec 2025 Discord announcement advertised patron access to locked dinosaurs, Apex access to Rex "even when it's locked", queue skip, and AmberShards to "instantly purchase full-grown dinos" | **Documented** (operator's Discord; screenshot) | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
-| Still offered: a patron-only page lets patrons unlock species that are at Dino Den's per-server cap, with some species tier-gated: a Senior Admin confirmed in Oct 2026 that Allosaurus and Rex "can be unlock if you are APEX patreon, otherwise its popcontrol on them" | **Documented** (site code; staff statement; patron screenshot) | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
+| Still offered: a patron-only page lets patrons unlock species on a server (Dino Den caps each species per server), with some species tier-gated: a Senior Admin confirmed in Oct 2026 that Allosaurus and Rex "can be unlock if you are APEX patreon, otherwise its popcontrol on them" | **Documented** (site code; staff statement; patron screenshot) | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
 | Terms let staff suspend accounts "with or without reason" and call moderation decisions "final", while the FAQ promises appeals "the exact reason" | **Documented** | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) |
-| Staff conduct: bans after critical reviews, a trial admin removed and muted after criticising senior staff, cheaters not dealt with and admins absent | **Player claims**, several independent sources, unverified and partly disputed (evidence wanted) | [community-reports.md](community-reports.md#bans-after-criticism) |
-| Patreon perks advertised but not delivered | **Player claims**, unverified | [community-reports.md](community-reports.md#patreon-perks-advertised-but-not-delivered) |
+| Staff conduct: a ban after criticism in a Steam discussion, a former trial admin removed and muted after criticising the owner, cheaters not dealt with and admins absent | **Player claims**, unverified, with counterpoints (evidence wanted) | [community-reports.md](community-reports.md#bans-after-criticism) |
+| Patreon perks advertised but not delivered | **Player claim**, one source (a former trial admin, Nov 2025), unverified | [community-reports.md](community-reports.md#patreon-perks-advertised-but-not-delivered) |
 
 ## Why it matters
 
@@ -84,14 +86,14 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 - Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no evidence, target or date has been published. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
 - Real names, Steam profile links, alleged alt accounts, or private messages between other people.
 - Ordinary players' names, or their Discord or private messages. Public forum posts are quoted without usernames and linked to their source; people who published their own analyses are credited by the name they published under.
-- Anything about owners' or staff members' private lives or real identities. They are referred to only by the names they use as staff, and only for what they did in that role. (Official announcements posted by the operator's own Discord app are included, cropped to the announcement.)
+- Anything about owners' or staff members' private lives or real identities. They are referred to only by the names they use as staff, and only for what they did in that role. (Official announcements, and messages staff posted in their staff role, are included, cropped, with ordinary players' names hidden.)
 - The Dino Den's software or other copyrighted material — only findings about it.
 
 ## Contents
 
 - [DISCREPANCIES.md](DISCREPANCIES.md) — every discrepancy, with both sources side by side
-- [evidence/01-patreon-to-casino.md](evidence/01-patreon-to-casino.md) — the value chain, Patreon tiers, Dino Shop, Marketplace
-- [evidence/02-casino-games-and-raffle.md](evidence/02-casino-games-and-raffle.md) — games, raffle, crates, patron-only coin flip
+- [evidence/01-patreon-to-casino.md](evidence/01-patreon-to-casino.md) — the value chain, Patreon tiers and perks, free sources, Dino Shop, Marketplace, Auctions
+- [evidence/02-casino-games-and-raffle.md](evidence/02-casino-games-and-raffle.md) — games, jackpot, raffle, crates, Lucky Bags, patron-only coin flip
 - [evidence/03-operator-statements.md](evidence/03-operator-statements.md) — FAQ and Terms of Service, and where they conflict with the evidence
 - [evidence/04-client-analysis.md](evidence/04-client-analysis.md) — what the DinoDen Client does and does not do
 - [evidence/snapshots/2026-10-27/api-snapshot.json](evidence/snapshots/2026-10-27/api-snapshot.json) — the raw data behind the figures, personal data removed
@@ -106,6 +108,6 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 
 The text, analysis and data compilations in this repository are licensed under [CC BY 4.0](LICENSE). You may share and adapt them, including commercially, as long as you give credit and link back, for example: *"The Dino Den evidence repository, https://github.com/scumxposer/dino-den-evidence"*. Linking back also lets readers find the latest corrections.
 
-**Not covered by this license:** material owned by others and quoted or reproduced here for reporting and criticism. That includes text, data and images from The Dino Den's website, Terms, FAQ, API and Discord (including the screenshot in `evidence/screenshots/`), and quotes from Patreon, Steam forum posts, regulators and legislation. Those remain the property of their owners.
+**Not covered by this license:** material owned by others and quoted or reproduced here for reporting and criticism. That includes text, data and images from The Dino Den's website, Terms, FAQ, API and Discord (including the screenshots in `evidence/screenshots/`), and quotes from Patreon, Steam forum posts, regulators and legislation. Those remain the property of their owners.
 
 *Last updated: 27 October 2026.*

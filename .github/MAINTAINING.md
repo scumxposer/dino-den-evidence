@@ -24,8 +24,8 @@ Search the whole repository for the topic (for example `grep -rn "jackpot" .`) a
 
 | Topic | Where it appears |
 |---|---|
-| Patreon tiers, prices, perks, multiplier | README (short version, key findings), DISCREPANCIES §1, §2, §11, evidence/01, verify-yourself, reports-filed |
-| Games, jackpot, poker, raffle, crates, Lucky Bags | README (short version, key findings), DISCREPANCIES §4, §6, evidence/02, verify-yourself |
+| Patreon tiers, prices, perks, multiplier | README (short version, key findings, why it matters), DISCREPANCIES §1, §2, §5, §11, evidence/01, community-reports, verify-yourself, reports-filed |
+| Games, jackpot, poker, raffle, crates, Lucky Bags, gambling wording | README (short version, key findings), DISCREPANCIES §4, §6, evidence/02, evidence/03, verify-yourself |
 | Terms, FAQ, age rule, moderation and appeals | README (staff section, key findings, why it matters), DISCREPANCIES §3, §5, §9, §10, evidence/03 |
 | Staff and owner conduct | README (staff section, key findings), community-reports, CONTRIBUTING, CODE_OF_CONDUCT, evidence/03 |
 | Player counts | README (key findings), DISCREPANCIES §7, community-reports |
@@ -61,3 +61,6 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - Leaving "not re-tested" in place after a re-test.
 - A table row broken by an edit.
 - Privacy rules worded differently in different files.
+- Attributing forum comments to Dino Den when, in a thread covering several servers, they were about another server.
+- Paraphrases drifting from the source ("a critical review" for a forum post; "two posters" for one). Quote the source where possible and re-read it before summarising.
+- A detail added without any source (who developed a community tool).

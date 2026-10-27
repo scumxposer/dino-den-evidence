@@ -54,7 +54,7 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | Patreon tiers, Dino Shop and Marketplace data — see [evidence/01](evidence/01-patreon-to-casino.md) | paid tiers supply the currencies that end up wagered |
 
 **Can be concluded:** the operator itself describes the games as casino and chance-based games, and its own account settings call them *"gambling games"*, while its Terms say they are not gambling for anything of value.
-**Cannot be concluded:** whether this meets any legal definition of gambling. That is for Patreon and regulators to judge.
+**Cannot be concluded:** whether this meets any legal definition of gambling. That is for Patreon and regulators to judge. Also unclear: the self-exclusion text names four games (Crash, Roll, Mines, Blackjack) while the FAQ says it covers *"all casino games"*; whether it also blocks Coinflip, Jackpot and Crates could not be checked.
 
 ## 5. "Memberships are not purchases of Virtual Items"
 
@@ -63,6 +63,9 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | Current Terms §3 — <https://main.dinoden.gg/tos> | *"memberships are not purchases of Virtual Items"* |
 | Tier configuration — <https://api.dinoden.gg/patreon/tiers> | each tier is defined by `amberShardsBiWeekly` (18,000–80,000 AmberShards every 14 days) |
 | FAQ — <https://main.dinoden.gg/faq> | *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."* |
+
+**Can be concluded:** the Terms say memberships are not purchases of Virtual Items, while every tier is defined by, and pays out, a fixed amount of AmberShards.
+**Cannot be concluded:** how that wording would be treated by Patreon or a regulator.
 
 ## 6. Games menu vs games switched on
 
@@ -85,7 +88,8 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | [TheSpoofingIsle — NA #1](https://thespoofingisle.com/server/51.222.255.170%3A7777), [EU #2](https://thespoofingisle.com/server/45.88.230.190%3A7777) (read ~09:00 UTC, 27 Oct 2026) | "Spoofing" scores 75 and 83; join bursts up to +173 players in 3 minutes; refills faster than clients can load after restarts; ~15-minute repeating curve |
 | Kadin's EOS session check (Discord post, ~Nov 2025; screenshot held by the author) | most listed players on "The Dino Den" and "NERF Official" were not real |
 
-**Cannot be concluded:** that counts are definitely faked. The tracker's restart check also fires on an official developer server ([Official US 1](https://thespoofingisle.com/server/172.237.147.22%3A31067)), and the 15-minute pattern appears on unrelated servers (e.g. [ORIGIN](https://thespoofingisle.com/server/216.39.241.102%3A7777)). Dino Den's own public data (raffle tickets, playtime leaderboard) neither confirms nor rules out the displayed counts. Full detail: [community-reports.md](community-reports.md#inflated-player-counts).
+**Can be concluded:** two independent analyses, a year apart, flag Dino Den's displayed counts as inflated.
+**Cannot be concluded:** that counts are definitely faked. The tracker's restart check also fires on an official developer server ([Official US 1](https://thespoofingisle.com/server/172.237.147.22%3A31067)), and the 15-minute pattern appears on unrelated servers (e.g. [ORIGIN](https://thespoofingisle.com/server/216.39.241.102%3A7777)). Dino Den's own public data (raffle tickets, playtime leaderboard) neither confirms nor rules out the displayed counts. Full detail, and a way to test it directly with Dino Den's own patron-only population page: [community-reports.md](community-reports.md#inflated-player-counts).
 
 ## 8. Privacy policy vs the DinoDen Client
 
@@ -95,6 +99,7 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | DinoDen Client v0.2.0, static review ([evidence/04](evidence/04-client-analysis.md)) | sends the computer's hostname (`deviceName`) once at sign-in; uses the microphone for proximity voice |
 
 **Can be concluded:** the policy does not describe data the client sends. This is a documentation gap, not evidence of misuse.
+**Cannot be concluded:** how that data is stored or used on Dino Den's servers. The review covers version 0.2.0 only.
 
 ## 9. EU Digital Services Act: contact point and legal representative removed
 
@@ -113,7 +118,7 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 - Art. 13(1): providers *"which do not have an establishment in the Union but which offer services in the Union shall designate, in writing"* a legal representative in a Member State.
 - Art. 16(1): hosting providers must let anyone report illegal content *"exclusively by electronic means."*
 - Art. 17(1): hosting providers must give *"a clear and specific statement of reasons"* to users for content removal or account suspension/termination.
-- Art. 19(1): online-platform duties in Section 3 (including Art. 20 complaints, Art. 25 interface design and Art. 28 protection of minors) do not apply to micro or small enterprises. Arts. 12, 13, 16 and 17 are not covered by that exemption.
+- Art. 19(1): online-platform duties in Section 3 (including Art. 20 complaints, Art. 25 interface design and Art. 28 protection of minors), except Art. 24(3), do not apply to micro or small enterprises. Arts. 12, 13, 16 and 17 are not covered by that exemption.
 
 **Can be concluded:** the operator's own January Terms acknowledged DSA duties (an EU contact point and a possible EU legal representative); the June Terms removed the DSA contact and email address and no representative is published.
 **Cannot be concluded:** whether The Dino Den is legally required to meet these obligations, or whether its Discord ticket system satisfies them (Discord is an electronic channel, but it requires a Discord account). That is for regulators to decide. The company's size (relevant to the Art. 19 exemption) cannot be checked until its first accounts are filed (due October 2027, per [Companies House](https://find-and-update.company-information.service.gov.uk/company/16970676)). This is not legal advice.
@@ -158,7 +163,7 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | Dino Den's public website chat, 27 Oct 2026 (visible without signing in; players not named) | players saying Rex "stays locked" and asking for someone to "open rex" on EU 2 |
 | The site's patron-only "Patreon Access" page — <https://main.dinoden.gg/subscriber> (text from the site's JavaScript, read 27 Oct 2026) | *"Live server population, species unlocks and the skin designer for patrons."* Each species shows *"Online"* as a count out of a per-server cap, and can carry a minimum tier badge (*"[tier]+"*, tooltip *"Requires [tier] or higher"*). Patrons can unlock a species on a server: *"[dino] unlocked on [server]"*, *"Playable for [time]"*, *"On cooldown for this server"*. *"Glitch skins are reserved for the APEX tier."* |
 | Screenshot of that page from a Patreon supporter (received 27 Oct 2026; held by the author; taken between 28 Sep and 27 Oct 2026, as the Halloween event banner is showing) | AU #2: Tyrannosaurus marked *"APEX+"*, 15 of 16 online, *"Playable"*; Deinosuchus 5 of 80 |
-| Reply by a Dino Den Senior Admin in the Dino Den Discord, 9 Oct 2026 ([screenshot](evidence/screenshots/2026-10-09-discord-senior-admin-apex-unlock.png), the player's name hidden; the staff member's Discord profile lists the roles Senior Admin, Admin, TDD Staff and Ticket Support) | answering a player who asked how to unlock Allosaurus: *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* |
+| Reply by a Dino Den Senior Admin in the Dino Den Discord, 9 Oct 2026 ([screenshot](evidence/screenshots/2026-10-09-discord-senior-admin-apex-unlock.png), the player's name hidden; the staff member's Discord profile lists the roles Senior Admin, Admin, TDD Staff and Ticket Support) | replying to a player's message (shown truncated as *"how do we unlock the allow…"*): *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* |
 
 **Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself still advertises queue skip and *"VIP-only access."*
 "Locked" refers to Dino Den's own per-server species caps, not to the game. The perk is still offered: the site's patron-only page lets patrons unlock species on a server for a limited time, in a patron's screenshot from October 2026 Tyrannosaurus is marked as needing the Apex tier, and on 9 October 2026 a Senior Admin stated that Allosaurus and Tyrannosaurus *"can be unlock if you are APEX patreon, otherwise its popcontrol on them."*

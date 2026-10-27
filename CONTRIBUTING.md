@@ -35,7 +35,7 @@ In scope: how the owners and staff use their powers and treat players. For examp
 ## How submissions are handled
 
 1. Every submission is checked against its source before anything is added.
-2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data, terms or official announcements, or evidence anyone can check directly), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints) or **Unconfirmed**.
+2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data, terms or official announcements, or evidence anyone can check directly), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints), **Unconfirmed**, or **Not supported** (checked and not borne out).
 3. Conflicts between sources go in [DISCREPANCIES.md](DISCREPANCIES.md), with both sources and what can and cannot be concluded.
 4. Every change is logged in [CORRECTIONS.md](CORRECTIONS.md), including mistakes in earlier versions.
 5. Every change follows the same procedure, written down in [.github/MAINTAINING.md](.github/MAINTAINING.md).
@@ -44,7 +44,7 @@ Submissions that can't be checked are not added, but they may be kept open in ca
 
 ## Responses from The Dino Den
 
-The operators are welcome to respond. A response will be published in full, unedited, alongside the evidence. See [CORRECTIONS.md](CORRECTIONS.md).
+The operators, and any owner or staff member whose conduct is described here, are welcome to respond. A response will be published in full, unedited, alongside the evidence. See [CORRECTIONS.md](CORRECTIONS.md).
 
 ## License of contributions
 

@@ -1,6 +1,6 @@
 # 01 — How Patreon money reaches the casino games
 
-All figures captured 27 October 2026 from The Dino Den's public API, without logging in. Raw data: [snapshots/2026-10-27/api-snapshot.json](snapshots/2026-10-27/api-snapshot.json).
+Figures were captured on 27 October 2026 from The Dino Den's public API without logging in, unless another source is named (site pages, Discord screenshots or a patron's screenshot). Raw data: [snapshots/2026-10-27/api-snapshot.json](snapshots/2026-10-27/api-snapshot.json).
 
 ## Step 1 — Patreon tiers pay AmberShards
 
@@ -20,7 +20,7 @@ Source: <https://api.dinoden.gg/patreon/tiers>
 
 ### Other patron perks
 
-The site's patron-only "Patreon Access" page (<https://main.dinoden.gg/subscriber>) offers *"Live server population, species unlocks and the skin designer for patrons."* Patrons can unlock a species that is at Dino Den's per-server cap for a limited time, and some species need a minimum tier: Tyrannosaurus is marked "APEX+" in a patron's October 2026 screenshot, and a Senior Admin wrote on 9 Oct 2026 that *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* ([screenshot](screenshots/2026-10-09-discord-senior-admin-apex-unlock.png)). See [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page).
+The site's patron-only "Patreon Access" page (<https://main.dinoden.gg/subscriber>) offers *"Live server population, species unlocks and the skin designer for patrons."* Patrons can unlock species on a server for a limited time (Dino Den caps each species per server), and some species need a minimum tier: Tyrannosaurus is marked "APEX+" in a patron's October 2026 screenshot, and a Senior Admin wrote on 9 Oct 2026 that *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* ([screenshot](screenshots/2026-10-09-discord-senior-admin-apex-unlock.png)). See [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page).
 
 ### Other ways to get AmberShards (for balance)
 
@@ -55,7 +55,7 @@ Example listing ids: 913900, 913902–913906 (six Troodons listed within four mi
 Dinosaurs are also sold for ClawCoins through **Auctions** (<https://api.dinoden.gg/auctions>; 10% fee seen). On 27 Oct 2026 at about 10:40 UTC, 2 of 17 active auctions were dinosaurs with `shop-` IDs, one of them a Tyrannosaurus (`shop-21-`). Not in the 08:33 UTC snapshot.
 
 **Limits of this step:**
-- Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format. The second part matches the shop's offer numbers and the third part matches the seller's account number; the site does not document the format.
+- Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format, which the site does not document. The second part matches the shop's offer numbers. The third part equals the seller's account number in most listings (83 of 104 `shop-` listings at about 17:55 UTC on 27 Oct 2026); where it differs, the dinosaur has probably changed hands, so the third part is most likely the original buyer.
 - Listings show asking prices, not completed sales.
 
 ## Step 4 — ClawCoins are wagered
