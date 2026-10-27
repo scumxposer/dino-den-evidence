@@ -38,7 +38,7 @@ On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs wh
 
 ## Staff and owner conduct
 
-What is documented so far comes from the operator's own rules:
+What the operator's own rules say:
 
 - The current Terms (§5) let staff suspend or terminate accounts *"with or without reason, and without prior notice or compensation"*, and say *"Moderation decisions are made at our sole discretion and are final."* Enforcement *"may extend across the website, our game servers, and connected community spaces such as our Discord."*
 - The FAQ tells banned players to *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* Reports and appeals go through Discord tickets only.

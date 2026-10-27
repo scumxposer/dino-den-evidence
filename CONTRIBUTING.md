@@ -33,7 +33,7 @@ Messages posted in public channels of the Dino Den Discord can be used as eviden
 - Include the channel and the date, and enough of the conversation to show the context.
 - **Players' usernames and avatars are always hidden.** Players' messages are never published with anything that identifies them. Staff and owners are shown by the handles they use as staff.
 - Messages from players are labelled as player claims unless they can be checked another way.
-- Nothing about anyone's personal life, and nothing from private channels or DMs between other people.
+- Nothing about anyone's personal life, and nothing from private channels or DMs between other people, unless the owner or staff have themselves posted them in a public channel. In that case they are described as they appeared there, with players' names hidden.
 
 ## What is not accepted
 

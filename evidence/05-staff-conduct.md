@@ -1,6 +1,6 @@
 # 05 — How the owner and staff treat players: Dino Den's own Discord
 
-Source: screenshots of two **public channels** in The Dino Den's Discord server, `#wall-of-shame` and `#sent-to-hell`, taken by the author by 27 October 2026, who holds the originals. Dates are as Discord shows them. Under this repository's rules, players' names and avatars are hidden, and staff are named by the handles they use as staff. Roles come from Dino Den's own Discord (screenshots taken by the author, 27 Oct 2026): Vire is the only holder of the server's "Founders" role, and CHUGGY's profile lists Head Admin, Senior Admin, Admin and TDD Staff. Only the owner's and the bot's words are quoted; what players wrote is described, not reproduced.
+Source: screenshots of two **public channels** in The Dino Den's Discord server, `#wall-of-shame` and `#sent-to-hell`, taken by the author by 27 October 2026, who holds the originals. Dates are as Discord shows them. Under this repository's rules, players' names and avatars are hidden, and staff are named by the handles they use as staff. Roles come from Dino Den's own Discord (screenshots taken by the author, 27 Oct 2026): Vire is the only holder of the server's "Founders" role, and CHUGGY's profile lists Head Admin, Senior Admin, Admin and TDD Staff. The owner's and the bot's words are quoted. What players wrote is described rather than reproduced, except two short phrases needed to show what the owner was answering. Some posts contain private messages that the owner or staff made public by posting them; they are described here only as they appeared in the public channel.
 
 ## `#wall-of-shame`
 
@@ -16,7 +16,7 @@ The channel starts on 15 August 2026. In the posts captured (15 August – 22 Oc
 | 19 Aug 2026 | Vire | A player's private message and friend request to the owner |
 | 19 Aug 2026 | Vire | A sexual private message a player sent the owner, captioned *"Yall gotta stop sending me this shit"* |
 | 5 Sep 2026 | Vire | Players' messages forwarded from the public `au-chat` channel |
-| 21 Sep 2026 | Vire | A clan's recruitment message, captioned *"Yes, they seem quite nice 🤣"* |
+| 21 Sep 2026 | Vire | A clan's boastful message from a forum thread, captioned *"Yes, they seem quite nice 🤣"* |
 | 21 Oct 2026 | Vire | A player's in-game chat message to the owner |
 | 22 Oct 2026 | Vire | A player's private message to the owner offering something sexual in exchange for a dinosaur |
 
