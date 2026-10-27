@@ -34,10 +34,10 @@ Every place where two sources disagree, side by side. Each item names both sourc
 | Terms of Service, last updated 2026-01-20, archived 2 April 2026 — <https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms> (§4 Eligibility) | *"If you are a minor, you may use the Service only with the consent of a parent or legal guardian (where required by law)."* |
 | Current Terms of Service, last updated 11 June 2026 — <https://main.dinoden.gg/tos> (§1) | *"You must be at least 18 years old to use the service."* |
 | Current Privacy Policy, last updated 11 June 2026 — <https://main.dinoden.gg/privacy> | *"The service is intended for adults and not directed at anyone under 18."* |
-| The author's own sign-in (October 2026) | No age check or parental-consent step before reaching the games, shop and marketplace |
+| The author's sign-ins on two different Steam accounts (October 2026, and a separate account on 27 Oct 2026) | No age check or parental-consent step before reaching the games, shop and marketplace on either account |
 
 **Can be concluded:** the operator moved from allowing minors (with consent) to adults-only in June 2026. The original site, na.dinoden.gg, is currently offline (error 521); the archived copy is the source.
-**Cannot be concluded:** whether an age check has been added since the author's sign-in; it has not been re-tested.
+**Cannot be concluded:** whether every new account sees the same sign-in flow. Both checks were made by the same person; confirmations from other players are welcome via the [evidence form](../../issues/new/choose).
 
 ## 4. "Not gambling" vs the operator's own descriptions
 
