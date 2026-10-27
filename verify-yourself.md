@@ -1,6 +1,6 @@
 # Verify it yourself
 
-Every documented figure here comes from public pages and public API endpoints that anyone can open in a browser, without logging in, except the one row marked "signed in" (that text is also in the site's public JavaScript). Values may have changed since 27 October 2026.
+Every documented figure here comes from public pages and public API endpoints that anyone can open in a browser, without logging in, except the rows marked "signed in" (their wording is also in the site's public JavaScript). Values may have changed since 27 October 2026.
 
 ## Pages (open normally)
 
@@ -8,6 +8,7 @@ Every documented figure here comes from public pages and public API endpoints th
 |---|---|
 | <https://main.dinoden.gg/faq> | "casino games", self-exclusion, Patreon AmberShard payouts, patron-only coin flip |
 | Account settings on main.dinoden.gg (signed in) | the "Gambling Self-Exclusion" section |
+| <https://main.dinoden.gg/subscriber> (signed in as a patron) | per-species online counts and caps, tier badges such as "APEX+", species unlocks |
 | <https://main.dinoden.gg/tos> | §1 age requirement, §2 virtual items and games, §3 Patreon |
 | <https://main.dinoden.gg/privacy> | data collected, "intended for adults" |
 | [Earlier Terms, archived 2 Apr 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms) | §4 minors allowed with parental consent; §7 "Chance-Based Games" |

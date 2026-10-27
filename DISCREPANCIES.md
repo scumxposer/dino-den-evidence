@@ -156,10 +156,12 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | *The Isle* patch 0.21.321, 28 December 2025 — [official news post](https://www.theisle-game.com/en/news/merry-x-mas-and-a-happy-new-patch-0-21-321) | adds the Tyrannosaurus as a playable dinosaur, three weeks after the announcement |
 | The author's own observation (October 2026) | Dino Den limits how many Rexes can be on its low-rules servers at once; when the limit is reached, Rex is "locked" for other players |
 | Dino Den's public website chat, 27 Oct 2026 (visible without signing in; players not named) | players saying Rex "stays locked" and asking for someone to "open rex" on EU 2 |
+| The site's patron-only "Patreon Access" page — <https://main.dinoden.gg/subscriber> (text from the site's JavaScript, read 27 Oct 2026) | *"Live server population, species unlocks and the skin designer for patrons."* Each species shows *"Online"* as a count out of a per-server cap, and can carry a minimum tier badge (*"[tier]+"*, tooltip *"Requires [tier] or higher"*). Patrons can unlock a species on a server: *"[dino] unlocked on [server]"*, *"Playable for [time]"*, *"On cooldown for this server"*. *"Glitch skins are reserved for the APEX tier."* |
+| Screenshot of that page from a Patreon supporter (received 27 Oct 2026; held by the author; taken between 28 Sep and 27 Oct 2026, as the Halloween event banner is showing) | AU #2: Tyrannosaurus marked *"APEX+"*, 15 of 16 online, *"Playable"*; Deinosuchus 5 of 80 |
 
 **Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself still advertises queue skip and *"VIP-only access."*
-"Locked" refers to Dino Den's own per-server limit, not to the game: Rex was still being reported as locked on Dino Den servers months after it became officially playable.
-**Cannot be concluded:** whether Apex patrons can still play Rex past the limit, or whether other locked-dinosaur access is still offered (the announcement is still visible in the channel; the individual Patreon tier descriptions could not be loaded for this check), or whether these perks worked as advertised.
+"Locked" refers to Dino Den's own per-server species caps, not to the game. The perk is still offered: the site's patron-only page lets patrons unlock species on a server for a limited time, and in a patron's screenshot from October 2026 Tyrannosaurus is marked as needing the Apex tier.
+**Cannot be concluded:** exactly how the unlock interacts with the cap (that logic runs on Dino Den's servers), the current unlock length and cooldown (shown only to patrons), or whether the perks always worked as advertised.
 
 ---
 
