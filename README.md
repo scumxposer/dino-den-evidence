@@ -12,7 +12,7 @@ If you have something that supports, disproves or adds to anything here, **[open
 
 **Most useful:** original, uncropped screenshots that show the date and time; video clips with timestamps; links to public posts, pages or archived copies; anything someone else can check for themselves.
 
-**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, private messages, or other people's Discord messages. These will be removed. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players.
+**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, private messages, or other people's Discord messages. These will be removed. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players. Details: [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## The short version
 
@@ -81,5 +81,12 @@ The Dino Den's Terms of Service also require users to be 18 or older, but no age
 - [reports-filed.md](reports-filed.md) — reports made to platforms
 - [verify-yourself.md](verify-yourself.md) — how to check every figure
 - [CORRECTIONS.md](CORRECTIONS.md) — corrections policy and right of reply
+- [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — how to submit evidence, and the rules
+
+## License
+
+The text, analysis and data compilations in this repository are licensed under [CC BY 4.0](LICENSE). You may share and adapt them, including commercially, as long as you give credit and link back, for example: *"The Dino Den evidence repository, https://github.com/scumxposer/dino-den-evidence"*. Linking back also lets readers find the latest corrections.
+
+**Not covered by this license:** material owned by others and quoted or reproduced here for reporting and criticism. That includes text, data and images from The Dino Den's website, Terms, FAQ, API and Discord (including the screenshot in `evidence/screenshots/`), and quotes from Patreon, Steam forum posts, regulators and legislation. Those remain the property of their owners.
 
 *Last updated: 27 October 2026.*
