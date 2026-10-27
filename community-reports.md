@@ -2,7 +2,7 @@
 
 These are **claims made by players** in public forums. Unless marked otherwise, none of them has been independently verified. They are included because several different people describe the same problems over many months, and each is listed with its source and with the counterpoints raised at the time. Dates without a year in Steam threads are 2026.
 
-Reports about how the owners and staff treat players are collected here too (see *Bans after criticism* and *Cheaters not dealt with; admins absent* below). What the operator's own rules say about moderation is summarised in the README under [Staff and owner conduct](README.md#staff-and-owner-conduct). New evidence is welcome through the [evidence form](../../issues/new/choose).
+Reports about how the owners and staff treat players are collected here too (see *Bans after criticism*, *Videos alleging admin abuse* and *Cheaters not dealt with; admins absent* below). What the operator's own rules say about moderation is summarised in the README under [Staff and owner conduct](README.md#staff-and-owner-conduct). New evidence is welcome through the [evidence form](../../issues/new/choose).
 
 Most of the public discussion is on Steam's *The Isle* General Discussions forum. Reddit could not be accessed directly for this repository; the Reddit posts cited below are from screenshots held by the author. One of the Steam threads cited ("Do not play on Petite Pieds…") is mainly about a different server, Petits Pieds; only the parts about Dino Den are used here.
 
@@ -27,6 +27,20 @@ Most of the public discussion is on Steam's *The Isle* General Discussions forum
 - A player says Dino Den admins banned him after he criticised the server in a Steam discussion: *"Some of the Admins saw my post here and decided to Ban me from their server"* (8 Aug 2026). — [Honest Opinion thread](https://steamcommunity.com/app/376210/discussions/14/582804934666261638/)
 - The former trial admin says he was stripped of his admin role, muted and kicked after criticising the owner in the staff chat (Nov 2025). — [Steam thread](https://steamcommunity.com/app/376210/discussions/14/669474588663616129/)
 - **Counterpoints:** no response from Dino Den appears in either thread. In the trial admin's thread, other players say he was banned from a *different* server (Petits Pieds) for livestreaming rule-breaking (*"you got banned because you were constantly livestreaming yourself breaking the rules (no overpacking)"*), and one says *"I was among the people that reported your constant overpacking."* He disputes that, saying he has messages from that server's owner giving another reason. That dispute is about another server, but readers may weigh it when judging his account.
+
+### Videos alleging admin abuse
+
+Four YouTube videos (checked 27 Oct 2026) say Dino Den admins misused their powers in-game. The uploaders' names and the players shown in them are not repeated here; the links go to the videos. Quotes are the uploaders' own on-screen captions or video descriptions.
+
+| Video | Posted | What the uploader says |
+|---|---|---|
+| [Replay footage, "server: dino den eu"](https://www.youtube.com/watch?v=0STn7iH4oGE) (2:48) | 31 Dec 2025 | Two Rexes *"spawned in perfect place to bait"* the uploader; one *"goes behind the rock so other admin can spawn without being seen lol"*; *"i got banned after reporting them"* |
+| [Gameplay, "THE DINO DEN EU 3X"](https://www.youtube.com/watch?v=bkJ9nfLP20E) (1:52) | 15 Jan 2026 | *"Here admin spawning with baryonx"*, *"Other admin tp with baryonx too"*, and that they attacked the uploader's group's young *"with teleporting"*; one caption hedges: *"This is probably another admin too"* |
+| [Replay footage](https://www.youtube.com/watch?v=f13kG96m66k) (1:31) | 25 Oct 2026 | *"Admin hides not far from me, then goes into admin spectator mode to escape. Was reported and told it was fine and not admin abuse."* |
+| [Replay footage](https://www.youtube.com/watch?v=3brSWU7IQIA) (2:31) | 25 Oct 2026 | *"This admin protects their friends while they safelog, got reported and the admin was not punished and is still a staff member."* Both 25 Oct videos say the uploader was permanently banned after posting them. |
+
+- **Limits:** three are recordings of the game's replay tool, which shows where players were and their names but nothing that marks an account as staff or shows an admin command being used. In all four, that the players were admins rests on the uploaders' word. The name tags also show Steam IDs, so the accounts are not named here. A match between a name in these videos and a staff role in Dino Den's Discord would make this stronger; [submit it](../../issues/new/choose) if you can show one.
+- **Counterpoints:** no response from Dino Den was found on the videos. A YouTuber's [review of the server](https://www.youtube.com/watch?v=XeGscXc0eGw) (11 Oct 2026) is broadly positive, and a [short by the same YouTuber](https://www.youtube.com/watch?v=KewF37jDCCs) (23 Oct 2026) shows the server's automatic mixed-packing warning being enforced.
 
 ### Inflated player counts
 
