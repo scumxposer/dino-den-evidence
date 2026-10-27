@@ -20,7 +20,7 @@ Source: <https://api.dinoden.gg/patreon/tiers>
 
 ### Other patron perks
 
-The site's patron-only "Patreon Access" page (<https://main.dinoden.gg/subscriber>) offers *"Live server population, species unlocks and the skin designer for patrons."* Patrons can unlock a species that is at Dino Den's per-server cap for a limited time, and some species need a minimum tier (Tyrannosaurus is marked "APEX+" in a patron's October 2026 screenshot). See [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page).
+The site's patron-only "Patreon Access" page (<https://main.dinoden.gg/subscriber>) offers *"Live server population, species unlocks and the skin designer for patrons."* Patrons can unlock a species that is at Dino Den's per-server cap for a limited time, and some species need a minimum tier: Tyrannosaurus is marked "APEX+" in a patron's October 2026 screenshot, and a Senior Admin wrote on 9 Oct 2026 that *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* ([screenshot](screenshots/2026-10-09-discord-senior-admin-apex-unlock.png)). See [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page).
 
 ### Other ways to get AmberShards (for balance)
 
