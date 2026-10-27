@@ -35,7 +35,7 @@ In scope: how the owners and staff use their powers and treat players. For examp
 ## How submissions are handled
 
 1. Every submission is checked against its source before anything is added.
-2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data or terms), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints) or **Unconfirmed**.
+2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data, terms or official announcements, or evidence anyone can check directly), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints) or **Unconfirmed**.
 3. Conflicts between sources go in [DISCREPANCIES.md](DISCREPANCIES.md), with both sources and what can and cannot be concluded.
 4. Every change is logged in [CORRECTIONS.md](CORRECTIONS.md), including mistakes in earlier versions.
 

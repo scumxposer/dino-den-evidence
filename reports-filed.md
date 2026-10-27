@@ -13,6 +13,7 @@ Patreon's [Commerce Guidelines](https://patreon.com/policy/benefits), §5 "Gambl
 
 - **Patreon:** use the Report option on the creator page, or contact Patreon support. Stick to what you have seen yourself.
 - **Afterthought LLC (The Isle developer):** through the official support site, if you believe a server breaks their hosting rules.
+- **Harassment on Discord:** use Discord's own reporting tool on the message or user (the "…" or right-click menu → Report), and keep your own copy of the evidence. You can also submit it here.
 - Please do not harass the operators, staff or players. It undermines the evidence and may break the law.
 
 This file will be updated when there is an outcome.
