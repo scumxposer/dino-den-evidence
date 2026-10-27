@@ -6,6 +6,14 @@ Everything in the **Documented** sections comes from the operator's own public w
 
 > This repository is not affiliated with The Dino Den, Afterthought LLC (developer of *The Isle*), or Patreon. It is not legal advice. Corrections and responses from The Dino Den are welcome — see [CORRECTIONS.md](CORRECTIONS.md).
 
+## Have evidence? Submit it
+
+If you have something that supports, disproves or adds to anything here, **[open an issue](../../issues/new/choose)** — new evidence, corrections and counter-evidence are all welcome.
+
+**Most useful:** original, uncropped screenshots that show the date and time; video clips with timestamps; links to public posts, pages or archived copies; anything someone else can check for themselves.
+
+**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, private messages, or other people's Discord messages. These will be removed. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players.
+
 ## The short version
 
 Patreon money reaches The Dino Den's casino games through a loop that runs entirely on the operator's own site:

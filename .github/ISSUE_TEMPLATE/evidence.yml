@@ -1,0 +1,50 @@
+name: Submit evidence
+description: Share evidence that supports, disproves or adds to something in this repository.
+title: "[Evidence] "
+labels: ["evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Evidence is added only if someone else can check it, and it is labelled by how well it is supported.
+        **Please do not include** real names, addresses, Steam profiles, alleged alt accounts, private messages, or other people's Discord messages. These will be removed.
+  - type: textarea
+    id: claim
+    attributes:
+      label: What does this show?
+      description: One or two sentences. Which finding or claim does it relate to?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: The evidence
+      description: Links, original uncropped screenshots showing the date and time, or video clips with timestamps. Drag images in here.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When was this captured or posted?
+      placeholder: e.g. 27 Oct 2026, 14:05 UTC
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did it come from?
+      options:
+        - I captured it myself
+        - Public post or page (linked above)
+        - Someone else captured it
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: This contains no personal information about anyone (names, addresses, profiles, private messages).
+          required: true
+        - label: This is shared to document facts, not to target or harass anyone.
+          required: true

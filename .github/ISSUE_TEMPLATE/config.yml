@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Corrections and right of reply
+    url: https://github.com/scumxposer/dino-den-evidence/blob/main/CORRECTIONS.md
+    about: How corrections and responses from The Dino Den are handled.
