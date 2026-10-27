@@ -17,6 +17,7 @@ Most documented figures come from public pages and public API endpoints that any
 | <https://main.dinoden.gg/games/jackpot> | rooms and limits; "How it works" (2.5% tax) |
 | <https://find-and-update.company-information.service.gov.uk/company/16970676> | THE DINO DEN LTD company record |
 | <https://www.patreon.com/TheDinoDen> | current tier prices and stated perks (compare with `/patreon/tiers`) |
+| <https://graphtreon.com/creator/TheDinoDen> | paid-member history up to 28 Mar 2026, when the counts were made private |
 | <https://thespoofingisle.com> | third-party player-count analysis (search "DINO DEN") |
 | The Dino Den Discord (join through the site's Discord link) | public channels `#wall-of-shame` and `#sent-to-hell` |
 

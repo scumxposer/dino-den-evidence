@@ -22,6 +22,23 @@ Source: <https://api.dinoden.gg/patreon/tiers>
 
 The site's patron-only "Patreon Access" page (<https://main.dinoden.gg/subscriber>) offers *"Live server population, species unlocks and the skin designer for patrons."* Patrons can unlock a capped species on a server for a limited time (Dino Den caps each species per server). The site's code treats an unlock as a server-wide state (*"Unlocks on [server] only"*, *"Already unlocked on this server"*), and players say it benefits everyone there; a separate *"respawn"* mode respawns the patron as the species. Some species need a minimum tier: Tyrannosaurus is marked "APEX+" in a patron's October 2026 screenshot, and a Senior Admin wrote on 9 Oct 2026 that *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* ([screenshot](screenshots/2026-10-09-discord-senior-admin-apex-unlock.png)). A player replying on Reddit says capped species are usually unlocked by asking in chat and that *"Allo is not hard to get at all"*, though Rex is harder ([community-reports](../community-reports.md#restricted-dinosaurs-unlocked-by-paying)). See [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page).
 
+### How many people pay
+
+Patreon's own member count for The Dino Den is no longer public. The third-party tracker [Graphtreon](https://graphtreon.com/creator/TheDinoDen), which records Patreon's public counts, shows (read 27 Oct 2026):
+
+| Date | Paid members |
+|---|---|
+| 22 Apr 2025 (first record; page launched 9 Apr 2025) | 12 |
+| 10 Oct 2025 | 427 |
+| 8 Dec 2025 (the day of the Discord perk announcement) | 323 |
+| 1 Jan 2026 | 684 |
+| 1 Feb 2026 | 1,173 |
+| 28 Mar 2026 (last record) | 1,692 |
+
+Graphtreon also shows 7,966 free and paid members in total, and notes *"Patreon stats set to private on Mar 29, 2026."* It shows no earnings estimate.
+
+**Limits:** these are a third party's records of Patreon's public counts, not Dino Den's own figures. Paid members can be on any tier, and some pay discounted prices, so the counts cannot be turned into an income figure. The rise after December 2025 coincides with the perk announcement and Rex's release in the game on 28 Dec 2025; the data cannot show why people joined.
+
 ### Other ways to get AmberShards (for balance)
 
 Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"* — <https://api.dinoden.gg/news/daily-rewards-2026-10-26>), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals as displayed on that page, 27 Oct 2026: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
