@@ -31,7 +31,7 @@ Two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and 
 - and, after the player replied that they wouldn't get an answer to a ticket: *"I got no clue what you did to get banned"*
 - after the player apologised: *"You deserve the #wall-of-shame tbh xD"*
 
-**A permanent ban lifted over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw i will unban you."*
+**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw i will unban you."*
 
 ## `#sent-to-hell`: a ban trap
 
@@ -49,13 +49,15 @@ The channel description reads: *"Souls claimed: 403 🔥 Type here and join them
 
 **Can be concluded:**
 - The owner and a Head Admin use a public channel in Dino Den's Discord to post other people's messages, including private messages and support-ticket messages, for the community to react to. The owner told a banned player he *"deserve[d]"* to be posted there.
-- The owner refused a refund on the grounds of rule-breaking while saying he had *"no clue"* why the player was banned.
-- The owner lifted a permanent ban after a private message, outside the ticket process the FAQ describes. The Terms call moderation decisions *"final."*
-- Dino Den runs a channel that instantly bans anyone who posts in it, and the channel's own description invites people to post. The channel's own count is *"Souls claimed: 403"*.
+- The owner refused a refund on the grounds of rule-breaking while saying he had *"no clue"* why the player was banned. He also suggested the player open a ticket.
+- The owner told a permanently banned player, by private message, that he would unban him, outside the ticket process the FAQ describes. The Terms call moderation decisions *"final."*
+- Dino Den runs a channel whose bot notice says anyone who posts in it is instantly banned, and the channel's own description invites people to post. The channel's own count is *"Souls claimed: 403"*.
 
 **Cannot be concluded:**
 - Why the refund player was banned, whether the refund was for a Patreon payment, or how other ban appeals are handled.
-- Whether the `#sent-to-hell` bans also apply to the game servers or the website, or only to Discord.
+- Whether the promised unban happened.
+- Whether the `#sent-to-hell` bans also apply to the game servers or the website, or only to Discord, and how many of the 403 were spam bots or hacked accounts rather than players.
+- Counterpoint: [trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel, and the 403 may include many of those. The concern is that this channel's description invites people to type there.
 - Counterpoint: several of the private messages the owner posted were unsolicited sexual or harassing messages sent to him. Posting them may be how he responds to harassment, rather than an attempt to shame players.
 
 See also [DISCREPANCIES.md §12](../DISCREPANCIES.md#12-moderation-in-practice-vs-the-terms-and-faq) and the README's [Staff and owner conduct](../README.md#staff-and-owner-conduct) section.

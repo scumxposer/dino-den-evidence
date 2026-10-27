@@ -45,6 +45,7 @@ RISKY = {
     "absolute": r"\b(always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only)\b",
     "motive": r"\b(mock\w*|laugh(?:ed)? at|deliberately|intentionally|on purpose|in order to|scam\w*|fraud\w*|rigged|lie[sd]?|lying|faked?|illegal\w*|crimes?)\b",
     "generalisation": r"\b(many players|most players|routinely|regularly|repeatedly|often|usually|typically|pattern)\b",
+    "completed action": r"\b(lifted|reversed|overturned|unbanned|refused|banned|removed|wiped|stripped|muted|kicked|deleted)\b",
     "staleness": r"\b(so far|currently|not yet|not re-tested|still|recently|today|now)\b",
 }
 CLAIM_WORDS = r"\b(players? say|player reports?|reportedly|alleged\w*|claims?|unverified)\b"

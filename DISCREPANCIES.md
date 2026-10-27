@@ -182,8 +182,8 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | The owner to a permanently banned player who said he had been an Apex patron for about a year (private messages, 16 Aug 2026; shown in the same channel) | three laughing emojis, then *"Dw i will unban you"* |
 | `#sent-to-hell` channel, notice by Dino Den's bot, 15 Aug 2026 | *"This is a ban trap… No warnings. No second chances."*; channel description: *"Souls claimed: 403 🔥 Type here and join them 😈"* |
 
-**Can be concluded:** in these cases, the owner refused a refund for "breaking rules" while saying he did not know why the player was banned, and he reversed a permanent ban through private messages rather than the appeal-ticket process, despite the Terms calling decisions "final." Dino Den also runs a channel that bans anyone who posts in it, while its description invites people to post. Details and a counterpoint: [evidence/05](evidence/05-staff-conduct.md).
-**Cannot be concluded:** how typical these cases are, why the refund player was banned, or whether the refund concerned a Patreon payment.
+**Can be concluded:** in these cases, the owner refused a refund for "breaking rules" while saying he did not know why the player was banned (he also suggested opening a ticket), and he told a permanently banned player by private message that he would unban him, outside the appeal-ticket process, despite the Terms calling decisions "final." Dino Den also runs a channel whose bot notice says anyone who posts is banned, while its description invites people to post; [trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel. Details and a counterpoint: [evidence/05](evidence/05-staff-conduct.md).
+**Cannot be concluded:** how typical these cases are, why the refund player was banned, whether the refund concerned a Patreon payment, or whether the promised unban happened.
 
 ---
 

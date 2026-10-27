@@ -49,7 +49,9 @@ From the repository root, run `python3 tools/check.py`. It must print `OK` befor
 How to clear a wording flag:
 1. Re-open the source for that line.
 2. Ask whether the line says more than the source supports: more certain, more general, automatic rather than possible, a motive rather than an action, out of date, or a player claim labelled as documented. If it does, fix the line.
-3. Only if the line is accurate, record it: `python3 tools/check.py --ack FILE:LINE "the source and why the wording is accurate"`. Never record reviews in bulk without reading each line. The reason must name the source.
+3. Address **every** flagged word, not just the first one: a line flagged for "now" and "still" needs both checked.
+4. For actions ("lifted", "banned", "refused"), check that the source shows the action happened, not only a promise or a claim of it.
+5. Only if the line is accurate, record it: `python3 tools/check.py --ack FILE:LINE "the source and why the wording is accurate"`. Never record reviews in bulk or with rule-matched notes: read each line and write its own reason, naming the source.
 
 Then re-read the README from top to bottom as a first-time reader. The summary, the findings table and the detail files must say the same thing.
 
@@ -79,7 +81,7 @@ A request for a full review means every step below, in order. Report what was do
 2. Read every file in full, top to bottom: README, DISCREPANCIES, evidence/01–05, community-reports, verify-yourself, reports-filed, CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS (policy and the last ten log rows), this file and the issue templates. Count them.
 3. For each row of the README's key findings table, open the file it links to and check that the finding, its status label and its wording match the detail.
 4. Re-open the live sources for anything time-sensitive (FAQ, Terms, tier configuration, Patreon page) and compare them with the repository.
-5. Read it as a hostile critic would: for each claim, what would someone defending The Dino Den say is overstated or missing? Fix anything they would be right about.
+5. Read it as a hostile critic would, and as a fair one: for each finding about the operator or staff, is there an innocent explanation or common practice the reader should know (a counterpoint)? Is anything said by the operator that cuts the other way left out? For each claim, what would someone defending The Dino Den say is overstated or missing? Fix anything they would be right about.
 6. Check everything outside the repository (section 6): the sent emails in reports-filed and any drafts.
 7. Log the review in CORRECTIONS.md with what was checked and what was found. Say plainly if an earlier review missed something.
 
@@ -107,3 +109,7 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - A broken sentence left by a scripted edit (". and some species").
 - Reddit drafts and a sent email repeating wording the repository had already corrected.
 - Calling reviews "thorough" when they were only searches for the phrase just fixed. Section 7 exists because of this.
+- Recording wording reviews with rule-matched notes, which let an undated "still offered" through on a line whose note only covered "now".
+- Reporting a promise as an action: "lifted a permanent ban" when the owner only wrote "Dw i will unban you".
+- Leaving out a fair counterpoint: ban-trap channels are a common anti-spam tool, and ClawCoins cannot be cashed out.
+- Giving a share without data ("most AmberShards come from Patreon") when another source (Twitch rewards, 32M paid out) was never compared.
