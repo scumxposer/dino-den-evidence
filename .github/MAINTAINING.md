@@ -24,7 +24,7 @@ Search the whole repository for the topic (for example `grep -rn "jackpot" .`) a
 
 | Topic | Where it appears |
 |---|---|
-| Patreon tiers, prices, perks, multiplier | README (short version, key findings, why it matters), DISCREPANCIES §1, §2, §5, §11, evidence/01, community-reports, verify-yourself, reports-filed |
+| Patreon tiers, prices, perks, multiplier, the AmberShard → ClawCoin route | README (short version, key findings, why it matters), DISCREPANCIES §1, §2, §4, §5, §10 (UK gambling law), §11, evidence/01, evidence/03, community-reports, verify-yourself, reports-filed |
 | Games, jackpot, poker, raffle, crates, Lucky Bags, gambling wording | README (short version, key findings), DISCREPANCIES §4, §6, evidence/02, evidence/03, verify-yourself |
 | Terms, FAQ, age rule, moderation and appeals | README (staff section, key findings, why it matters), DISCREPANCIES §3, §5, §9, §10, §12, evidence/03, evidence/05 |
 | Staff and owner conduct | README (staff section, key findings), DISCREPANCIES §12, evidence/05, community-reports, CONTRIBUTING, CODE_OF_CONDUCT, evidence/03 |
@@ -64,3 +64,5 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - Attributing forum comments to Dino Den when, in a thread covering several servers, they were about another server.
 - Paraphrases drifting from the source ("a critical review" for a forum post; "two posters" for one). Quote the source where possible and re-read it before summarising.
 - A detail added without any source (who developed a community tool).
+- Describing a possible route as automatic (AmberShards only become ClawCoins if a player chooses to sell), or calling items "Patreon-funded" when their source can't be known.
+- Putting a player-reported effect under a **Documented** label (who benefits from a patron's species unlock).
