@@ -1,0 +1,53 @@
+{
+  "_about": "Who wrote each quoted player post, under anonymised labels (players are never named in this repository). tools/check.py uses it to stop one person being presented as several. Add every new quoted player post here.",
+  "honest-opinion-author": [
+    "it only last for a day or two",
+    "they all are Offline in the morning",
+    "they are only 'Chat admins'",
+    "I got probably around 300hrs",
+    "at times",
+    "Some of the Admins saw my post here",
+    "When it says 450/450"
+  ],
+  "trial-admin": [
+    "Apex=Rex",
+    "Priority Queue",
+    "You get it when it's active",
+    "get past the cap (Pop Control)",
+    "The entire system currently doesn't work",
+    "IMMEDIATELY has almost close to cap"
+  ],
+  "steam-poster-mk": [
+    "servers showing full players count"
+  ],
+  "steam-poster-paywall": [
+    "BEHIND PAYWALLS"
+  ],
+  "steam-poster-120h": [
+    "never had to pay for anything",
+    "dinos that are not released yet"
+  ],
+  "steam-poster-beware": [
+    "But dinoden restrict the Rexs",
+    "BUT, if your apex"
+  ],
+  "reddit-player-a": [
+    "for EVERYONE. Not just themselves",
+    "benefits EVERYBODY involved"
+  ],
+  "reddit-player-b": [
+    "asking in chat will normally get them unlocked",
+    "Allo is not hard to get at all",
+    "have more access to trex",
+    "is a smart decision",
+    "access to any Dino that the paying players have",
+    "Admins have always been reasonable"
+  ],
+  "steam-poster-petits": [
+    "you got banned because you were constantly livestreaming",
+    "I was among the people that reported your constant overpacking"
+  ],
+  "steam-poster-nerf-link": [
+    "The owners of Dookie Den are the same owners as NERF servers"
+  ]
+}

@@ -44,7 +44,7 @@ FACTS_FILE = "tools/facts.json"
 # caught a real mistake or is a known trap.
 RISKY = {
     "certainty": r"\b(prove[sn]?|proof|confirm(?:s|ed)?|definitely|clearly|obviously|certainly|undeniabl\w*)\b",
-    "automatic route": r"\b(end(?:s|ed)? up|convert(?:s|ed)?|turns? into|closed loop|feeds?|Patreon-funded|funded by|paid for by|sells? on|sells? for|are sold|get sold)\b",
+    "automatic route": r"\b(end(?:s|ed)? up|convert(?:s|ed)?|turns? into|closed loop|feeds?|Patreon-funded|funded by|paid for by|sells? on|sells? for|are (?:\w+ )?sold|get sold)\b",
     "absolute": r"\b(everything|always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only|all (?:the )?(?:conflicts|discrepancies|evidence|claims|figures|sources|players|staff|admins|patrons|members))\b",
     "motive": r"\b(spoof\w*|mock\w*|laugh(?:ed)? at|deliberately|intentionally|on purpose|in order to|scam\w*|fraud\w*|rigged|lie[sd]?|lying|faked?|illegal\w*|crimes?)\b",
     "generalisation": r"\b(many players|most players|routinely|regularly|repeatedly|often|usually|typically|pattern)\b",
@@ -175,6 +175,9 @@ def check_sentences(files, problems):
             m = re.search(r"\b(\w+) \1\b", t)
             if m and not m.group(1).isdigit() and m.group(0) not in ALLOWED_REPEATS:
                 problems.append(f"{f}:{n}: doubled word: {m.group(0)}")
+            m = re.search(r'[^.!?…]"\*? +(?:He|She|They|It|The|This|That|A|An|In|On|But|And|So|One|Two)\b', line)
+            if m:
+                problems.append(f"{f}:{n}: missing full stop after a quote: …{m.group(0)}…")
             if t.count('"') % 2:
                 problems.append(f"{f}:{n}: unbalanced double quotes")
             if t.count("(") != t.count(")"):
@@ -246,6 +249,73 @@ def says_column_hits(path, text):
         else:
             i += 1
     return hits
+
+
+NUMBERS = {"two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+
+
+def count_hits(line):
+    """'four tiers (A, B and C)': the number must match the items listed."""
+    out = []
+    t = re.sub(r'\*"[^"]*"\*|"[^"]*"', lambda m: m.group(0).replace(",", " ").replace(" and ", " "), strip_code(line))
+    for m in re.finditer(r"\b(two|three|four|five|six|seven|eight|nine|ten)\b([A-Za-z' -]{0,60}?)\(([^()]{3,300})\)", t, re.I):
+        items = [x for x in re.split(r",|;|\band\b|\bor\b", m.group(3)) if x.strip()]
+        if len(items) > 1 and len(items) != NUMBERS[m.group(1).lower()]:
+            out.append(f"count: '{m.group(1)}{m.group(2)}' but {len(items)} items listed")
+    return out
+
+
+def norm_quote(q):
+    return re.sub(r"\s+", " ", q.replace("’", "'").replace("…", "...").strip().lower())
+
+
+def linked_quote_hits(path, line, texts):
+    """Quotes on a line that cites another file in this repository must appear in that file."""
+    if path in ROOT_FILES_EXCLUDED_FROM_WORDING:
+        return []
+    targets = []
+    for link in re.findall(r"\]\(([^)\s#]+\.md)(?:#[^)]*)?\)", line):
+        target = os.path.normpath(os.path.join(os.path.dirname(path), link))
+        if target in texts and target != path:
+            targets.append(target)
+    if not targets:
+        return []
+    out = []
+    for q in re.findall(r'\*"([^"]{4,})"\*', line):
+        parts = [x for x in re.split(r"…|\.\.\.", q) if len(x.strip()) > 3]
+        if not all(any(norm_quote(x) in norm_quote(texts[t]) for t in targets) for x in parts):
+            out.append(f"quote not found in the linked file: \"{q[:60]}\"")
+    return out
+
+
+SAME_PERSON = r"(?i)\bsame (player|poster|person)\b|\bone player\b|\bthe player who\b|\bthe same\b"
+PLURAL = r"\b(Players|other players|another (?:player|poster)|a (?:third|second|frequent)\b|several)"
+
+
+def poster_hits(path, text):
+    """One person must not read as several: within a section, a second line quoting the same
+    poster (or one line quoting them twice) has to say it is the same person."""
+    out = {}
+    if not os.path.exists("tools/sources.json") or path in ROOT_FILES_EXCLUDED_FROM_WORDING:
+        return out
+    reg = {k: v for k, v in json.load(open("tools/sources.json", encoding="utf-8")).items() if not k.startswith("_")}
+    seen = {}
+    for n, line in enumerate(text.split("\n"), 1):
+        if line.startswith("#"):
+            seen = {}
+            continue
+        quotes = " ".join(re.findall(r'"([^"]+)"', line))
+        if path == "community-reports.md" and re.search(r"steamcommunity|Reddit|reddit", line):
+            for q in re.findall(r'\*"([^"]{8,})"\*', line):
+                if not any(f.lower() in q.lower() or q.lower() in f.lower() for frags in reg.values() for f in frags):
+                    out[n] = f"player quote not in tools/sources.json: \"{q[:50]}\" (record who wrote it)"
+        labels = [lab for lab, frags in reg.items() for f in frags if f.lower() in quotes.lower()]
+        for lab in set(labels):
+            repeated = labels.count(lab) > 1 and re.search(PLURAL, line)
+            if (lab in seen or repeated) and not re.search(SAME_PERSON, line):
+                out[n] = f"same poster as line {seen.get(lab, n)} ({lab}); say it is the same person"
+            seen.setdefault(lab, n)
+    return out
 
 
 def check_hedges(problems):
@@ -328,14 +398,33 @@ def scan_outside(paths):
     return 0
 
 
+def list_quotes():
+    """Every quote on a line that cites an outside web page, grouped by the pages that line cites.
+    In a full review, open each page and confirm each quote appears there word for word."""
+    groups = {}
+    for f in md_files():
+        if f in ROOT_FILES_EXCLUDED_FROM_WORDING:
+            continue
+        for n, line in prose_lines(open(f, encoding="utf-8").read()):
+            urls = sorted(set(re.findall(r"https?://[^\s)>\]\"*]+", line)))
+            quotes = re.findall(r'\*"([^"]{6,})"\*', line)
+            if urls and quotes:
+                groups.setdefault(" ".join(urls), []).append((f"{f}:{n}", quotes))
+    print(json.dumps(groups, indent=1, ensure_ascii=False))
+    return 0
+
+
 def check_wording(files, problems):
     reviews = load_reviews()
+    texts = {f: open(f, encoding="utf-8").read() for f in files}
     unreviewed = []
     for f in files:
         text = open(f, encoding="utf-8").read()
         says = says_column_hits(f, text)
+        posters = poster_hits(f, text)
         for n, line in prose_lines(text):
-            hits = risky_hits(f, line) + ([says[n]] if n in says else [])
+            hits = (risky_hits(f, line) + ([says[n]] if n in says else []) + ([posters[n]] if n in posters else [])
+                    + count_hits(line) + linked_quote_hits(f, line, texts))
             if hits and line_key(f, line) not in reviews:
                 unreviewed.append(f"{f}:{n}: [{'; '.join(hits)}]\n    {line.strip()[:300]}")
     if unreviewed:
@@ -351,7 +440,10 @@ def ack(target, note):
     path, _, n = target.rpartition(":")
     lines = open(path, encoding="utf-8").read().split("\n")
     line = lines[int(n) - 1]
-    if not risky_hits(path, line) and int(n) not in says_column_hits(path, "\n".join(lines)):
+    texts = {f: open(f, encoding="utf-8").read() for f in md_files()}
+    if (not risky_hits(path, line) and int(n) not in says_column_hits(path, "\n".join(lines))
+            and not count_hits(line) and not linked_quote_hits(path, line, texts)
+            and int(n) not in poster_hits(path, "\n".join(lines))):
         print(f"{target} has no high-risk wording; nothing to record")
         return 0
     if len(note.strip()) < 15:
@@ -382,6 +474,8 @@ def main(argv):
         return prune()
     if argv[:1] == ["--synced"] and len(argv) == 3:
         return synced(argv[1], argv[2])
+    if argv[:1] == ["--quotes"]:
+        return list_quotes()
     if argv[:1] == ["--outside"] and len(argv) > 1:
         return scan_outside(argv[1:])
     files = md_files()

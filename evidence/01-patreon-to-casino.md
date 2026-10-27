@@ -69,7 +69,7 @@ Source: <https://api.dinoden.gg/market/listings>
 
 Example listing ids: 913900, 913902–913906 (six Troodons listed within four minutes by one seller), 913963 (Allosaurus), 913976 (Deinosuchus).
 
-Dinosaurs are also sold for ClawCoins through **Auctions** (<https://api.dinoden.gg/auctions>; 10% fee seen). On 27 Oct 2026 at about 10:40 UTC, 2 of 17 active auctions were dinosaurs with `shop-` IDs, one of them a Tyrannosaurus (`shop-21-`). Not in the 08:33 UTC snapshot.
+Dinosaurs can also be sold for ClawCoins through **Auctions** (<https://api.dinoden.gg/auctions>; 10% fee seen). On 27 Oct 2026 at about 10:40 UTC, 2 of 17 active auctions were dinosaurs with `shop-` IDs, one of them a Tyrannosaurus (`shop-21-`). Not in the 08:33 UTC snapshot.
 
 **Limits of this step:**
 - Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format, which the site does not document. The second part matches the shop's offer numbers. The third part equals the seller's account number in most listings (83 of 104 `shop-` listings at about 17:55 UTC on 27 Oct 2026); where it differs, the dinosaur has probably changed hands, so the third part is most likely the original buyer.
