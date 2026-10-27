@@ -1,6 +1,6 @@
 # 05 — How the owner and staff treat players: Dino Den's own Discord
 
-Source: screenshots of two **public channels** in The Dino Den's Discord server, `#wall-of-shame` and `#sent-to-hell`, taken by the author by 27 October 2026, who holds the originals. Dates are as Discord shows them. Under this repository's rules, players' names and avatars are hidden, and staff are named by the handles they use as staff. Roles come from Dino Den's own Discord (screenshots taken by the author, 27 Oct 2026): Vire is the only holder of the server's "Founders" role, and CHUGGY's profile lists Head Admin, Senior Admin, Admin and TDD Staff. The owner's and the bot's words are quoted. What players wrote is mostly described rather than reproduced; short phrases are quoted where needed to show what the owner was answering. One redacted screenshot is published, for the exchanges that the findings rest on. Some posts contain private messages that the owner or staff made public by posting them; they are described here only as they appeared in the public channel.
+Source: screenshots of two **public channels** in The Dino Den's Discord server, `#wall-of-shame` and `#sent-to-hell`, taken by the author by 27 October 2026, who holds the originals. Dates are as Discord shows them. Under this repository's rules, players' names and avatars are hidden, and staff are named by the handles they use as staff. Roles come from Dino Den's own Discord (screenshots taken by the author, 27 Oct 2026): Vire is the only holder of the server's "Founders" role; CHUGGY's profile lists Head Admin, Senior Admin, Admin and TDD Staff; the member list shows ColdHeart under Head Admin and Harry_ under Server Directors, and Harry_'s profile lists Server Directors, Community Manager, Admin and TDD Staff. The owner's and the bot's words are quoted. What players wrote is mostly described rather than reproduced; short phrases are quoted where needed to show what the owner was answering. One redacted screenshot is published, for the exchanges that the findings rest on. Some posts contain private messages that the owner or staff made public by posting them; they are described here only as they appeared in the public channel.
 
 ## `#wall-of-shame`
 
@@ -26,9 +26,9 @@ Two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and 
 
 ![The two exchanges as shown in the channel on 18 Aug 2026; players' names, avatars and two offensive lines hidden](screenshots/2026-08-18-discord-wall-of-shame-refund-and-unban.png)
 
-*Screenshot provided by the author. Players' names, avatars and clan tags, two staff handles whose roles could not be confirmed, and two offensive lines (described below) are hidden.*
+*Screenshot provided by the author. Players' names, avatars and clan tags, and two offensive lines (described below), are hidden. Staff handles are shown.*
 
-**A refund request.** In a Discord channel, a banned player tagged the owner and several staff, asked for their money back, said they were banned *"for misinformation"* with *"no warnings"*, and said they would not open a ticket. The owner replied:
+**A refund request.** In a Discord channel, a banned player tagged the owner and three staff members (Harry_, a Server Director, and the Head Admins CHUGGY and ColdHeart), asked for their money back, said they were banned *"for misinformation"* with *"no warnings"*, and said they would not open a ticket. The owner replied:
 
 - *"We dont refund for players breaking rules"*
 - *"I would open a ticket and explain your side"*
