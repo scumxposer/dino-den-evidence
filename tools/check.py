@@ -42,7 +42,7 @@ FACTS_FILE = "tools/facts.json"
 RISKY = {
     "certainty": r"\b(prove[sn]?|proof|confirm(?:s|ed)?|definitely|clearly|obviously|certainly|undeniabl\w*)\b",
     "automatic route": r"\b(end(?:s|ed)? up|convert(?:s|ed)?|turns? into|closed loop|feeds?|Patreon-funded|funded by|paid for by)\b",
-    "absolute": r"\b(always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only)\b",
+    "absolute": r"\b(always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only|all (?:the )?(?:conflicts|discrepancies|evidence|claims|figures|sources|players|staff|admins|patrons|members))\b",
     "motive": r"\b(mock\w*|laugh(?:ed)? at|deliberately|intentionally|on purpose|in order to|scam\w*|fraud\w*|rigged|lie[sd]?|lying|faked?|illegal\w*|crimes?)\b",
     "generalisation": r"\b(many players|most players|routinely|regularly|repeatedly|often|usually|typically|pattern)\b",
     "completed action": r"\b(lifted|reversed|overturned|unbanned|refused|banned|removed|wiped|stripped|muted|kicked|deleted)\b",

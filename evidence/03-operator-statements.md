@@ -22,7 +22,7 @@ The site footer and both versions of the Terms name **THE DINO DEN LTD (Company 
 | Current Terms §1: *"You must be at least 18 years old to use the service."* | The earlier Terms §4 said: *"If you are a minor, you may use the Service only with the consent of a parent or legal guardian (where required by law)."* ([archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)). The author observed no age check at sign-in on two different Steam accounts (October 2026, and a separate account on 27 Oct 2026; author's own observation). |
 | Current Terms §5: accounts may be suspended *"with or without reason, and without prior notice or compensation"*; *"Moderation decisions are made at our sole discretion and are final."* | The FAQ tells banned players to *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* The earlier Terms §11 said: *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."* See [DISCREPANCIES.md §10](../DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) and player reports in [community-reports.md](../community-reports.md#bans-after-criticism). |
 
-All conflicts between sources are also listed side by side in [DISCREPANCIES.md](../DISCREPANCIES.md).
+The conflicts found between sources are also listed side by side in [DISCREPANCIES.md](../DISCREPANCIES.md).
 
 ## Real-money trading
 

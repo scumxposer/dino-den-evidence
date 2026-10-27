@@ -112,4 +112,5 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - Recording wording reviews with rule-matched notes, which let an undated "still offered" through on a line whose note only covered "now".
 - Reporting a promise as an action: "lifted a permanent ban" when the owner only wrote "Dw i will unban you".
 - Leaving out a fair counterpoint: ban-trap channels are a common anti-spam tool, and ClawCoins cannot be cashed out.
+- Scope claims such as "all conflicts are listed" or "every discrepancy" when only the ones found are listed.
 - Giving a share without data ("most AmberShards come from Patreon") when another source (Twitch rewards, 32M paid out) was never compared.

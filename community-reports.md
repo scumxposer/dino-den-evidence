@@ -36,7 +36,7 @@ Four YouTube videos (checked 27 Oct 2026) say Dino Den admins misused their powe
 
 | Video | Posted | What the uploader says |
 |---|---|---|
-| [Replay footage, "server: dino den eu"](https://www.youtube.com/watch?v=0STn7iH4oGE) (2:48) | 31 Dec 2025 | Two Rexes *"spawned in perfect place to bait"* the uploader; one *"goes behind the rock so other admin can spawn without being seen lol"*; *"i got banned after reporting them"* |
+| [Replay footage, "server: dino den eu"](https://www.youtube.com/watch?v=0STn7iH4oGE) (2:48) | 31 Dec 2025 | Players *"spawned in perfect place to bait"* the uploader; one *"goes behind the rock so other admin can spawn without being seen lol"*; *"i got banned after reporting them"* |
 | [Gameplay, "THE DINO DEN EU 3X"](https://www.youtube.com/watch?v=bkJ9nfLP20E) (1:52) | 15 Jan 2026 | *"Here admin spawning with baryonx"*, *"Other admin tp with baryonx too"*, and that they attacked the uploader's group's young *"with teleporting"*; one caption hedges: *"This is probably another admin too"* |
 | [Replay footage](https://www.youtube.com/watch?v=f13kG96m66k) (1:31) | 25 Oct 2026 | *"Admin hides not far from me, then goes into admin spectator mode to escape. Was reported and told it was fine and not admin abuse."* |
 | [Replay footage](https://www.youtube.com/watch?v=3brSWU7IQIA) (2:31) | 25 Oct 2026 | *"This admin protects their friends while they safelog, got reported and the admin was not punished and is still a staff member."* Both 25 Oct videos say the uploader was permanently banned after posting them. |
