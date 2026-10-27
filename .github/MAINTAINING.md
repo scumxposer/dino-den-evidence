@@ -60,6 +60,8 @@ How to clear a wording flag:
 4. For actions ("lifted", "banned", "refused"), check that the source shows the action happened, not only a promise or a claim of it.
 5. Only if the line is accurate, record it: `python3 tools/check.py --ack FILE:LINE "the source and why the wording is accurate"`. Never record reviews in bulk or with rule-matched notes: read each line and write its own reason, naming the source.
 
+The check also fails while review records exist for lines that no longer exist (`--prune` removes them), because a stale record would silently accept that old text if it came back.
+
 Then re-read the README from top to bottom as a first-time reader. The summary, the findings table and the detail files must say the same thing.
 
 ## 5. Log and commit
