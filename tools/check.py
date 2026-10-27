@@ -373,10 +373,16 @@ def screenshot_quote_hits(path, text):
             if not nq or nq in hay:
                 continue
             words = hay.split(" ")
-            k = len(nq.split(" "))
-            best = max((difflib.SequenceMatcher(None, nq, " ".join(words[i:i + k])).ratio()
+            qw = nq.split(" ")
+            k = len(qw)
+
+            def word_ok(a, b):
+                # Exact match, or OCR noise inside a longer word (never for short words like "i", "ill").
+                return a == b or (len(a) >= 5 and difflib.SequenceMatcher(None, a, b).ratio() >= 0.8)
+
+            best = max((sum(word_ok(a, b) for a, b in zip(qw, words[i:i + k])) / k
                         for i in range(max(1, len(words) - k + 1))), default=0)
-            if best < 0.85:
+            if best < 1.0:
                 out.setdefault(n, []).append(f"quote not readable in the screenshot (best match {best:.2f}): \"{q[:50]}\"")
     return out
 
@@ -553,6 +559,11 @@ def main(argv):
     check_wording(files, problems)
     check_hedges(problems)
     check_summaries(problems)
+    live = {line_key(f, l) for f in files for _, l in prose_lines(open(f, encoding="utf-8").read())}
+    stale = [k for k in load_reviews() if k not in live]
+    if stale:
+        problems.append(f"{len(stale)} review record(s) are for lines that no longer exist. A stale record would accept "
+                        f"that old text if it came back. Run: python3 tools/check.py --prune")
     if problems:
         print("\n".join(problems))
         return 1
