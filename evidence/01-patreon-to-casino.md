@@ -1,4 +1,4 @@
-# 01 — How Patreon money reaches the casino games
+# 01 — How Patreon money can reach the casino games
 
 Figures were captured on 27 October 2026 from The Dino Den's public API without logging in, unless another source is named (site pages, Discord screenshots or a patron's screenshot). Raw data: [snapshots/2026-10-27/api-snapshot.json](snapshots/2026-10-27/api-snapshot.json).
 
@@ -34,7 +34,7 @@ The Dino Shop sells 22 species priced in AmberShards: from 1,000 AS (Troodon, Pt
 
 The operator's own Discord announcement (8 Dec 2025) describes this step for patrons: *"Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!"* ([screenshot](screenshots/2025-12-08-discord-support-the-server.png); see [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page)).
 
-## Step 3 — Shop dinosaurs are sold to other players for ClawCoins
+## Step 3 — Shop dinosaurs can be sold to other players for ClawCoins
 
 Source: <https://api.dinoden.gg/market/listings>
 
@@ -57,8 +57,9 @@ Dinosaurs are also sold for ClawCoins through **Auctions** (<https://api.dinoden
 **Limits of this step:**
 - Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format, which the site does not document. The second part matches the shop's offer numbers. The third part equals the seller's account number in most listings (83 of 104 `shop-` listings at about 17:55 UTC on 27 Oct 2026); where it differs, the dinosaur has probably changed hands, so the third part is most likely the original buyer.
 - Listings show asking prices, not completed sales.
+- Selling is optional. Patrons can keep and play the dinosaurs they buy, and public data cannot show what share of shop dinosaurs is sold, or how much of the proceeds is wagered. Only the ClawCoin multiplier (below) gives patrons ClawCoins without a sale.
 
-## Step 4 — ClawCoins are wagered
+## Step 4 — ClawCoins can be wagered
 
 ClawCoins are the stake in the site's casino-style games and the price of most crates. The operator's FAQ: *"You can also win (or lose...) ClawCoins in our casino games."* Details in [02-casino-games-and-raffle.md](02-casino-games-and-raffle.md).
 
@@ -68,4 +69,4 @@ Every tier multiplies the ClawCoins a player earns from playtime, quests and rew
 
 ## Worked example
 
-A Juvie member (£12 a month on the site; $17.50 on Patreon for US viewers) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. Each can be listed on the Marketplace for ClawCoins, which can then be wagered.
+A Juvie member (£12 a month on the site; $17.50 on Patreon for US viewers) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. The member can play them, or list them on the Marketplace for ClawCoins, which can then be wagered. Separately, the 1.5x multiplier raises the ClawCoins they earn by playing.

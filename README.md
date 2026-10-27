@@ -16,9 +16,9 @@ If you have something that supports, disproves or adds to anything here, **[open
 
 ## The short version
 
-This repository covers two subjects: **the money** (how Patreon payments end up wagered in casino-style games) and **how the owners and staff treat players** (see [Staff and owner conduct](#staff-and-owner-conduct) below).
+This repository covers two subjects: **the money** (how Patreon payments can end up wagered in casino-style games) and **how the owners and staff treat players** (see [Staff and owner conduct](#staff-and-owner-conduct) below).
 
-On the money side, Patreon money reaches The Dino Den's casino games through a loop that runs entirely on the operator's own site:
+On the money side, Patreon money can reach The Dino Den's casino games by two routes, both on the operator's own site. Each step in the first route is the player's choice: a patron can keep the dinosaurs they buy rather than sell them.
 
 ```
 Patreon pledge (5 tiers, £12–£55 a month as shown on the site)
@@ -29,12 +29,12 @@ Patreon pledge (5 tiers, £12–£55 a month as shown on the site)
                           (jackpot: players' bets go into one pot, one player wins it, the site keeps 2.5%)
                           └─► every 100,000 ClawCoins wagered = 1 entry in a weekly 100,000,000-ClawCoin raffle
 
-Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second, direct route)
+Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second route: ClawCoins directly, no sale needed)
 ```
 
 Patreon is not the only way in: ClawCoins are earned by playing, and smaller amounts of AmberShards come from free login rewards and Twitch watching (a few hundred AmberShards a week from login rewards, against 18,000–80,000 every two weeks from Patreon; see [evidence/01](evidence/01-patreon-to-casino.md#other-ways-to-get-ambershards-for-balance)). This repository is about the paid route.
 
-On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs whose IDs match Dino Shop purchases (interpretation explained in [evidence/01](evidence/01-patreon-to-casino.md)), listed for sale in ClawCoins — 37 of them Tyrannosaurus.
+On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs whose IDs match Dino Shop purchases (interpretation explained in [evidence/01](evidence/01-patreon-to-casino.md)), listed for sale in ClawCoins — 37 of them Tyrannosaurus. How many shop dinosaurs are sold rather than played, and how much of the proceeds is wagered, cannot be measured from public data.
 
 ## Staff and owner conduct
 
