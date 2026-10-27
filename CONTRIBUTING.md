@@ -22,7 +22,7 @@ In scope: how the owners and staff use their powers and treat players. For examp
 - Show the whole exchange, not just the reply. Include what led up to it.
 - Include the date, the server or channel, and any ban or mute notice or ticket transcript.
 - Messages a staff member or owner sent **to you** while acting as staff (including in tickets or DMs) are accepted. Only the relevant part is published.
-- Staff are described by their role (for example "a Senior Admin"), and only for what they did in that role. Names and avatars are hidden in anything published. Nothing about their private lives, real identities or personal accounts.
+- Owners and staff are named by the handles they use as staff, with their role, and only for what they did in that role. Unverified claims about a named staff member are labelled as claims, with any counterpoints. Nothing about their private lives, real identities or personal accounts.
 - Reports are labelled as claims unless they can be checked, listed with any counterpoints, and the operator is invited to respond.
 
 ## Messages from the public Dino Den Discord
@@ -31,7 +31,7 @@ Messages posted in public channels of the Dino Den Discord can be used as eviden
 
 - They must be relevant: the Patreon, currency and games subject, or how owners and staff treat players.
 - Include the channel and the date, and enough of the conversation to show the context.
-- **Every username and avatar is hidden** before publication, players and staff alike. Players' messages are never published with anything that identifies them.
+- **Players' usernames and avatars are always hidden.** Players' messages are never published with anything that identifies them. Staff and owners are shown by the handles they use as staff.
 - Messages from players are labelled as player claims unless they can be checked another way.
 - Nothing about anyone's personal life, and nothing from private channels or DMs between other people.
 
