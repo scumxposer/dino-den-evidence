@@ -12,7 +12,7 @@ If you have something that supports, disproves or adds to anything here, **[open
 
 **Most useful:** original, uncropped screenshots that show the date and time; video clips with timestamps; links to public posts, pages or archived copies; ban or mute notices; anything someone else can check for themselves. For staff conduct, show the full context, not only the reply.
 
-**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Messages a staff member or owner sent *to you* while acting as staff are accepted; ordinary players' names will be hidden before anything is published. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players. Details: [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Messages from the public Dino Den Discord, and messages a staff member or owner sent *to you* while acting as staff, are accepted; all usernames and avatars are hidden before anything is published. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players. Details: [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## The short version
 
@@ -85,8 +85,8 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 
 - Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no evidence, target or date has been published. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
 - Real names, Steam profile links, alleged alt accounts, or private messages between other people.
-- Ordinary players' names, or their Discord or private messages. Public forum posts are quoted without usernames and linked to their source; people who published their own analyses are credited by the name they published under.
-- Anything about owners' or staff members' private lives or real identities. They are referred to only by the names they use as staff, and only for what they did in that role. (Official announcements, and messages staff posted in their staff role, are included, cropped, with ordinary players' names hidden.)
+- Players' usernames or avatars. Public posts (Steam, Reddit, public Dino Den Discord channels) are quoted or shown with names and avatars hidden, with the channel or link and the date. People who published their own analyses are credited by the name they published under.
+- Anything about owners' or staff members' private lives or real identities. Staff are described by their role (for example "a Senior Admin"), only for what they did in that role, with names and avatars hidden in screenshots. Official announcements from the operator's Discord app, and official channels the operator itself lists, can be cited.
 - The Dino Den's software or other copyrighted material — only findings about it.
 
 ## Contents

@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for helping. Evidence is added only if someone else can check it, and it is labelled by how well it is supported.
         This covers the Patreon and casino evidence, and evidence of how the owners or staff have treated players (bans, mutes or wipes without reason, retaliation, harassment, misuse of admin powers). For staff conduct, show the whole exchange and include any ban notice or ticket transcript.
-        **Please do not include** real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Messages staff sent to you while acting as staff are fine; ordinary players' names will be hidden.
+        **Please do not include** real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Messages from public Dino Den Discord channels, and messages staff sent to you while acting as staff, are fine. Include the channel and date; all usernames and avatars will be hidden before anything is published.
   - type: dropdown
     id: topic
     attributes:
