@@ -177,7 +177,7 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 |---|---|
 | Current Terms §5 — <https://main.dinoden.gg/tos> | *"Moderation decisions are made at our sole discretion and are final."*; accounts may be suspended *"with or without reason, and without prior notice or compensation"* |
 | FAQ — <https://main.dinoden.gg/faq> ("Bans & Strikes") | *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* |
-| The owner, Vire, to a banned player asking for a refund (screenshot posted in the public `#wall-of-shame` channel, 18 Aug 2026; held by the author) | *"We dont refund for players breaking rules"*, then *"I got no clue what you did to get banned"*, then *"You deserve the #wall-of-shame tbh xD"* |
+| The owner, Vire, to a banned player asking for a refund (screenshot posted in the public `#wall-of-shame` channel by a Head Admin, CHUGGY, 18 Aug 2026; taken by the author) | *"We dont refund for players breaking rules"*, then *"I got no clue what you did to get banned"*, then *"You deserve the #wall-of-shame tbh xD"* |
 | The owner to a permanently banned player who said he had been an Apex patron for about a year (private messages, 16 Aug 2026; shown in the same channel) | three laughing emojis, then *"Dw i will unban you"* |
 | `#sent-to-hell` channel, notice by Dino Den's bot, 15 Aug 2026 | *"This is a ban trap… No warnings. No second chances."*; channel description: *"Souls claimed: 403 🔥 Type here and join them 😈"* |
 
