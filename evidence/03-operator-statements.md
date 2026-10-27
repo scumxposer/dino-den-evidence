@@ -2,7 +2,7 @@
 
 Sources, read 27 October 2026:
 - Current Terms of Service — <https://main.dinoden.gg/tos> (last updated 11 June 2026)
-- Earlier Terms of Service — <https://na.dinoden.gg/terms> (last updated 20 January 2026; site now offline, [archived 2 April 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms))
+- Earlier Terms of Service — <https://na.dinoden.gg/terms> (last updated 20 January 2026; site offline when checked on 27 Oct 2026, [archived 2 April 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms))
 - FAQ — <https://main.dinoden.gg/faq>
 - Privacy Policy — <https://main.dinoden.gg/privacy> (last updated 11 June 2026)
 

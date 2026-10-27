@@ -58,7 +58,7 @@ Dinosaurs are also sold for ClawCoins through **Auctions** (<https://api.dinoden
 - Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format, which the site does not document. The second part matches the shop's offer numbers. The third part equals the seller's account number in most listings (83 of 104 `shop-` listings at about 17:55 UTC on 27 Oct 2026); where it differs, the dinosaur has probably changed hands, so the third part is most likely the original buyer.
 - Listings show asking prices, not completed sales.
 - A listing cannot show where the AmberShards came from. Most AmberShards come from Patreon (18,000–80,000 every two weeks per tier, against a few hundred a week from free login rewards), but some shop dinosaurs may have been bought with free AmberShards.
-- Selling is optional. Patrons can keep and play the dinosaurs they buy, and public data cannot show what share of shop dinosaurs is sold, or how much of the proceeds is wagered. Only the ClawCoin multiplier (below) gives patrons ClawCoins without a sale.
+- Selling is optional. Patrons can keep and play the dinosaurs they buy, and public data cannot show what share of shop dinosaurs is sold, or how much of the proceeds is wagered. Of the Patreon perks, the ClawCoin multiplier (below) is the one that gives patrons extra ClawCoins without a sale.
 
 ## Step 4 — ClawCoins can be wagered
 

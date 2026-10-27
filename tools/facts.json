@@ -1,0 +1,99 @@
+[
+  {
+    "name": "shop dinosaurs among Marketplace listings (27 Oct 2026, 08:33 UTC)",
+    "pattern": "\\b(\\d+) of (\\d+) active (?:Marketplace )?listings",
+    "expected": [
+      "117",
+      "877"
+    ]
+  },
+  {
+    "name": "shop Tyrannosaurus listings",
+    "pattern": "(\\d+) of them Tyrannosaurus",
+    "expected": [
+      "37"
+    ]
+  },
+  {
+    "name": "sent-to-hell count",
+    "pattern": "Souls claimed: (\\d+)",
+    "expected": [
+      "403"
+    ]
+  },
+  {
+    "name": "Apex description multiplier",
+    "pattern": "Maximum ([\\d.]+)x",
+    "expected": [
+      "3.5"
+    ]
+  },
+  {
+    "name": "configured multiplier range",
+    "pattern": "([\\d.]+)x(?:–| to )([\\d.]+)x",
+    "expected": [
+      "1.5",
+      "4.5"
+    ]
+  },
+  {
+    "name": "site tier price range",
+    "pattern": "£(\\d+)–£(\\d+)",
+    "expected": [
+      "12",
+      "55"
+    ]
+  },
+  {
+    "name": "AmberShards per tier range",
+    "pattern": "(\\d{2},\\d{3})[–-](\\d{2},\\d{3}) (?:AmberShards|every)",
+    "expected": [
+      "18,000",
+      "80,000"
+    ]
+  },
+  {
+    "name": "Patreon US full-price range",
+    "pattern": "\\$(\\d+\\.\\d\\d)–\\$(\\d+)\\b",
+    "expected": [
+      "17.50",
+      "79"
+    ]
+  },
+  {
+    "name": "Patreon price gap",
+    "pattern": "([\\d.]+)–([\\d.]+)% more",
+    "expected": [
+      "7.5",
+      "9.5"
+    ]
+  },
+  {
+    "name": "company number",
+    "pattern": "Company No\\. (\\d+)",
+    "expected": [
+      "16970676"
+    ]
+  },
+  {
+    "name": "Dino Shop species",
+    "pattern": "sells (\\d+) species",
+    "expected": [
+      "22"
+    ]
+  },
+  {
+    "name": "active crates",
+    "pattern": "(\\d+) crates are active",
+    "expected": [
+      "25"
+    ]
+  },
+  {
+    "name": "raffle #4 tickets",
+    "pattern": "(3,\\d{3},\\d{3}) (?:raffle )?tickets",
+    "expected": [
+      "3,708,647"
+    ]
+  }
+]

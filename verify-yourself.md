@@ -1,6 +1,6 @@
 # Verify it yourself
 
-Every documented figure here comes from public pages and public API endpoints that anyone can open in a browser, without logging in, except the rows marked "signed in" (their wording is also in the site's public JavaScript) and the Discord row, which needs you to join the server. Values may have changed since 27 October 2026.
+Most documented figures come from public pages and public API endpoints that anyone can open in a browser, without logging in. The exceptions are the rows marked "signed in" (their wording is also in the site's public JavaScript), the Discord row, which needs you to join the server, and figures from screenshots held by the author, which are labelled where they are used. Values may have changed since 27 October 2026.
 
 ## Pages (open normally)
 

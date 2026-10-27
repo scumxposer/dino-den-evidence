@@ -2,7 +2,7 @@
 
 A sourced, one-stop record of how **The Dino Den** — a large unofficial server network for *The Isle: Evrima*, operated by THE DINO DEN LTD (Company No. 16970676, England) — links paid Patreon memberships to casino-style games on its website, and of how its owners and staff treat players. It also collects evidence, documented or reported, of how moderation powers are used, including abuse of those powers, harassment of players and retaliation for criticism, held to the same standards as everything else here.
 
-Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations and screenshots shared with the author (sign-in checks, Patreon page screenshots, Discord screenshots and a patron's screenshot), each labelled where it is used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints, including reports about staff conduct, are kept separately, labelled as claims, with their sources and counterpoints.
+Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, from other public records (Patreon's pages, Companies House, legislation), plus a small number of the author's own observations and screenshots shared with the author (sign-in checks, Patreon page screenshots, Discord screenshots and a patron's screenshot), each labelled where it is used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints, including reports about staff conduct, are kept separately, labelled as claims, with their sources and counterpoints.
 
 > This repository is not affiliated with The Dino Den, Afterthought LLC (developer of *The Isle*), or Patreon. It is not legal advice. Corrections and responses from The Dino Den are welcome — see [CORRECTIONS.md](CORRECTIONS.md).
 
@@ -42,7 +42,7 @@ What the operator's own rules say:
 
 - The current Terms (§5) let staff suspend or terminate accounts *"with or without reason, and without prior notice or compensation"*, and say *"Moderation decisions are made at our sole discretion and are final."* Enforcement *"may extend across the website, our game servers, and connected community spaces such as our Discord."*
 - The FAQ tells banned players to *"Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible."* Reports and appeals go through Discord tickets only.
-- The January 2026 Terms said only: *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."*
+- The January 2026 Terms said: *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."*
 
 What the owner and staff have done in Dino Den's own public Discord channels ([evidence/05](evidence/05-staff-conduct.md)):
 
@@ -54,7 +54,7 @@ Players have reported a ban after criticising the server in a Steam discussion, 
 
 ## Key findings
 
-Every place where two sources disagree is listed side by side, with links, in **[DISCREPANCIES.md](DISCREPANCIES.md)**.
+The places where two sources disagree are listed side by side, with links, in **[DISCREPANCIES.md](DISCREPANCIES.md)**.
 
 | Finding | Status | Detail |
 |---|---|---|
@@ -62,7 +62,7 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Shop-bought dinosaurs are listed for ClawCoins on the Marketplace | **Documented** (ID format interpretation explained) | [evidence/01](evidence/01-patreon-to-casino.md) |
 | ClawCoins are wagered on casino-style games the operator itself calls "casino games", and its account settings call "gambling games" (with a "Gambling Self-Exclusion" option) | **Documented** | [DISCREPANCIES.md §4](DISCREPANCIES.md#4-not-gambling-vs-the-operators-own-descriptions) |
 | Weekly raffle gives more entries the more a player wagers | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
-| Outage compensation can be gambled on a double-or-nothing coin flip; only active patrons can claim it | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
+| Outage compensation can be gambled on a double-or-nothing coin flip; the FAQ offers it to *"everyone who was an active patron during the outage"* | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Apex ClawCoin boost stated inconsistently: Patreon says 3.5x; the site's own Patreon page shows "Maximum 3.5x" and "4.5x" on the same tier card (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
 | Patreon charges US viewers 7.5–9.5% more than the site's £ tier prices converted at the market rate | **Documented** (cause unknown) | [DISCREPANCIES.md §2](DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums) |
 | Age rule changed from "minors with parental consent" (Jan 2026 Terms) to 18+ (June 2026 Terms) | **Documented** | [DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed) |
@@ -71,7 +71,7 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Player-vs-player jackpot with rooms up to 25,000,000 ClawCoins a round; the site takes 2.5% of each pot | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md#jackpot) |
 | Poker (Texas Hold'em) is built and switched on but limited to high-role (apparently staff) accounts | **Documented** (site code) | [DISCREPANCIES.md §6](DISCREPANCIES.md#6-games-menu-vs-games-switched-on) |
 | Dec 2025 Discord announcement advertised patron access to locked dinosaurs, Apex access to Rex "even when it's locked", queue skip, and AmberShards to "instantly purchase full-grown dinos" | **Documented** (operator's Discord; screenshot) | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
-| Still offered: a patron-only page lets patrons unlock capped species on a server for a limited time (players say an unlock opens the species for everyone on that server), with some species tier-gated, and Patreon's Apex tier lists a dino-cap bypass: a Senior Admin confirmed in Oct 2026 that Allosaurus and Rex "can be unlock if you are APEX patreon, otherwise its popcontrol on them" | **Documented** (site code; staff statement; Patreon and patron screenshots). The effect for other players comes from player reports | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
+| Still offered in Oct 2026: a patron-only page lets patrons unlock capped species on a server for a limited time (players say an unlock opens the species for everyone on that server), with some species tier-gated, and Patreon's Apex tier listed a dino-cap bypass in Oct 2026; a Senior Admin stated on 9 Oct 2026 that Allosaurus and Rex "can be unlock if you are APEX patreon, otherwise its popcontrol on them" | **Documented** (site code; staff statement; Patreon and patron screenshots). The effect for other players comes from player reports | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
@@ -87,7 +87,7 @@ Patreon's [Commerce Guidelines](https://patreon.com/policy/benefits) (§5, "Gamb
 
 The Dino Den's Terms of Service also require users to be 18 or older, but no age check was seen at sign-in ([DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed)).
 
-How staff use their powers matters for the same players: dinosaurs, currency and Patreon-funded items all sit on accounts that the Terms let the operator suspend *"with or without reason"*, and the Terms also allow staff to *"remove Virtual Items"*, with decisions described as *"final."*
+How staff use their powers matters for the same players: dinosaurs, currency and items bought with Patreon perks all sit on accounts that the Terms let the operator suspend *"with or without reason"*, and the Terms also allow staff to *"remove Virtual Items"*, with decisions described as *"final."*
 
 ## What this repository deliberately does not include
 
@@ -99,7 +99,7 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 
 ## Contents
 
-- [DISCREPANCIES.md](DISCREPANCIES.md) — every discrepancy, with both sources side by side
+- [DISCREPANCIES.md](DISCREPANCIES.md) — the discrepancies found, with both sources side by side
 - [evidence/01-patreon-to-casino.md](evidence/01-patreon-to-casino.md) — the value chain, Patreon tiers and perks, free sources, Dino Shop, Marketplace, Auctions
 - [evidence/02-casino-games-and-raffle.md](evidence/02-casino-games-and-raffle.md) — games, jackpot, raffle, crates, Lucky Bags, patron-only coin flip
 - [evidence/03-operator-statements.md](evidence/03-operator-statements.md) — FAQ and Terms of Service, and where they conflict with the evidence
@@ -111,7 +111,7 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 - [verify-yourself.md](verify-yourself.md) — how to check every figure
 - [CORRECTIONS.md](CORRECTIONS.md) — corrections policy and right of reply
 - [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — how to submit evidence, and the rules
-- [.github/MAINTAINING.md](.github/MAINTAINING.md) — the standard procedure every change follows, and `tools/check.py`
+- [.github/MAINTAINING.md](.github/MAINTAINING.md) — the standard procedure every change follows, and the checks in `tools/` (`check.py`, `facts.json`, `reviewed-wording.tsv`)
 
 ## License
 

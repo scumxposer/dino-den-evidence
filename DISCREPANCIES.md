@@ -1,6 +1,6 @@
 # Discrepancies, with sources
 
-Every place where two sources disagree, side by side. Each item names both sources, when they were read, and what can and cannot be concluded. Unless stated otherwise, sources were read on **27 October 2026** without logging in; API values are preserved in [the snapshot](evidence/snapshots/2026-10-27/api-snapshot.json).
+The places found where two sources disagree, side by side. Each item names both sources, when they were read, and what can and cannot be concluded. Unless stated otherwise, sources were read on **27 October 2026** without logging in; API values are preserved in [the snapshot](evidence/snapshots/2026-10-27/api-snapshot.json).
 
 ---
 
@@ -40,7 +40,7 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | Current Privacy Policy, last updated 11 June 2026 — <https://main.dinoden.gg/privacy> | *"The service is intended for adults and not directed at anyone under 18."* |
 | The author's sign-ins on two different Steam accounts (October 2026, and a separate account on 27 Oct 2026) | No age check or parental-consent step before reaching the games, shop and marketplace on either account |
 
-**Can be concluded:** the operator moved from allowing minors (with consent) to adults-only in June 2026. The original site, na.dinoden.gg, is currently offline (error 521); the archived copy is the source.
+**Can be concluded:** the operator moved from allowing minors (with consent) to adults-only in June 2026. The original site, na.dinoden.gg, was offline (error 521) when checked on 27 Oct 2026; the archived copy is the source.
 **Cannot be concluded:** whether every new account sees the same sign-in flow. Both checks were made by the same person; confirmations from other players are welcome via the [evidence form](../../issues/new/choose).
 
 ## 4. "Not gambling" vs the operator's own descriptions
@@ -167,8 +167,8 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | Reply by a Dino Den Senior Admin, MissElephantuu, in the Dino Den Discord, 9 Oct 2026 ([screenshot](evidence/screenshots/2026-10-09-discord-senior-admin-apex-unlock.png); the player's name is hidden, and the original is held by the author; the staff member's Discord profile lists the roles Senior Admin, Admin, TDD Staff and Ticket Support) | replying to a player's message (shown truncated as *"how do we unlock the allow…"*): *"Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them"* |
 | Two players replying to the author's Reddit post (27 Oct 2026; screenshots held by the author; names hidden) | when a patron unlocks a capped species, *"they unlock it for EVERYONE. Not just themselves"*; *"asking in chat will normally get them unlocked, though access to trex is a bit more difficult"* |
 
-**Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself still advertises queue skip and *"VIP-only access"*, and its Apex tier listed a dino-cap bypass in October 2026.
-"Locked" refers to Dino Den's own per-server species caps, not to the game. The site's code treats an unlock as a server-wide state for a limited time, which is consistent with players' accounts that an unlock benefits everyone on that server; the separate respawn mode benefits only the patron. The perk is still offered: the site's patron-only page lets patrons unlock species on a server for a limited time, in a patron's screenshot from October 2026 Tyrannosaurus is marked as needing the Apex tier, and on 9 October 2026 a Senior Admin stated that Allosaurus and Tyrannosaurus *"can be unlock if you are APEX patreon, otherwise its popcontrol on them."*
+**Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself advertised queue skip and *"VIP-only access"* on 27 Oct 2026, and its Apex tier listed a dino-cap bypass in October 2026.
+"Locked" refers to Dino Den's own per-server species caps, not to the game. The site's code treats an unlock as a server-wide state for a limited time, which is consistent with players' accounts that an unlock benefits everyone on that server; the separate respawn mode benefits only the patron. The perk was still offered in October 2026: the site's patron-only page lets patrons unlock species on a server for a limited time, in a patron's screenshot from October 2026 Tyrannosaurus is marked as needing the Apex tier, and on 9 October 2026 a Senior Admin stated that Allosaurus and Tyrannosaurus *"can be unlock if you are APEX patreon, otherwise its popcontrol on them."*
 **Cannot be concluded:** exactly how the unlock interacts with the cap and who can then spawn as the species (that logic runs on Dino Den's servers), the current unlock length and cooldown (shown only to patrons), or whether the perks always worked as advertised.
 
 

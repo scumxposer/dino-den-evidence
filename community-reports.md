@@ -1,6 +1,6 @@
 # Community reports
 
-These are **claims made by players** in public forums. Unless marked otherwise, none of them has been independently verified. They are included because several unconnected people describe the same problems over many months, and each is listed with its source and with the counterpoints raised at the time. Dates without a year in Steam threads are 2026.
+These are **claims made by players** in public forums. Unless marked otherwise, none of them has been independently verified. They are included because several different people describe the same problems over many months, and each is listed with its source and with the counterpoints raised at the time. Dates without a year in Steam threads are 2026.
 
 Reports about how the owners and staff treat players are collected here too (see *Bans after criticism* and *Cheaters not dealt with; admins absent* below). What the operator's own rules say about moderation is summarised in the README under [Staff and owner conduct](README.md#staff-and-owner-conduct). New evidence is welcome through the [evidence form](../../issues/new/choose).
 

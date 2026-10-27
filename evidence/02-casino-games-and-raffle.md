@@ -50,14 +50,14 @@ Source: <https://api.dinoden.gg/raffle/current>
 
 | Raffle | Dates (UTC) | Entrants | Tickets |
 |---|---|---|---|
-| #5 (open) | 25 Oct – 1 Nov 2026 | 12,206 so far | 737,023 so far |
+| #5 (open) | 25 Oct – 1 Nov 2026 | 12,206 by 27 Oct | 737,023 by 27 Oct |
 | #4 | 18 – 25 Oct 2026 | 22,908 | 3,708,647 |
 
 ## Crates
 
 Source: <https://api.dinoden.gg/games/crates>
 
-25 crates are active: 22 priced in ClawCoins and 3 seasonal crates priced in Pumpkins. The site's code allows dinosaurs, skins, ClawCoins and AmberShards as crate drops, and also supports pricing crates in AmberShards (none are priced that way today). Most crates are made by players, who receive a 0.5% revenue share.
+25 crates are active: 22 priced in ClawCoins and 3 seasonal crates priced in Pumpkins. The site's code allows dinosaurs, skins, ClawCoins and AmberShards as crate drops, and also supports pricing crates in AmberShards (none were priced that way on 27 Oct 2026). Most crates are made by players, who receive a 0.5% revenue share.
 
 | Crate | Price (ClawCoins) | Times opened |
 |---|---|---|

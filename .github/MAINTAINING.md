@@ -38,15 +38,52 @@ Also:
 
 ## 4. Check
 
-- From the repository root, run `python3 tools/check.py`. It checks every internal link and anchor, and that every table row has the right number of columns.
-- Re-read the README from top to bottom as a first-time reader. The summary, the findings table and the detail files must say the same thing.
+From the repository root, run `python3 tools/check.py`. It must print `OK` before anything is committed. It checks:
+
+- **Links and tables:** every internal link and anchor exists; every table row has the right number of columns.
+- **Sentences:** broken sentences left by edits (a lowercase word after a full stop, doubled words, unbalanced quotes, brackets or italics, stray punctuation).
+- **Facts:** figures that appear in more than one file match `tools/facts.json`. When a figure changes, change it in every file and in `facts.json` together. When a new figure appears in two or more files, add it to `facts.json`.
+- **Dates:** the README's "Last updated" matches the latest entry in CORRECTIONS.md.
+- **Wording review:** every line with high-risk wording must have a recorded review. The categories are: certainty ("confirmed", "proves"), automatic routes ("ends up", "converts", "Patreon-funded"), absolutes ("always", "only", "every"), motives ("mocking", "deliberately", "rigged"), generalisations ("often", "pattern"), staleness ("still", "currently", "so far"), and a player claim inside a **Documented** row. Direct quotes are skipped because they are checked word for word against the source. Editing a line cancels its review, so a changed line is always looked at again.
+
+How to clear a wording flag:
+1. Re-open the source for that line.
+2. Ask whether the line says more than the source supports: more certain, more general, automatic rather than possible, a motive rather than an action, out of date, or a player claim labelled as documented. If it does, fix the line.
+3. Only if the line is accurate, record it: `python3 tools/check.py --ack FILE:LINE "the source and why the wording is accurate"`. Never record reviews in bulk without reading each line. The reason must name the source.
+
+Then re-read the README from top to bottom as a first-time reader. The summary, the findings table and the detail files must say the same thing.
 
 ## 5. Log and commit
 
 - Add a row to the log in [CORRECTIONS.md](../CORRECTIONS.md) describing the change. If an earlier version was wrong, say so plainly and say what was wrong.
 - Commit messages describe the change and end with a `Co-Authored-By:` line where applicable. Never include chat or session links.
 
-## 6. Publish
+## 6. Anything that leaves the repository
+
+Reddit posts and replies, YouTube or Steam comments, and emails to platforms repeat claims from the repository. They are held to the same standard:
+
+- Every factual claim in a draft must match a line in the repository, with the same strength. If the repository says "can", the draft cannot say "does".
+- Run each draft through the same questions as the wording review: certainty, automatic routes, absolutes, motives, generalisations, staleness, and player claims stated as fact.
+- **After every correction**, search for the old wording and its synonyms in:
+  - the repository;
+  - any drafts not yet posted;
+  - what has already been sent or posted.
+
+  `reports-filed.md` records what was sent to platforms, so check the sent emails against the corrected repository and list any statements that have since changed. Tell the owner which posted text needs editing.
+
+## 7. Full review
+
+A request for a full review means every step below, in order. Report what was done, with the numbers, not just "reviewed".
+
+1. `git pull`, then run `python3 tools/check.py`. Fix everything it reports, including every wording flag (section 4).
+2. Read every file in full, top to bottom: README, DISCREPANCIES, evidence/01–05, community-reports, verify-yourself, reports-filed, CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS (policy and the last ten log rows), this file and the issue templates. Count them.
+3. For each row of the README's key findings table, open the file it links to and check that the finding, its status label and its wording match the detail.
+4. Re-open the live sources for anything time-sensitive (FAQ, Terms, tier configuration, Patreon page) and compare them with the repository.
+5. Read it as a hostile critic would: for each claim, what would someone defending The Dino Den say is overstated or missing? Fix anything they would be right about.
+6. Check everything outside the repository (section 6): the sent emails in reports-filed and any drafts.
+7. Log the review in CORRECTIONS.md with what was checked and what was found. Say plainly if an earlier review missed something.
+
+## 8. Publish
 
 - Automated tasks push only to a review branch named `updates/YYYY-MM-DD`. The owner reviews and merges it.
 - Never force-push to main and never delete branches.
@@ -66,3 +103,7 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - A detail added without any source (who developed a community tool).
 - Describing a possible route as automatic (AmberShards only become ClawCoins if a player chooses to sell), or calling items "Patreon-funded" when their source can't be known.
 - Putting a player-reported effect under a **Documented** label (who benefits from a patron's species unlock).
+- Present-tense or "still" statements left undated ("currently offline", "so far", "still advertises").
+- A broken sentence left by a scripted edit (". and some species").
+- Reddit drafts and a sent email repeating wording the repository had already corrected.
+- Calling reviews "thorough" when they were only searches for the phrase just fixed. Section 7 exists because of this.
