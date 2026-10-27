@@ -18,6 +18,10 @@ Source: `https://api.dinoden.gg/patreon/tiers`
 - The operator's FAQ: *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."*
 - **Advertised vs configured:** the Apex description says *"Maximum 3.5x Clawcoin boost"*, but the configured `clawcoinBoost` is `4.5`.
 
+### Other ways to get AmberShards (for balance)
+
+Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"*), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals shown: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
+
 ## Step 2 — AmberShards buy dinosaurs
 
 Source: `https://api.dinoden.gg/shop/dinos`

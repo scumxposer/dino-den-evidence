@@ -56,6 +56,14 @@ Source: `https://api.dinoden.gg/games/crates`
 
 Six of 25 shown; the full list is in the snapshot.
 
+## Lucky Bags
+
+Source: The Dino Den's own news posts (`https://api.dinoden.gg/news`) and Item Shop (`https://api.dinoden.gg/shop/items`), read 27 October 2026.
+
+- A new "edition" of Lucky Bags has been announced every 14 days since May 2026 (Edition #4 on 2 May to Edition #17 on 26 October), each with *"Clawcoin prizes up to 20000k CC jackpot."*
+- Edition #17 lists five bag tiers with random ClawCoin prizes and jackpots, for example Common *"Up to 5k CC · Jackpot: 500k CC"* and Rare *"Up to 50k CC · Jackpot: 5000k CC"*, plus random decorations.
+- In the Item Shop, bags are sold in limited stock: Epic and Legendary bags for 10–15 Pumpkins (the Halloween event currency), and one Legendary Lucky Bag for 250,000 ClawCoins.
+
 ## An item that changes odds
 
 The site's code defines a consumable labelled *"Lucky — Better RNG on lucky bags & games."* How players obtain it could not be confirmed.
