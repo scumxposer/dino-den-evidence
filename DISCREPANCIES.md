@@ -87,6 +87,27 @@ Every place where two sources disagree, side by side. Each item names both sourc
 
 **Can be concluded:** the policy does not describe data the client sends. This is a documentation gap, not evidence of misuse.
 
+## 9. EU Digital Services Act: contact point and legal representative removed
+
+| Source | Says |
+|---|---|
+| Terms of Service, last updated 2026-01-20 — [archived 2 Apr 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms), §2 "EU Contact Point (DSA)" | *"If you are located in the European Union, you may contact us electronically via contact@dinoden.gg for matters related to the EU Digital Services Act (DSA). If we are legally required to appoint an EU legal representative, we will publish the representative's contact details in an easily accessible place on the Service."* |
+| Same January Terms, §11 | *"Where reasonable, we may provide notice or an opportunity to appeal via our support channels."* |
+| Current Terms of Service, last updated 11 June 2026 — <https://main.dinoden.gg/tos>, §12 Contact | *"Reach us through our Discord or in writing to"* a London postal address. No email address, no DSA section, no EU legal representative. |
+| Current Terms §5 | *"Moderation decisions are made at our sole discretion and are final."*; accounts may be suspended *"with or without reason, and without prior notice"* |
+| The site's code and pages (searched 27 Oct 2026) | No mention of the DSA, an EU legal representative, or a mechanism for reporting illegal content on the website |
+
+**Relevant DSA provisions** (Regulation (EU) 2022/2065, [official text](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2065)):
+- Art. 2(1): applies to intermediary services offered to recipients in the EU *"irrespective of where the providers… have their place of establishment"*; Art. 3(e) defines a *"substantial connection to the Union"* to include *"a significant number of recipients"* in a Member State or *"the targeting of activities towards one or more Member States."* Dino Den runs EU servers and hosts user content (chat, marketplace listings, player-made crates, profiles).
+- Art. 12(1): a single point of contact for users, *"by electronic means and in a user-friendly manner… which shall not solely rely on automated tools."*
+- Art. 13(1): providers *"which do not have an establishment in the Union but which offer services in the Union shall designate, in writing"* a legal representative in a Member State.
+- Art. 16(1): hosting providers must let anyone report illegal content *"exclusively by electronic means."*
+- Art. 17(1): hosting providers must give *"a clear and specific statement of reasons"* to users for content removal or account suspension/termination.
+- Art. 19(1): online-platform duties in Section 3 (including Art. 20 complaints, Art. 25 interface design and Art. 28 protection of minors) do not apply to micro or small enterprises. Arts. 12, 13, 16 and 17 are not covered by that exemption.
+
+**Can be concluded:** the operator's own January Terms acknowledged DSA duties (an EU contact point and a possible EU legal representative); the June Terms removed the DSA contact and email address and no representative is published.
+**Cannot be concluded:** whether The Dino Den is legally required to meet these obligations, or whether its Discord channel satisfies them. That is for regulators to decide. The company's size (relevant to the Art. 19 exemption) cannot be checked until its first accounts are filed (due October 2027, per [Companies House](https://find-and-update.company-information.service.gov.uk/company/16970676)). This is not legal advice.
+
 ---
 
 ## Checked, no discrepancy found

@@ -44,6 +44,7 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Double-or-nothing coin flip available only to active patrons | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Apex ClawCoin boost stated inconsistently: 3.5x in the tier description and on Patreon, 4.5x in the site's configuration (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
 | Age rule changed from "minors with parental consent" (Jan 2026 Terms) to 18+ (June 2026 Terms) | **Documented** | [DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed) |
+| EU Digital Services Act contact point and legal-representative wording removed from the Terms in June 2026; none published | **Documented** (whether DSA duties apply is for regulators) | [DISCREPANCIES.md §9](DISCREPANCIES.md#9-eu-digital-services-act-contact-point-and-legal-representative-removed) |
 | Jackpot and poker switched on but not shown in the Games menu | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
