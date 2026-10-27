@@ -99,6 +99,7 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 - [verify-yourself.md](verify-yourself.md) — how to check every figure
 - [CORRECTIONS.md](CORRECTIONS.md) — corrections policy and right of reply
 - [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — how to submit evidence, and the rules
+- [MAINTAINING.md](MAINTAINING.md) — the standard procedure every change follows, and `tools/check.py`
 
 ## License
 
