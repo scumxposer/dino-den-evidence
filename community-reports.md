@@ -2,7 +2,7 @@
 
 These are **claims made by players** in public forums. None of them has been independently verified. They are included because several unconnected people describe the same problems over many months, and each is listed with its source and with the counterpoints raised at the time. Dates without a year in Steam threads are 2026.
 
-Most of the public discussion is on Steam's *The Isle* General Discussions forum. Reddit could not be reviewed for this repository.
+Most of the public discussion is on Steam's *The Isle* General Discussions forum. Reddit could not be accessed directly for this repository; the one Reddit post cited below is from a screenshot held by the author.
 
 ## Recurring complaints
 
@@ -48,4 +48,4 @@ A NERF administrator is also said to have acknowledged false counts in the offic
 
 Forum posts and screenshots circulating about Dino Den also include accusations of crimes (such as DDoS attacks on rival servers), allegations about individuals' private conduct, and alleged leaked messages. These are not reproduced here because **no evidence has been published for them**: no logs, no named target, no dates, no statement from a hosting provider or an affected server.
 
-If you have verifiable evidence, see [CORRECTIONS.md](CORRECTIONS.md). Evidence of a crime should go to the platform concerned or law enforcement, not to a public repository.
+If you have verifiable evidence, [submit it here](../../issues/new/choose) (see also [CORRECTIONS.md](CORRECTIONS.md)). Evidence of a crime should go to the platform concerned or law enforcement, not to a public repository.

@@ -2,7 +2,7 @@
 
 A sourced, one-stop record of how **The Dino Den** — a large unofficial server network for *The Isle: Evrima*, operated by THE DINO DEN LTD (Company No. 16970676, England) — links paid Patreon memberships to casino-style games on its website.
 
-Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**. Anyone can re-check it (see [verify-yourself.md](verify-yourself.md)). Player complaints are kept separately, labelled as claims, with their sources and counterpoints.
+Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations (sign-in checks and Patreon page screenshots), which are labelled as such wherever they are used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints are kept separately, labelled as claims, with their sources and counterpoints.
 
 > This repository is not affiliated with The Dino Den, Afterthought LLC (developer of *The Isle*), or Patreon. It is not legal advice. Corrections and responses from The Dino Den are welcome — see [CORRECTIONS.md](CORRECTIONS.md).
 
@@ -19,17 +19,17 @@ If you have something that supports, disproves or adds to anything here, **[open
 Patreon money reaches The Dino Den's casino games through a loop that runs entirely on the operator's own site:
 
 ```
-Patreon pledge ($12–$55 per tier)
+Patreon pledge (5 tiers; site minimums $12–$55, Patreon's displayed prices differ, see DISCREPANCIES §2)
   └─► AmberShards (18,000–80,000 every 14 days)
         └─► Dino Shop: dinosaurs for 1,000–7,000 AmberShards each
               └─► Marketplace: dinosaurs resold to other players for ClawCoins
-                    └─► ClawCoins wagered on crash, roll, blackjack, coinflip, jackpot, poker and crates
+                    └─► ClawCoins wagered on roll, crash, blackjack, coinflip and crates (jackpot and poker also switched on)
                           └─► every 100,000 ClawCoins wagered = 1 entry in a weekly 100,000,000-ClawCoin raffle
 
-Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier)──► ClawCoins   (a second, direct route)
+Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second, direct route)
 ```
 
-On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs carrying Dino Shop purchase IDs, listed for sale in ClawCoins — 37 of them Tyrannosaurus.
+On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs whose IDs match Dino Shop purchases (interpretation explained in [evidence/01](evidence/01-patreon-to-casino.md)), listed for sale in ClawCoins — 37 of them Tyrannosaurus.
 
 ## Key findings
 
@@ -41,11 +41,11 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Shop-bought dinosaurs are listed for ClawCoins on the Marketplace | **Documented** (ID format interpretation explained) | [evidence/01](evidence/01-patreon-to-casino.md) |
 | ClawCoins are wagered on casino-style games the operator itself calls "casino games" | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Weekly raffle gives more entries the more a player wagers | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
-| Double-or-nothing coin flip available only to active patrons | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
+| Outage compensation can be gambled on a double-or-nothing coin flip; only active patrons can claim it | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Apex ClawCoin boost stated inconsistently: 3.5x in the tier description and on Patreon, 4.5x in the site's configuration (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
 | Age rule changed from "minors with parental consent" (Jan 2026 Terms) to 18+ (June 2026 Terms) | **Documented** | [DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed) |
 | EU Digital Services Act contact point and legal-representative wording removed from the Terms in June 2026; none published | **Documented** (whether DSA duties apply is for regulators) | [DISCREPANCIES.md §9](DISCREPANCIES.md#9-eu-digital-services-act-contact-point-and-legal-representative-removed) |
-| Terms require 18+, but no age verification at sign-in; no public reporting or complaints process (relevant to the UK Online Safety Act) | **Documented** (whether the Act applies is for Ofcom) | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-complaints) |
+| Terms require 18+, but no age verification at sign-in; reports and ban appeals go through Discord tickets only, and the Terms call moderation decisions "final" (relevant to the UK Online Safety Act) | **Documented** (whether the Act applies is for Ofcom) | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) |
 | Jackpot and poker switched on but not shown in the Games menu | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
@@ -54,9 +54,9 @@ Every place where two sources disagree is listed side by side, with links, in **
 
 ## Why it matters
 
-Patreon's Commerce Guidelines ("Gambling, Raffles, and Sweepstakes") say creators may not use Patreon to access, provide or facilitate gambling for money or an exchange of value, including digital currencies. A report has been filed with Patreon Trust & Safety — see [reports-filed.md](reports-filed.md).
+Patreon's [Commerce Guidelines](https://patreon.com/policy/benefits) (§5, "Gambling, Raffles, and Sweepstakes") say: *"Fans and creators may not use Patreon to access, provide, or facilitate gambling for money or an exchange of value, including digital currencies."* They list *"raffles, casinos and casino games"* among gambling activities. A report has been filed with Patreon Trust & Safety — see [reports-filed.md](reports-filed.md).
 
-The Dino Den's Terms of Service also require users to be 18 or older.
+The Dino Den's Terms of Service also require users to be 18 or older, but no age check was seen at sign-in ([DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed)).
 
 ## What this repository deliberately does not include
 

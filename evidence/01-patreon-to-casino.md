@@ -20,13 +20,13 @@ Source: <https://api.dinoden.gg/patreon/tiers>
 
 ### Other ways to get AmberShards (for balance)
 
-Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"* — <https://api.dinoden.gg/news/daily-rewards-2026-10-26>), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals shown: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
+Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"* — <https://api.dinoden.gg/news/daily-rewards-2026-10-26>), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals as displayed on that page, 27 Oct 2026: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
 
 ## Step 2 — AmberShards buy dinosaurs
 
 Source: <https://api.dinoden.gg/shop/dinos>
 
-The Dino Shop sells 22 species priced in AmberShards: 1,000 AS for a Troodon, Pteranodon or Beipiaosaurus, up to 6,000 AS for a Tyrannosaurus or Triceratops (7,000 AS as a prime). The site's purchase code deducts the price from the account's AmberShard balance.
+The Dino Shop sells 22 species priced in AmberShards: from 1,000 AS (Troodon, Pteranodon, Beipiaosaurus, Dryosaurus, Hypsilophodon) up to 6,000 AS for a Tyrannosaurus or Triceratops (7,000 AS as a prime). Full price list in the snapshot. The site's purchase code deducts the price from the account's AmberShard balance.
 
 ## Step 3 — Shop dinosaurs are sold to other players for ClawCoins
 
@@ -34,7 +34,7 @@ Source: <https://api.dinoden.gg/market/listings>
 
 - The Marketplace lists dinosaurs for sale in ClawCoins (the listing form labels prices with the site's ClawCoins name). Listing fees seen ranged from 10% to 25%.
 - Dinosaurs bought from the Dino Shop carry an ID that starts `shop-<offer id>-…`. The offer ids match the Dino Shop's own offer numbers (for example `shop-21-` = Tyrannosaurus, `shop-38-` = Troodon).
-- On 27 October 2026 at 08:33 UTC, **117 of 877 active listings** carried `shop-` IDs, covering 17 shop offers. The largest groups:
+- On 27 October 2026 at 08:33 UTC, **117 of 877 active listings** carried `shop-` IDs, covering 17 shop offers. 16 of these are in the current Dino Shop; one (offer 41, one Beipiaosaurus listing) is not, and may be a retired offer. The largest groups:
 
 | Shop offer | Dinosaur | Listings |
 |---|---|---|
@@ -56,7 +56,7 @@ ClawCoins are the stake in the site's casino-style games and the price of most c
 
 ## The second route: the ClawCoin multiplier
 
-Every tier multiplies the ClawCoins a player earns from playtime, quests and rewards (1.5x to 4.5x). The FAQ: *"Patreon tiers add a ClawCoin boost on top."* So a paying member gets more of the wagering currency directly, without going through the shop.
+Every tier multiplies the ClawCoins a player earns from playtime, quests and rewards (1.5x to 4.5x as configured; the Apex tier is described as 3.5x, see [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x)). The FAQ: *"Patreon tiers add a ClawCoin boost on top."* So a paying member gets more of the wagering currency directly, without going through the shop.
 
 ## Worked example
 
