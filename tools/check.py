@@ -211,6 +211,18 @@ def check_facts(files, problems):
                             f"(update every file, or tools/facts.json if the figure changed)")
         if found == 0:
             problems.append(f"{FACTS_FILE}: fact '{fact['name']}' no longer appears anywhere; update or remove it")
+        if "snapshot" in fact:
+            snapfile = sorted(glob.glob("evidence/snapshots/*/api-snapshot.json"))[-1]
+            data = json.load(open(snapfile, encoding="utf-8"))
+            vals = []
+            for path_ in fact["snapshot"]:
+                is_len = path_.startswith("len:")
+                cur = data
+                for part in path_.replace("len:", "").split("."):
+                    cur = cur[part]
+                vals.append(f"{len(cur) if is_len else cur:,}")
+            if vals != fact["expected"]:
+                problems.append(f"{FACTS_FILE}: fact '{fact['name']}' expects {fact['expected']} but the snapshot says {vals}")
 
 
 def check_dates(problems):
@@ -288,7 +300,8 @@ def linked_quote_hits(path, line, texts):
     return out
 
 
-SAME_PERSON = r"(?i)\bsame (player|poster|person|uploader)\b|\bone player\b|\bthe player who\b|\bthe same\b"
+SAME_PERSON = (r"(?i)\bsame (player|poster|person|uploader)\b|\bone player\b|\bthe player who\b|\bthe same\b"
+               r"|former trial admin|author of the Honest Opinion thread|same Reddit player")
 PLURAL = r"\b(Players|other players|another (?:player|poster)|a (?:third|second|frequent)\b|several)"
 
 
@@ -302,8 +315,7 @@ def poster_hits(path, text):
     seen = {}
     for n, line in enumerate(text.split("\n"), 1):
         if line.startswith("#"):
-            seen = {}
-            continue
+            continue  # the same person can recur across sections, so the check covers the whole file
         quotes = " ".join(re.findall(r'"([^"]+)"', line))
         if path == "community-reports.md" and re.search(r"steamcommunity|Reddit|reddit", line):
             for q in re.findall(r'\*"([^"]{8,})"\*', line):
@@ -368,9 +380,15 @@ def screenshot_quote_hits(path, text):
         if not texts or any(t is None for t in texts):
             continue
         hay = " ".join(_norm_ocr(t) for t in texts)
+        raw = re.sub(r"\s+", " ", " ".join(texts))
+        # A full stop inside the quotation marks must be in the image too (OCR rarely invents one).
+        for q in re.findall(r'\*"([^"]{8,}[.!?])"\*', line):
+            tail = re.escape(re.sub(r"[.!?]$", "", q).split(" ")[-1])
+            if re.search(tail + r"\b", raw, re.I) and not re.search(tail + r"\s?[.!?]", raw, re.I):
+                out.setdefault(n, []).append(f"quote ends with '{q[-1]}' but the screenshot shows none after '{q.split(' ')[-1][:-1]}'")
         for q in re.findall(r'\*"([^"]{8,})"\*', line):
             nq = _norm_ocr(q.split("…")[0] if "…" in q else q)
-            if not nq or nq in hay:
+            if not nq or nq in hay or nq.replace(" ", "") in hay.replace(" ", ""):
                 continue
             words = hay.split(" ")
             qw = nq.split(" ")

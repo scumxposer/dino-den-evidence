@@ -5,6 +5,10 @@
     "expected": [
       "117",
       "877"
+    ],
+    "snapshot": [
+      "marketplace.listingsWithShopIds",
+      "marketplace.activeListings"
     ]
   },
   {
@@ -80,6 +84,9 @@
     "pattern": "sells (\\d+) species",
     "expected": [
       "22"
+    ],
+    "snapshot": [
+      "len:shopDinos.items"
     ]
   },
   {
@@ -87,6 +94,9 @@
     "pattern": "(\\d+) crates are active",
     "expected": [
       "25"
+    ],
+    "snapshot": [
+      "len:crates.items"
     ]
   },
   {
@@ -94,6 +104,29 @@
     "pattern": "(3,\\d{3},\\d{3}) (?:raffle )?tickets",
     "expected": [
       "3,708,647"
+    ],
+    "snapshot": [
+      "raffle.last.totalTickets"
+    ]
+  },
+  {
+    "name": "raffle #4 entrants",
+    "pattern": "\\| (\\d{2},\\d{3}) \\| 3,708,647 \\|",
+    "expected": [
+      "22,908"
+    ],
+    "snapshot": [
+      "raffle.last.entrantCount"
+    ]
+  },
+  {
+    "name": "shop offers among listings",
+    "pattern": "covering (\\d+) shop offers",
+    "expected": [
+      "17"
+    ],
+    "snapshot": [
+      "len:marketplace.byShopOffer"
     ]
   }
 ]

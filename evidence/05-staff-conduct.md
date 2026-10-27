@@ -36,13 +36,13 @@ Two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and 
 
 The player then said what they had posted: an accusation against the owner, which they attributed to *"disgruntled staff"*. (In the same chat the owner linked accusations of this kind to the unban described below.) They added *"horrible staff hope your server dies like it should"*. The owner replied *"Maybe you shouldnt believe everything you hear online xD"*. The player apologised twice and said they were embarrassed; the owner's reply to that was *"You deserve the #wall-of-shame tbh xD"*. When CHUGGY posted the exchange in `#wall-of-shame`, his caption, tagging the player, was *"I appreciate the humility W"*.
 
-**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw ill unban you."* In the refund exchange above, the owner had posted an image with a message saying he was being criticised *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
+**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw ill unban you"*. In the refund exchange above, the owner had posted an image with a message saying he was being criticised *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
 
 ## `#sent-to-hell`: a ban trap
 
 ![The #sent-to-hell channel and the ban-trap notice, 15 Aug 2026](screenshots/2026-08-15-discord-sent-to-hell-ban-trap.png)
 
-A notice posted by Dino Den's own bot ("TDD Auto Ban") on 15 August 2026 says:
+A notice posted by Dino Den's own bot ("TDD Auto Ban") on 15 August 2026, headed *"DO NOT TYPE IN THIS CHANNEL"*, says:
 
 - *"This is a ban trap. Sending anything here — a message, a meme, a sticker, a GIF, even a single letter — gets you instantly banned."*
 - *"No warnings. No second chances."*
@@ -56,7 +56,7 @@ The channel description reads: *"Souls claimed: 403 🔥 Type here and join them
 - The owner and a Head Admin use a public channel in Dino Den's Discord to post other people's messages, including private messages and support-ticket messages, for the community to react to. The owner told a banned player he *"deserve[d]"* to be posted there.
 - The owner refused a refund on the grounds of rule-breaking while saying he had *"no clue"* why the player was banned. He also suggested the player open a ticket. The player then said they had posted an accusation against the owner.
 - The owner told a permanently banned player, by private message, that he would unban him, and later wrote that he had *"unbanned a guy for this"*. This happened outside the ticket process the FAQ describes; the Terms call moderation decisions *"final."*
-- Dino Den runs a channel whose bot notice says anyone who posts in it is instantly banned, and the channel's own description invites people to post. The channel's own count is *"Souls claimed: 403"*.
+- Dino Den runs a channel whose bot notice, headed *"DO NOT TYPE IN THIS CHANNEL"*, says anyone who posts in it is instantly banned, while the channel's own description invites people to post. The channel's own count is *"Souls claimed: 403"*.
 
 **Cannot be concluded:**
 - Who banned the refund player and on what exact grounds. The player's own account is that it followed an accusation they posted about the owner; the screenshot does not show whether the owner himself was involved in that decision.
