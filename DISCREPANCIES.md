@@ -50,9 +50,10 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | Current Terms §2 — <https://main.dinoden.gg/tos> | games *"are played exclusively with virtual currency, are provided for entertainment only and are not gambling for money or anything of monetary value."* |
 | Earlier Terms §7 "Chance-Based Games (Entertainment Only)" — [archived copy](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms) | *"Any chance-based features (including, without limitation, coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics)…"* |
 | FAQ — <https://main.dinoden.gg/faq> | *"A casino game crashed or did not pay out."*; *"You can also win (or lose...) ClawCoins in our casino games."*; *"Can I set gambling limits or exclude myself?"* |
+| Account settings, shown to signed-in users (text from the site's JavaScript, read 27 Oct 2026; the setting calls the API endpoint `/me/gamble-block`) | section titled *"Gambling Self-Exclusion"*: *"Lock yourself out of all gambling games (Crash, Roll, Mines, Blackjack) for a fixed period."* When active: *"Gambling locked"* and *"You're locked out of gambling until"* a date |
 | Patreon tiers, Dino Shop and Marketplace data — see [evidence/01](evidence/01-patreon-to-casino.md) | paid tiers supply the currencies that end up wagered |
 
-**Can be concluded:** the operator itself describes the games as casino and chance-based games with gambling controls, while its Terms say they are not gambling for anything of value.
+**Can be concluded:** the operator itself describes the games as casino and chance-based games, and its own account settings call them *"gambling games"*, while its Terms say they are not gambling for anything of value.
 **Cannot be concluded:** whether this meets any legal definition of gambling. That is for Patreon and regulators to judge.
 
 ## 5. "Memberships are not purchases of Virtual Items"
@@ -151,10 +152,14 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | Announcement posted by the operator's Discord app in `#support-the-server`, 8 December 2025 ([screenshot](evidence/screenshots/2025-12-08-discord-support-the-server.png), cropped to the announcement; time shown in the author's time zone) | *"Support the server on Patreon and unlock powerful perks that give you the edge in the wild!"* Perks include *"Queue skip – join instantly even when full"*, *"Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!"*, *"Unlock currently locked dinos"*, and *"Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked"*. Tiers bring *"greater power on the island. Choose your path to dominance."* |
 | The site's Patreon page — <https://main.dinoden.gg/patreon> (27 Oct 2026) | Each tier lists only AmberShards every 2 weeks, a ClawCoin multiplier and *"Unlimited Dino parking"*. No queue skip, locked-dino or Rex access listed |
 | Patreon creator page — <https://www.patreon.com/TheDinoDen> (fetched 27 Oct 2026) | *"From Amber Shards every 2 weeks, to queue skip, to VIP-only access and event invites."* |
-| Player reports — [community-reports.md](community-reports.md#restricted-dinosaurs-unlocked-by-paying) | Rex and big carnivores restricted, with unrestricted play for Apex members (Mar 2026); a former trial admin says Rex access on lower tiers did not work (Nov 2025) |
+| Player reports — [community-reports.md](community-reports.md#restricted-dinosaurs-unlocked-by-paying) | Rex and big carnivores restricted, with unrestricted play for Apex members (Mar 2026); a former trial admin says Rex access on lower tiers and a *"dino-cap bypass"* did not work (Nov 2025) |
+| *The Isle* patch 0.21.321, 28 December 2025 — [official news post](https://www.theisle-game.com/en/news/merry-x-mas-and-a-happy-new-patch-0-21-321) | adds the Tyrannosaurus as a playable dinosaur, three weeks after the announcement |
+| The author's own observation (October 2026) | Dino Den limits how many Rexes can be on its low-rules servers at once; when the limit is reached, Rex is "locked" for other players |
+| Dino Den's public website chat, 27 Oct 2026 (visible without signing in; players not named) | players saying Rex "stays locked" and asking for someone to "open rex" on EU 2 |
 
 **Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself still advertises queue skip and *"VIP-only access."*
-**Cannot be concluded:** whether locked-dinosaur and Rex access are still offered (the announcement is still visible in the channel; the individual Patreon tier descriptions could not be loaded for this check), or whether they worked as advertised.
+"Locked" refers to Dino Den's own per-server limit, not to the game: Rex was still being reported as locked on Dino Den servers months after it became officially playable.
+**Cannot be concluded:** whether Apex patrons can still play Rex past the limit, or whether other locked-dinosaur access is still offered (the announcement is still visible in the channel; the individual Patreon tier descriptions could not be loaded for this check), or whether these perks worked as advertised.
 
 ---
 

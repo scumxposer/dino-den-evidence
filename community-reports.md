@@ -15,7 +15,7 @@ Most of the public discussion is on Steam's *The Isle* General Discussions forum
 
 ### Restricted dinosaurs unlocked by paying
 - *"dinoden restrict the Rexs and big carnivore,"* with unrestricted play for monthly "apex" members (31 Mar 2026). — [Beware of pay to win servers](https://steamcommunity.com/app/376210/discussions/14/802343728582771226/)
-- **Now partly documented:** the operator's own Discord announcement of 8 Dec 2025 advertised *"Unlock currently locked dinos"* and *"Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked"* as Patreon perks ([DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page)). Whether this is still offered is not confirmed.
+- **Now partly documented:** the operator's own Discord announcement of 8 Dec 2025 advertised *"Unlock currently locked dinos"* and *"Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked"* as Patreon perks ([DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page)). Rex became officially playable in *The Isle* on 28 Dec 2025, but Dino Den limits how many Rexes can be on its low-rules servers, and "locked" refers to that limit (author's observation; players were still reporting Rex as locked in Dino Den's website chat on 27 Oct 2026). Whether Apex patrons can still bypass the limit is not confirmed.
 - Related documented fact: 37 shop-bought Tyrannosaurus were listed on the Marketplace on 27 Oct 2026 ([evidence/01](evidence/01-patreon-to-casino.md)).
 
 ### Cheaters not dealt with; admins absent
