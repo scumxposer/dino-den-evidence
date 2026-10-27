@@ -12,7 +12,7 @@ From The Dino Den's FAQ (<https://main.dinoden.gg/faq>):
 
 The account settings shown to signed-in players (text from the site's JavaScript, read 27 Oct 2026) go further. A section titled *"Gambling Self-Exclusion"* says: *"Lock yourself out of all gambling games (Crash, Roll, Mines, Blackjack) for a fixed period."* Once set, it shows *"Gambling locked"*. The list names four games, while the FAQ says self-exclusion covers *"all casino games"*; whether it also blocks Coinflip, Jackpot and Crates could not be checked. See [DISCREPANCIES.md §4](../DISCREPANCIES.md#4-not-gambling-vs-the-operators-own-descriptions).
 
-The earlier Terms of Service (20 January 2026, [archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)) had a section titled *"Chance-Based Games (Entertainment Only)"* covering *"coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics."*
+The earlier Terms of Service (20 January 2026, [archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)) had a section titled *"Chance-Based Games (Entertainment Only)"* covering *"coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics"*.
 
 The site's main navigation menu lists Roll, Crash, Blackjack, Coinflip, Jackpot and Crates; the footer list leaves out Jackpot.
 

@@ -15,7 +15,7 @@ The site footer and both versions of the Terms name **THE DINO DEN LTD (Company 
 | What the operator says | What the site does |
 |---|---|
 | Terms §2: games *"are played exclusively with virtual currency, are provided for entertainment only and are not gambling for money or anything of monetary value."* | Paid Patreon tiers supply currency: AmberShards directly, and extra ClawCoins through the multiplier (both can also be earned without paying). AmberShards can become ClawCoins when a patron sells shop dinosaurs on the operator's own Marketplace or Auctions ([01](01-patreon-to-casino.md)). The site's own account settings offer *"Gambling Self-Exclusion"* from *"all gambling games"* ([02](02-casino-games-and-raffle.md)). |
-| Terms §3: Patreon *"memberships are not purchases of Virtual Items."* | Each tier is defined by the AmberShards it pays; the FAQ says upgrades *"grant the difference between the tiers immediately."* |
+| Terms §3: Patreon *"memberships are not purchases of Virtual Items."* | Each tier pays a fixed amount of AmberShards; the FAQ says upgrades *"grant the difference between the tiers immediately."* |
 | Terms §2: Virtual Items *"have no monetary or real-world value."* | Dinosaurs bought from the Dino Shop with AmberShards, which Patreon tiers pay out, are listed for ClawCoins, which can be wagered for more ClawCoins, dinosaurs and skins. |
 | Earlier Terms §7, *"Chance-Based Games (Entertainment Only)"*: *"Any chance-based features (including, without limitation, coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics) are provided solely for entertainment and use only virtual in-service currency or virtual items."* ([archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)) | The operator's own earlier Terms describe these features as chance-based games, including raffles and loot boxes. |
 | FAQ: *"ClawCoins are earned by playing - the only real-money support is our Patreon."* | Consistent with the evidence: Patreon is the real-money entry point. |
@@ -26,7 +26,7 @@ The conflicts found between sources are also listed side by side in [DISCREPANCI
 
 ## Real-money trading
 
-The Terms and FAQ ban players from buying or selling ClawCoins, dinosaurs or accounts for real money. That rule applies between players; it does not cover the operator's own sale of currency-paying memberships through Patreon.
+The Terms and FAQ ban players from buying or selling ClawCoins, dinosaurs or accounts for real money. As written, the rule is about what players may do; the Terms deal with the operator's own Patreon memberships, which pay out currency, separately (§3).
 
 ## Privacy policy notes
 

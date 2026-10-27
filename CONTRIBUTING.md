@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping keep this record accurate. The repository covers two things: how The Dino Den's Patreon tiers feed its casino-style games, and how its owners and staff treat players. The most useful contribution is **evidence someone else can check**, and corrections when something here is wrong.
+Thanks for helping keep this record accurate. The repository covers two things: how The Dino Den's Patreon tiers connect to its casino-style games, and how its owners and staff treat players. The most useful contribution is **evidence someone else can check**, and corrections when something here is wrong.
 
 ## How to contribute
 
@@ -22,7 +22,7 @@ In scope: how the owners and staff use their powers and treat players. For examp
 - Show the whole exchange, not just the reply. Include what led up to it.
 - Include the date, the server or channel, and any ban or mute notice or ticket transcript.
 - Messages a staff member or owner sent **to you** while acting as staff (including in tickets or DMs) are accepted. Only the relevant part is published.
-- Owners and staff are named by the handles they use as staff, with their role, and only for what they did in that role. Unverified claims about a named staff member are labelled as claims, with any counterpoints. Nothing about their private lives, real identities or personal accounts.
+- Owners and staff are named by the handles they use as staff, with their role, and only for what they did in that role. A handle is shown as staff only once the role is confirmed (for example from Dino Den's Discord member list or the person's profile); until then it is hidden like a player's. Unverified claims about a named staff member are labelled as claims, with any counterpoints. Nothing about their private lives, real identities or personal accounts.
 - Reports are labelled as claims unless they can be checked, listed with any counterpoints, and the operator is invited to respond.
 
 ## Messages from the public Dino Den Discord

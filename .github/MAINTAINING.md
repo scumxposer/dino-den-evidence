@@ -49,6 +49,7 @@ From the repository root, run `python3 tools/check.py`. It must print `OK` befor
 - **Counts:** "four tiers (A, B and C)" is flagged when the number doesn't match the items listed.
 - **Quotes against linked files:** a quote on a line that links to another file in this repository must appear in that file, so the detail file and its summary quote the same words.
 - **Same person:** `tools/sources.json` records, under anonymised labels, who wrote each quoted player post. Within a section, a second line quoting the same person, or one line quoting them twice under plural wording ("Players say", "another player", "a third player"), is flagged until the text says it is the same person. Add every new quoted player post to `sources.json`; a player quote in community-reports that isn't registered is flagged.
+- **Screenshot quotes:** quotes on a line that links a screenshot, or in a section that embeds one, are read from the image with OCR (`tesseract`) and flagged if they can't be found. Quotes from images that are not published (the author's originals) must be checked against the original by eye and recorded with `--ack`.
 - **Quoted columns:** a table column headed "What … says" must hold the source's own words. More than a few words outside quotes are flagged, so the writer's own reading can't slip in as the source's.
 - **Wording review:** every line with high-risk wording must have a recorded review. The categories are: certainty ("confirmed", "proves"), automatic routes ("ends up", "converts", "sell for", "Patreon-funded"), absolutes ("always", "only", "every", "everything", "all conflicts"), motives ("mocking", "deliberately", "rigged", "spoofing"), generalisations ("often", "pattern"), completed actions ("lifted", "banned", "refused"), actors ("the creator made…": who did it must be in the source), completeness ("covering", "in full"), staleness ("still", "currently", "so far"), and a player claim inside a **Documented** row. Direct quotes are skipped because they are checked word for word against the source. Editing a line cancels its review, so a changed line is always looked at again.
 
@@ -88,7 +89,7 @@ A request for a full review means every step below, in order. Report what was do
 2. Read every file in full, top to bottom: README, DISCREPANCIES, evidence/01–05, community-reports, verify-yourself, reports-filed, CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS (policy and the last ten log rows), this file and the issue templates. Count them.
 3. For each row of the README's key findings table, open the file it links to and check that the finding, its status label and its wording match the detail.
 4. Re-open the live sources for anything time-sensitive (FAQ, Terms, tier configuration, Patreon page) and compare them with the repository.
-4a. **Quote audit:** run `python3 tools/check.py --quotes`, which lists every quote next to the outside pages its line cites. Open each page and confirm each quote appears there word for word, including where it ends, and that it was written by the person the repository says (forum threads: check each post's author). Do not complete bot checks or CAPTCHAs to reach a page; note it as not re-checked instead.
+4a. **Quote audit:** run `python3 tools/check.py --quotes`, which lists every quote next to the outside pages its line cites. Open each page and confirm each quote appears there word for word, including where it ends (a full stop inside the quotation marks must be in the source), and that it was written by the person the repository says (forum threads: check each post's author). Do the same for screenshots: compare each quote with the image itself (zoom in; OCR and memory both misread). Do not complete bot checks or CAPTCHAs to reach a page; note it as not re-checked instead.
 5. Read it as a hostile critic would, and as a fair one: for each finding about the operator or staff, is there an innocent explanation or common practice the reader should know (a counterpoint)? Is anything said by the operator that cuts the other way left out? For each claim, what would someone defending The Dino Den say is overstated or missing? Fix anything they would be right about.
 6. Check everything outside the repository (section 6): the sent emails in reports-filed and any drafts.
 7. Log the review in CORRECTIONS.md with what was checked and what was found. Say plainly if an earlier review missed something.
@@ -118,7 +119,7 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - Reddit drafts and a sent email repeating wording the repository had already corrected.
 - Calling reviews "thorough" when they were only searches for the phrase just fixed. Section 7 exists because of this.
 - Recording wording reviews with rule-matched notes, which let an undated "still offered" through on a line whose note only covered "now".
-- Reporting a promise as an action: "lifted a permanent ban" when the owner only wrote "Dw i will unban you".
+- Reporting a promise as an action: "lifted a permanent ban" when the owner only wrote "Dw ill unban you".
 - Leaving out a fair counterpoint: ban-trap channels are a common anti-spam tool, and ClawCoins cannot be cashed out.
 - Scope claims such as "all conflicts are listed" or "every discrepancy" when only the ones found are listed.
 - A detail file corrected while its summary in the README kept the old version (the refund context), and summary rows worded as fact under a Supported or Player claims label.
@@ -126,6 +127,8 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - The writer's reading inserted into a column of the source's words ("two Rexes").
 - Published posts left with wording the repository had corrected ("those dinos sell", "everything comes from").
 - A quotation that the source never contained (*"dino-cap bypass"*), and a quote ending with a full stop where the source carries on.
+- A misread screenshot quote ("Dw i will unban you" for "Dw ill unban you"), and captions on staff posts left out ("I appreciate the humility W").
+- Wording reviews recorded in bulk with generic notes, which let a scope claim ("how to check every figure") through until they were redone one by one.
 - One person presented as several ("Players say", "a frequent critic", "another player", "a third player") when the quotes came from one poster.
 - A fix that broke a sentence (removing a quote's full stop left the next sentence running straight on from the quote).
 - A count that doesn't match the list after it ("the other four tiers" followed by three).

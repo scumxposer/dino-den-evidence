@@ -47,10 +47,10 @@ What the operator's own rules say:
 What the owner and staff have done in Dino Den's own public Discord channels ([evidence/05](evidence/05-staff-conduct.md)):
 
 - A `#wall-of-shame` channel, started on 15 Aug 2026, where the owner, Vire, and a Head Admin, CHUGGY, post other people's messages, including private messages and support-ticket messages, for the server to react to. After a banned player who had asked for a refund apologised, the owner told them: *"You deserve the #wall-of-shame tbh xD"*.
-- In that exchange the owner refused the refund (*"We dont refund for players breaking rules"*) and suggested opening a ticket, then said *"I got no clue what you did to get banned."* The player then said they had posted an accusation against the owner, and later apologised. To another permanently banned player, who had messaged him privately, he replied with laughing emojis and *"Dw i will unban you"*, and later wrote that he had *"unbanned a guy for this"*.
+- In that exchange the owner refused the refund (*"We dont refund for players breaking rules"*) and suggested opening a ticket, then said *"I got no clue what you did to get banned."* The player then said they had posted an accusation against the owner, and later apologised. To another permanently banned player, who had messaged him privately, he replied with laughing emojis and *"Dw ill unban you"*, and later wrote that he had *"unbanned a guy for this"*.
 - A `#sent-to-hell` "ban trap" whose bot notice says anyone who posts in it is instantly banned (*"No warnings. No second chances."*); its description reads *"Souls claimed: 403 🔥 Type here and join them 😈"*. [Trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel, but this one's description invites people to post.
 
-Players have reported a ban after criticising the server in a Steam discussion, admins using their powers against players in four YouTube videos, a former trial admin who says he was stripped of his role and muted after criticising the owner in staff chat, and (from one player) cheaters not being dealt with. One player says admins have treated them reasonably. These player reports are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). If you have evidence, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
+Players have reported a ban after criticising the server in a Steam discussion, admins using their powers against players in four YouTube videos from three uploaders, a former trial admin who says he was stripped of his role and muted after criticising the owner in staff chat, and (from one player) cheaters not being dealt with. One player says admins have treated them reasonably. These player reports are **unverified claims**, listed with counterpoints in [community-reports.md](community-reports.md). If you have evidence, [submit it](../../issues/new/choose) following [CONTRIBUTING.md](CONTRIBUTING.md#evidence-about-owner-and-staff-conduct).
 
 ## Key findings
 
@@ -77,9 +77,9 @@ The places where two sources disagree are listed side by side, with links, in **
 | Server-browser player counts appear inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
 | Terms let staff suspend accounts "with or without reason" and call moderation decisions "final", while the FAQ promises appeals "the exact reason" | **Documented** | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) |
-| The owner and a Head Admin post players' private and support-ticket messages in a public `#wall-of-shame` channel; the owner refused a refund for "breaking rules" while saying he had "no clue" why the player was banned (the player then said they had posted an accusation against him), and told another banned player by private message "Dw i will unban you", later writing that he had "unbanned a guy for this" | **Documented** (Dino Den's public Discord; screenshots) | [evidence/05](evidence/05-staff-conduct.md) |
+| The owner and a Head Admin post players' private and support-ticket messages in a public `#wall-of-shame` channel; the owner refused a refund for "breaking rules" while saying he had "no clue" why the player was banned (the player then said they had posted an accusation against him), and told another banned player by private message "Dw ill unban you", later writing that he had "unbanned a guy for this" | **Documented** (Dino Den's public Discord; screenshots) | [evidence/05](evidence/05-staff-conduct.md) |
 | A `#sent-to-hell` channel whose bot notice says anyone who posts is instantly banned ("No warnings"), while its description invites people to post; "Souls claimed: 403". Trap channels are also a common anti-spam tool | **Documented** (Dino Den's public Discord; screenshot) | [DISCREPANCIES.md §12](DISCREPANCIES.md#12-moderation-in-practice-vs-the-terms-and-faq) |
-| Staff conduct, as players report it: a ban after criticism in a Steam discussion, admins spawning, teleporting or hiding in spectator mode against players (four YouTube videos, Dec 2025 – Oct 2026), a former trial admin removed and muted after criticising the owner, cheaters not dealt with and admins absent (one player) | **Player claims**, unverified, with counterpoints (evidence wanted) | [community-reports.md](community-reports.md#bans-after-criticism) |
+| Staff conduct, as players report it: a ban after criticism in a Steam discussion, admins spawning, teleporting or hiding in spectator mode against players (four YouTube videos from three uploaders, Dec 2025 – Oct 2026), a former trial admin removed and muted after criticising the owner, cheaters not dealt with and admins absent (one player) | **Player claims**, unverified, with counterpoints (evidence wanted) | [community-reports.md](community-reports.md#bans-after-criticism) |
 | A former trial admin says Patreon perks were advertised but not delivered | **Player claim**, one source (a former trial admin, Nov 2025), unverified | [community-reports.md](community-reports.md#patreon-perks-advertised-but-not-delivered) |
 
 ## Why it matters
@@ -92,7 +92,7 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 
 ## What this repository deliberately does not include
 
-- Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no evidence, target or date has been published. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
+- Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no published evidence, target or date has been found. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
 - Real names, Steam profile links, alleged alt accounts, or private messages between other people.
 - Players' usernames or avatars. Public posts (Steam, Reddit, public Dino Den Discord channels) are quoted or shown with names and avatars hidden, with the channel or link and the date. People who published their own analyses are credited by the name they published under.
 - Anything about owners' or staff members' private lives or real identities. Owners and staff are named by the handles they use as staff, with their role, and only for what they did in that role. Official announcements from the operator's Discord app, and official channels the operator itself lists, can be cited.
@@ -109,10 +109,10 @@ How staff use their powers matters for the same players: dinosaurs, currency and
 - [evidence/snapshots/2026-10-27/api-snapshot.json](evidence/snapshots/2026-10-27/api-snapshot.json) — the raw data behind the figures, personal data removed
 - [community-reports.md](community-reports.md) — player complaints, including reports about staff conduct, with sources and counterpoints
 - [reports-filed.md](reports-filed.md) — reports made to platforms
-- [verify-yourself.md](verify-yourself.md) — how to check every figure
+- [verify-yourself.md](verify-yourself.md) — how to check the figures yourself
 - [CORRECTIONS.md](CORRECTIONS.md) — corrections policy and right of reply
 - [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — how to submit evidence, and the rules
-- [.github/MAINTAINING.md](.github/MAINTAINING.md) — the standard procedure every change follows, and the checks in `tools/` (`check.py`, `facts.json`, `reviewed-wording.tsv`)
+- [.github/MAINTAINING.md](.github/MAINTAINING.md) — the standard procedure every change follows, and the checks in `tools/` (`check.py` and the files it uses)
 
 ## License
 

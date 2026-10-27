@@ -288,7 +288,7 @@ def linked_quote_hits(path, line, texts):
     return out
 
 
-SAME_PERSON = r"(?i)\bsame (player|poster|person)\b|\bone player\b|\bthe player who\b|\bthe same\b"
+SAME_PERSON = r"(?i)\bsame (player|poster|person|uploader)\b|\bone player\b|\bthe player who\b|\bthe same\b"
 PLURAL = r"\b(Players|other players|another (?:player|poster)|a (?:third|second|frequent)\b|several)"
 
 
@@ -315,6 +315,69 @@ def poster_hits(path, text):
             if (lab in seen or repeated) and not re.search(SAME_PERSON, line):
                 out[n] = f"same poster as line {seen.get(lab, n)} ({lab}); say it is the same person"
             seen.setdefault(lab, n)
+    return out
+
+
+_OCR = {}
+
+
+def ocr_text(img):
+    """Text of a screenshot, read with tesseract (dark-mode images are inverted first)."""
+    if img in _OCR:
+        return _OCR[img]
+    import subprocess, tempfile
+    txt = ""
+    try:
+        from PIL import Image, ImageOps
+        im = Image.open(img).convert("L")
+        if sum(im.resize((50, 50)).tobytes()) / 2500 < 128:
+            im = ImageOps.invert(im)
+        im = im.resize((im.width * 2, im.height * 2))
+        with tempfile.NamedTemporaryFile(suffix=".png") as tmp:
+            im.save(tmp.name)
+            txt = subprocess.run(["tesseract", tmp.name, "-", "--psm", "4"], capture_output=True, text=True).stdout
+    except Exception:
+        txt = None
+    _OCR[img] = txt
+    return txt
+
+
+def _norm_ocr(s):
+    s = s.lower().replace("’", "'")
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9#' ]+", " ", s)).strip()
+
+
+def screenshot_quote_hits(path, text):
+    """Quotes on a line that links a screenshot, or in a section that embeds one, must be readable in it."""
+    import difflib
+    out = {}
+    current = None
+    for n, line in enumerate(text.split("\n"), 1):
+        if re.match(r"#{1,3} ", line):
+            current = None
+        emb = re.search(r"!\[[^\]]*\]\(([^)]*screenshots/[^)]+\.png)\)", line)
+        if emb:
+            current = os.path.normpath(os.path.join(os.path.dirname(path), emb.group(1)))
+            continue
+        linked = [os.path.normpath(os.path.join(os.path.dirname(path), m))
+                  for m in re.findall(r"\]\(([^)]*screenshots/[^)]+\.png)\)", line)]
+        imgs = linked or ([current] if current else [])
+        if not imgs:
+            continue
+        texts = [ocr_text(i) for i in imgs if os.path.exists(i)]
+        if not texts or any(t is None for t in texts):
+            continue
+        hay = " ".join(_norm_ocr(t) for t in texts)
+        for q in re.findall(r'\*"([^"]{8,})"\*', line):
+            nq = _norm_ocr(q.split("…")[0] if "…" in q else q)
+            if not nq or nq in hay:
+                continue
+            words = hay.split(" ")
+            k = len(nq.split(" "))
+            best = max((difflib.SequenceMatcher(None, nq, " ".join(words[i:i + k])).ratio()
+                        for i in range(max(1, len(words) - k + 1))), default=0)
+            if best < 0.85:
+                out.setdefault(n, []).append(f"quote not readable in the screenshot (best match {best:.2f}): \"{q[:50]}\"")
     return out
 
 
@@ -422,8 +485,10 @@ def check_wording(files, problems):
         text = open(f, encoding="utf-8").read()
         says = says_column_hits(f, text)
         posters = poster_hits(f, text)
+        shots = screenshot_quote_hits(f, text)
         for n, line in prose_lines(text):
             hits = (risky_hits(f, line) + ([says[n]] if n in says else []) + ([posters[n]] if n in posters else [])
+                    + shots.get(n, [])
                     + count_hits(line) + linked_quote_hits(f, line, texts))
             if hits and line_key(f, line) not in reviews:
                 unreviewed.append(f"{f}:{n}: [{'; '.join(hits)}]\n    {line.strip()[:300]}")
@@ -443,7 +508,8 @@ def ack(target, note):
     texts = {f: open(f, encoding="utf-8").read() for f in md_files()}
     if (not risky_hits(path, line) and int(n) not in says_column_hits(path, "\n".join(lines))
             and not count_hits(line) and not linked_quote_hits(path, line, texts)
-            and int(n) not in poster_hits(path, "\n".join(lines))):
+            and int(n) not in poster_hits(path, "\n".join(lines))
+            and int(n) not in screenshot_quote_hits(path, "\n".join(lines))):
         print(f"{target} has no high-risk wording; nothing to record")
         return 0
     if len(note.strip()) < 15:

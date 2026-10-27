@@ -6,13 +6,13 @@ Source: screenshots of two **public channels** in The Dino Den's Discord server,
 
 ![The #wall-of-shame channel header, first post by Vire on 15 Aug 2026](screenshots/2026-08-15-discord-wall-of-shame-header.png)
 
-The channel starts on 15 August 2026. In the posts captured (15 August – 22 October 2026), the owner, Vire, made nine posts and a Head Admin, CHUGGY, made two. Most of them show screenshots of other people's messages, for the server to react to (one post drew 82 laughing reactions):
+The channel starts on 15 August 2026. In the posts captured (15 August – 22 October 2026), the owner, Vire, made nine posts and a Head Admin, CHUGGY, made two. Most of them show screenshots of other people's messages, for the server to react to (posts drew up to 86 laughing reactions):
 
 | Date | Posted by | What was shown |
 |---|---|---|
 | 15 Aug 2026 | Vire | A player's messages from a support ticket, answered with a GIF captioned *"WHAT THE FUCK"* |
-| 18 Aug 2026 | CHUGGY (Head Admin) | Two players' conversations with the owner after being banned (see below) |
-| 18 Aug 2026 | CHUGGY (Head Admin) | Private messages from the owner of a different server to a third person |
+| 18 Aug 2026 | CHUGGY (Head Admin) | Two players' conversations with the owner after being banned (see below), captioned *"I appreciate the humility W"* and tagging the refund player |
+| 18 Aug 2026 | CHUGGY (Head Admin) | Private messages from the owner of a different server to a third person, asking them to join his staff, captioned *"Don't be this guy folks."* |
 | 19 Aug 2026 | Vire | A player's private message and friend request to the owner |
 | 19 Aug 2026 | Vire | A sexual private message a player sent the owner, captioned *"Yall gotta stop sending me this shit"* |
 | 5 Sep 2026 | Vire | Players' messages forwarded from the public `au-chat` channel |
@@ -34,9 +34,9 @@ Two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and 
 - *"I would open a ticket and explain your side"*
 - after the player said a ticket would not be answered: *"I got no clue what you did to get banned"*
 
-The player then said what they had posted: an accusation against the owner over the unban described below, which they attributed to *"disgruntled staff"*. They added *"horrible staff hope your server dies like it should."* The owner replied *"Maybe you shouldnt believe everything you hear online xD"*. The player apologised twice and said they were embarrassed; the owner's reply to that was *"You deserve the #wall-of-shame tbh xD"*.
+The player then said what they had posted: an accusation against the owner, which they attributed to *"disgruntled staff"*. (In the same chat the owner linked accusations of this kind to the unban described below.) They added *"horrible staff hope your server dies like it should"*. The owner replied *"Maybe you shouldnt believe everything you hear online xD"*. The player apologised twice and said they were embarrassed; the owner's reply to that was *"You deserve the #wall-of-shame tbh xD"*. When CHUGGY posted the exchange in `#wall-of-shame`, his caption, tagging the player, was *"I appreciate the humility W"*.
 
-**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw i will unban you."* In the refund exchange above, the owner had posted an image with a message saying he was being criticised *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
+**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw ill unban you."* In the refund exchange above, the owner had posted an image with a message saying he was being criticised *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
 
 ## `#sent-to-hell`: a ban trap
 
