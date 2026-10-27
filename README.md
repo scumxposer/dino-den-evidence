@@ -25,6 +25,8 @@ On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs ca
 
 ## Key findings
 
+Every place where two sources disagree is listed side by side, with links, in **[DISCREPANCIES.md](DISCREPANCIES.md)**.
+
 | Finding | Status | Detail |
 |---|---|---|
 | Patreon tiers pay out AmberShards, which buy dinosaurs | **Documented** | [evidence/01](evidence/01-patreon-to-casino.md) |
@@ -32,7 +34,8 @@ On 27 October 2026, **117 of 877 active Marketplace listings** were dinosaurs ca
 | ClawCoins are wagered on casino-style games the operator itself calls "casino games" | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Weekly raffle gives more entries the more a player wagers | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Double-or-nothing coin flip available only to active patrons | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
-| Apex tier advertises "Maximum 3.5x" ClawCoin boost; configured value is 4.5x | **Documented** | [evidence/01](evidence/01-patreon-to-casino.md) |
+| Apex ClawCoin boost stated inconsistently: 3.5x in the tier description and on Patreon, 4.5x in the site's configuration (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
+| Age rule changed from "minors with parental consent" (Jan 2026 Terms) to 18+ (June 2026 Terms) | **Documented** | [DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed) |
 | Jackpot and poker switched on but not shown in the Games menu | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
@@ -54,6 +57,7 @@ The Dino Den's Terms of Service also require users to be 18 or older.
 
 ## Contents
 
+- [DISCREPANCIES.md](DISCREPANCIES.md) — every discrepancy, with both sources side by side
 - [evidence/01-patreon-to-casino.md](evidence/01-patreon-to-casino.md) — the value chain, Patreon tiers, Dino Shop, Marketplace
 - [evidence/02-casino-games-and-raffle.md](evidence/02-casino-games-and-raffle.md) — games, raffle, crates, patron-only coin flip
 - [evidence/03-operator-statements.md](evidence/03-operator-statements.md) — FAQ and Terms of Service, and where they conflict with the evidence

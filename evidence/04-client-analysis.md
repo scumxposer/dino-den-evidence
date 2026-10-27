@@ -28,4 +28,8 @@ Park, prime, slay and pause-growth for the player's live dinosaur; teleport to f
 
 - This covers version 0.2.0 only. Automatic updates mean future versions could behave differently.
 - The `app.asar` reviewed did not match the integrity hash recorded in the executable reviewed alongside it, most likely because they came from different builds. This is not evidence of tampering.
-- The installer is unsigned; Windows shows an "unknown publisher" warning.
+  - `app.asar` reviewed: SHA-256 `8e3faab48b005a82e73e0083965b29b43d340a9fa3085e3a87365bc979d2e478`
+  - Hash recorded in `DinoDen Client.exe`: `6ee2297bdb1d8cf3c69df5af9edf7ef1ab5bdbf69480550b9c8e912780af62de`
+  - Current release per <https://api.dinoden.gg/client/version>: 0.2.0, released 29 September 2026
+- The executable is not code-signed; the client page tells users to click through Windows' "unknown publisher" warning (<https://main.dinoden.gg/dinoden-client>).
+- The client's privacy-relevant behaviour is not described in the Privacy Policy; see [DISCREPANCIES.md §8](../DISCREPANCIES.md#8-privacy-policy-vs-the-dinoden-client).

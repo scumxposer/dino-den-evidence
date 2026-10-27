@@ -17,3 +17,5 @@ The operators of The Dino Den are invited to respond. A response will be publish
 | Date | Change |
 |---|---|
 | 27 Oct 2026 | Repository created. Player-count section updated with EOS session check and TheSpoofingIsle tracker data. |
+| 27 Oct 2026 | Added Lucky Bags and other sources of AmberShards (for balance). |
+| 27 Oct 2026 | Added DISCREPANCIES.md listing every conflict between sources side by side. Reworded the Apex finding: the 3.5x vs 4.5x boost is an inconsistency in members' favour, and the rate actually applied can't be verified. Added the archived January 2026 Terms (minors with parental consent; "Chance-Based Games" section), Patreon price vs site minimum comparison, Companies House link, client file hashes, and explicit sources and capture times throughout. |

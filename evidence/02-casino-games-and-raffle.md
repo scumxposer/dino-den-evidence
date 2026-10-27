@@ -4,17 +4,19 @@ Captured 27 October 2026. Raw data: [snapshots/2026-10-27/api-snapshot.json](sna
 
 ## The operator calls them casino games
 
-From The Dino Den's FAQ (`https://main.dinoden.gg/faq`):
+From The Dino Den's FAQ (<https://main.dinoden.gg/faq>):
 
 - *"A casino game crashed or did not pay out."* — the heading of one FAQ entry.
 - *"How do I earn ClawCoins? … Patreon tiers add a ClawCoin boost on top. You can also win (or lose...) ClawCoins in our casino games."*
 - *"Can I set gambling limits or exclude myself? Yes. You can self-exclude from all casino games."*
 
-The site's Games menu lists Roll, Crash, Blackjack, Crates and Coinflip.
+The earlier Terms of Service (20 January 2026, [archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)) had a section titled *"Chance-Based Games (Entertainment Only)"* covering *"coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics."*
+
+The site's Games menu (footer of <https://main.dinoden.gg>) lists Roll, Crash, Blackjack, Crates and Coinflip.
 
 ## Games switched on
 
-Source: `https://api.dinoden.gg/features`
+Source: <https://api.dinoden.gg/features>
 
 | Switched on | Switched off |
 |---|---|
@@ -28,7 +30,7 @@ From the FAQ: after server downtime, *"everyone who was an active patron during 
 
 ## The weekly raffle rewards wagering
 
-Source: `https://api.dinoden.gg/raffle/current`
+Source: <https://api.dinoden.gg/raffle/current>
 
 - Tickets come from two sources: **10 per hour played** and **1 per 100,000 ClawCoins wagered**.
 - Neither source is capped (`maxPlaytimeTickets: 0`, `maxWagerTickets: 0`; the site's code only applies a cap when the value is above 0).
@@ -41,7 +43,7 @@ Source: `https://api.dinoden.gg/raffle/current`
 
 ## Crates
 
-Source: `https://api.dinoden.gg/games/crates`
+Source: <https://api.dinoden.gg/games/crates>
 
 25 crates are active: 22 priced in ClawCoins and 3 seasonal crates priced in Pumpkins. The site's code allows dinosaurs, skins, ClawCoins and AmberShards as crate drops, and also supports pricing crates in AmberShards (none are priced that way today). Most crates are made by players, who receive a 0.5% revenue share.
 
@@ -58,7 +60,7 @@ Six of 25 shown; the full list is in the snapshot.
 
 ## Lucky Bags
 
-Source: The Dino Den's own news posts (`https://api.dinoden.gg/news`) and Item Shop (`https://api.dinoden.gg/shop/items`), read 27 October 2026.
+Source: The Dino Den's own news posts (<https://api.dinoden.gg/news>) and Item Shop (<https://api.dinoden.gg/shop/items>), read 27 October 2026.
 
 - A new "edition" of Lucky Bags has been announced every 14 days since May 2026 (Edition #4 on 2 May to Edition #17 on 26 October), each with *"Clawcoin prizes up to 20000k CC jackpot."*
 - Edition #17 lists five bag tiers with random ClawCoin prizes and jackpots, for example Common *"Up to 5k CC · Jackpot: 500k CC"* and Rare *"Up to 50k CC · Jackpot: 5000k CC"*, plus random decorations.

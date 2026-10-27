@@ -4,7 +4,7 @@ All figures captured 27 October 2026 from The Dino Den's public API, without log
 
 ## Step 1 — Patreon tiers pay AmberShards
 
-Source: `https://api.dinoden.gg/patreon/tiers`
+Source: <https://api.dinoden.gg/patreon/tiers>
 
 | Tier | Minimum pledge (site setting) | AmberShards every 14 days | Troodons this buys (1,000 AS each) | ClawCoin earning multiplier |
 |---|---|---|---|---|
@@ -14,23 +14,23 @@ Source: `https://api.dinoden.gg/patreon/tiers`
 | Elder | $44 | 60,000 | 60 | 3x |
 | Apex | $55 | 80,000 | 80 | 4.5x |
 
-- The pledge column is the site's own minimum for each tier. Patreon's page has shown discounted prices at times (for example $10.50 for Juvie during a 40% promotion).
-- The operator's FAQ: *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."*
-- **Advertised vs configured:** the Apex description says *"Maximum 3.5x Clawcoin boost"*, but the configured `clawcoinBoost` is `4.5`.
+- The pledge column is the site's own `minCents` setting, not the price on Patreon. Patreon displayed different prices in October 2026 ($10.50–$47.40 during a 40% promotion). See [DISCREPANCIES.md §2](../DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums).
+- The operator's FAQ (<https://main.dinoden.gg/faq>): *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."*
+- **Apex multiplier is stated inconsistently.** The multiplier column shows the configured `clawcoinBoost` values. For Apex, the tier's own description says *"Maximum 3.5x Clawcoin boost"* and Patreon showed 3.5x, while the configured value is `4.5`. Which rate members actually receive can't be verified, and the configured value is in members' favour. Sources: [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x).
 
 ### Other ways to get AmberShards (for balance)
 
-Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"*), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals shown: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
+Patreon is not the only source. The operator's weekly "Daily Rewards" posts offer free login rewards (for the week of 26 Oct – 2 Nov 2026: *"up to 58.0k Clawcoins, 786 AmberShards"* — <https://api.dinoden.gg/news/daily-rewards-2026-10-26>), and the [Dino Den Rewards](https://den.dinoden.gg/twitch/leaderboard) Twitch program lets viewers *"earn ClawCoins and AmberShards"* for watching Dino Den streams (lifetime totals shown: 734M ClawCoins and 32M AmberShards across 7,492 viewers). For scale: a week of free login rewards gives up to 786 AmberShards, while the lowest Patreon tier gives 18,000 every two weeks.
 
 ## Step 2 — AmberShards buy dinosaurs
 
-Source: `https://api.dinoden.gg/shop/dinos`
+Source: <https://api.dinoden.gg/shop/dinos>
 
 The Dino Shop sells 22 species priced in AmberShards: 1,000 AS for a Troodon, Pteranodon or Beipiaosaurus, up to 6,000 AS for a Tyrannosaurus or Triceratops (7,000 AS as a prime). The site's purchase code deducts the price from the account's AmberShard balance.
 
 ## Step 3 — Shop dinosaurs are sold to other players for ClawCoins
 
-Source: `https://api.dinoden.gg/market/listings`
+Source: <https://api.dinoden.gg/market/listings>
 
 - The Marketplace lists dinosaurs for sale in ClawCoins (the listing form labels prices with the site's ClawCoins name). Listing fees seen ranged from 10% to 25%.
 - Dinosaurs bought from the Dino Shop carry an ID that starts `shop-<offer id>-…`. The offer ids match the Dino Shop's own offer numbers (for example `shop-21-` = Tyrannosaurus, `shop-38-` = Troodon).

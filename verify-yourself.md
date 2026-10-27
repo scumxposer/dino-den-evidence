@@ -8,7 +8,12 @@ Every documented figure here comes from public pages and public API endpoints th
 |---|---|
 | <https://main.dinoden.gg/faq> | "casino games", self-exclusion, Patreon AmberShard payouts, patron-only coin flip |
 | <https://main.dinoden.gg/tos> | §1 age requirement, §2 virtual items and games, §3 Patreon |
-| <https://main.dinoden.gg/privacy> | data collected |
+| <https://main.dinoden.gg/privacy> | data collected, "intended for adults" |
+| [Earlier Terms, archived 2 Apr 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms) | §4 minors allowed with parental consent; §7 "Chance-Based Games" |
+| <https://main.dinoden.gg/dinoden-client> | client claims (no injection, free) |
+| <https://find-and-update.company-information.service.gov.uk/company/16970676> | THE DINO DEN LTD company record |
+| <https://www.patreon.com/TheDinoDen> | current tier prices and stated perks (compare with `/patreon/tiers`) |
+| <https://thespoofingisle.com> | third-party player-count analysis (search "DINO DEN") |
 
 These pages load their content with JavaScript, so use a normal browser.
 
