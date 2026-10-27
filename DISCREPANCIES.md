@@ -116,7 +116,7 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 |---|---|
 | Current Terms §1 — <https://main.dinoden.gg/tos> | *"You must be at least 18 years old to use the service."* |
 | Terms last updated 2026-01-20 — [archived copy](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms), §4 | *"If you are a minor, you may use the Service only with the consent of a parent or legal guardian (where required by law)."* |
-| The author's sign-ins to the website (October 2026; re-checked 27 Oct 2026) | No age verification or age estimation step before reaching the games, shop and Marketplace |
+| The author's sign-ins to the website on two different Steam accounts (October 2026, and a separate account on 27 Oct 2026) | No age verification or age estimation step before reaching the games, shop and Marketplace on either account |
 | Current Terms §5 | *"Moderation decisions are made at our sole discretion and are final."*; accounts may be suspended *"with or without reason, and without prior notice"* |
 | Current Terms §12 | Contact through Discord or by post only |
 | The site's code and pages (searched 27 Oct 2026) | No published process for reporting illegal content or for complaining about moderation decisions |
