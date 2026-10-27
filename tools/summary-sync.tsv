@@ -1,0 +1,9 @@
+detail file	hash	note
+DISCREPANCIES.md	4d7789a9be2c3e9f	27 Oct 2026 baseline after third full review: Every README findings row linking to DISCREPANCIES checked against its section: wording and labels match.
+community-reports.md	b75fcbf686cbcf78	27 Oct 2026: no text change since the baseline; acks only.
+evidence/01-patreon-to-casino.md	f3f0d6ed2c29f020	27 Oct 2026 baseline after third full review: README short version and rows (tiers, Marketplace, Graphtreon now 'according to', unlocks) match; DISCREPANCIES §1, §2, §5, §11 match on 3.5x/4.5x, prices, unlock wording; evidence/03 table says 'can become'; community-reports Restricted section matches incl. Allo counterpoint.
+evidence/02-casino-games-and-raffle.md	91a46b190cd7a69f	27 Oct 2026 baseline after third full review: README diagram (games, 2.5% jackpot cut, raffle) and rows (raffle, coin flip offered to active patrons, jackpot per player per round, poker) match; DISCREPANCIES §4 self-exclusion text and §6 menus match.
+evidence/03-operator-statements.md	8035212555610098	27 Oct 2026 baseline after third full review: README rules bullets (Terms §5, FAQ, Jan Terms) and rows (Terms 'not gambling', age, appeals) match; DISCREPANCIES §3, §4, §5, §10 match.
+evidence/04-client-analysis.md	a43a46a1489f85f8	27 Oct 2026 baseline after third full review: README 'Not supported' client row and DISCREPANCIES §8 and Checked table match v0.2.0 findings.
+evidence/05-staff-conduct.md	9be2f4331b91a4ed	27 Oct 2026 baseline after third full review: README bullets now give the apology and accusation context and the owner's 'unbanned a guy' statement; findings rows match; DISCREPANCIES §12 rows and conclusions match; community-reports Bans line matches.
+reports-filed.md	25e17c302a773f69	27 Oct 2026 baseline after third full review: README 'Why it matters' (report filed, no cash-out balance) matches reports-filed.

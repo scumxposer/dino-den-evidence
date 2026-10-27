@@ -44,7 +44,10 @@ From the repository root, run `python3 tools/check.py`. It must print `OK` befor
 - **Sentences:** broken sentences left by edits (a lowercase word after a full stop, doubled words, unbalanced quotes, brackets or italics, stray punctuation).
 - **Facts:** figures that appear in more than one file match `tools/facts.json`. When a figure changes, change it in every file and in `facts.json` together. When a new figure appears in two or more files, add it to `facts.json`.
 - **Dates:** the README's "Last updated" matches the latest entry in CORRECTIONS.md.
-- **Wording review:** every line with high-risk wording must have a recorded review. The categories are: certainty ("confirmed", "proves"), automatic routes ("ends up", "converts", "Patreon-funded"), absolutes ("always", "only", "every"), motives ("mocking", "deliberately", "rigged"), generalisations ("often", "pattern"), staleness ("still", "currently", "so far"), and a player claim inside a **Documented** row. Direct quotes are skipped because they are checked word for word against the source. Editing a line cancels its review, so a changed line is always looked at again.
+- **Finding labels:** a README findings row labelled **Supported**, **Player claim(s)** or **Unconfirmed** must say who says it, or use "appear"/"may"; it cannot read as established fact.
+- **Summaries:** `tools/summaries.json` lists, for each detail file, every place that summarises it. When a detail file changes, the check fails until those summaries have been re-read for the same content, context and strength, and recorded with `python3 tools/check.py --synced FILE "what you checked"`. This is what stops a detail file being corrected while the README keeps the old version.
+- **Quoted columns:** a table column headed "What … says" must hold the source's own words. More than a few words outside quotes are flagged, so the writer's own reading can't slip in as the source's.
+- **Wording review:** every line with high-risk wording must have a recorded review. The categories are: certainty ("confirmed", "proves"), automatic routes ("ends up", "converts", "sell for", "Patreon-funded"), absolutes ("always", "only", "every", "everything", "all conflicts"), motives ("mocking", "deliberately", "rigged", "spoofing"), generalisations ("often", "pattern"), completed actions ("lifted", "banned", "refused"), actors ("the creator made…": who did it must be in the source), completeness ("covering", "in full"), staleness ("still", "currently", "so far"), and a player claim inside a **Documented** row. Direct quotes are skipped because they are checked word for word against the source. Editing a line cancels its review, so a changed line is always looked at again.
 
 How to clear a wording flag:
 1. Re-open the source for that line.
@@ -65,6 +68,7 @@ Then re-read the README from top to bottom as a first-time reader. The summary, 
 Reddit posts and replies, YouTube or Steam comments, and emails to platforms repeat claims from the repository. They are held to the same standard:
 
 - Every factual claim in a draft must match a line in the repository, with the same strength. If the repository says "can", the draft cannot say "does".
+- Save the text in a plain file and run `python3 tools/check.py --outside FILE`, which applies the same wording scan. Check every line it flags against the repository.
 - Run each draft through the same questions as the wording review: certainty, automatic routes, absolutes, motives, generalisations, staleness, and player claims stated as fact.
 - **After every correction**, search for the old wording and its synonyms in:
   - the repository;
@@ -113,4 +117,8 @@ These all happened once and were corrected (see the log in CORRECTIONS.md):
 - Reporting a promise as an action: "lifted a permanent ban" when the owner only wrote "Dw i will unban you".
 - Leaving out a fair counterpoint: ban-trap channels are a common anti-spam tool, and ClawCoins cannot be cashed out.
 - Scope claims such as "all conflicts are listed" or "every discrepancy" when only the ones found are listed.
+- A detail file corrected while its summary in the README kept the old version (the refund context), and summary rows worded as fact under a Supported or Player claims label.
+- An action attributed to someone the source doesn't name ("the creator made the counts private").
+- The writer's reading inserted into a column of the source's words ("two Rexes").
+- Published posts left with wording the repository had corrected ("those dinos sell", "everything comes from").
 - Giving a share without data ("most AmberShards come from Patreon") when another source (Twitch rewards, 32M paid out) was never compared.

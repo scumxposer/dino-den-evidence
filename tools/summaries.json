@@ -1,0 +1,11 @@
+{
+  "_about": "Each detail file, and the places that summarise it. When a detail file changes, tools/check.py fails until the summaries have been re-read and recorded with --synced.",
+  "evidence/01-patreon-to-casino.md": ["README.md: The short version; Key findings rows on tiers, Marketplace, paid members, unlocks", "DISCREPANCIES.md §1, §2, §4, §5, §11", "evidence/03-operator-statements.md: operator's position table", "community-reports.md: Restricted dinosaurs unlocked by paying"],
+  "evidence/02-casino-games-and-raffle.md": ["README.md: The short version (diagram); Key findings rows on games, raffle, coin flip, jackpot, poker", "DISCREPANCIES.md §4, §6"],
+  "evidence/03-operator-statements.md": ["README.md: Staff and owner conduct (rules); Key findings rows on Terms, age, appeals", "DISCREPANCIES.md §3, §4, §5, §10"],
+  "evidence/04-client-analysis.md": ["README.md: Key findings row on the client", "DISCREPANCIES.md §8 and Checked table"],
+  "evidence/05-staff-conduct.md": ["README.md: Staff and owner conduct bullets; Key findings rows on #wall-of-shame and #sent-to-hell", "DISCREPANCIES.md §12", "community-reports.md: Bans after criticism (related documented evidence)"],
+  "community-reports.md": ["README.md: Staff and owner conduct (player reports paragraph); Key findings rows labelled Supported or Player claims", "DISCREPANCIES.md §7 and §11 player rows", "evidence/01-patreon-to-casino.md: Other patron perks (player counterpoint)"],
+  "DISCREPANCIES.md": ["README.md: Key findings rows that link to DISCREPANCIES"],
+  "reports-filed.md": ["README.md: Why it matters", "CORRECTIONS.md: latest log rows about reports"]
+}
