@@ -1,18 +1,18 @@
-# The Dino Den: Patreon money, virtual currency and casino games
+# The Dino Den: Patreon money, casino games and staff conduct
 
-A sourced, one-stop record of how **The Dino Den** — a large unofficial server network for *The Isle: Evrima*, operated by THE DINO DEN LTD (Company No. 16970676, England) — links paid Patreon memberships to casino-style games on its website.
+A sourced, one-stop record of how **The Dino Den** — a large unofficial server network for *The Isle: Evrima*, operated by THE DINO DEN LTD (Company No. 16970676, England) — links paid Patreon memberships to casino-style games on its website, and of how its owners and staff treat players. It collects evidence of abuse of moderation powers, harassment of players and retaliation for criticism, held to the same standards as everything else here.
 
-Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations (sign-in checks and Patreon page screenshots), which are labelled as such wherever they are used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints are kept separately, labelled as claims, with their sources and counterpoints.
+Everything in the **Documented** sections comes from the operator's own public website, API, FAQ and Terms of Service, captured on **27 October 2026**, plus a small number of the author's own observations (sign-in checks and Patreon page screenshots), which are labelled as such wherever they are used. Anyone can re-check the public sources (see [verify-yourself.md](verify-yourself.md)). Player complaints, including reports about staff conduct, are kept separately, labelled as claims, with their sources and counterpoints.
 
 > This repository is not affiliated with The Dino Den, Afterthought LLC (developer of *The Isle*), or Patreon. It is not legal advice. Corrections and responses from The Dino Den are welcome — see [CORRECTIONS.md](CORRECTIONS.md).
 
 ## Have evidence? Submit it
 
-If you have something that supports, disproves or adds to anything here, **[open an issue](../../issues/new/choose)** — new evidence, corrections and counter-evidence are all welcome.
+If you have something that supports, disproves or adds to anything here, **[open an issue](../../issues/new/choose)** — new evidence, corrections and counter-evidence are all welcome. This includes evidence of how the owners or staff have treated you or others: bans, mutes or wipes without reason, retaliation for criticism, harassment, or misuse of admin powers.
 
-**Most useful:** original, uncropped screenshots that show the date and time; video clips with timestamps; links to public posts, pages or archived copies; anything someone else can check for themselves.
+**Most useful:** original, uncropped screenshots that show the date and time; video clips with timestamps; links to public posts, pages or archived copies; ban or mute notices; anything someone else can check for themselves. For staff conduct, show the full context, not only the reply.
 
-**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, private messages, or other people's Discord messages. These will be removed. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players. Details: [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+**Please don't submit:** real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Messages a staff member or owner sent *to you* while acting as staff are accepted; ordinary players' names will be hidden before anything is published. Submissions are added only if they can be checked, and each is labelled by how well it is supported. Please don't harass the owners, staff or players. Details: [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## The short version
 
@@ -54,7 +54,7 @@ Every place where two sources disagree is listed side by side, with links, in **
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
-| Patreon perks advertised but not delivered; weak anti-cheat moderation; bans after criticism | **Player claims**, several independent sources, unverified | [community-reports.md](community-reports.md) |
+| Staff conduct: bans and mutes after criticism, cheaters not dealt with and admins absent; Patreon perks advertised but not delivered | **Player claims**, several independent sources, unverified (evidence wanted) | [community-reports.md](community-reports.md) |
 
 ## Why it matters
 
@@ -65,8 +65,8 @@ The Dino Den's Terms of Service also require users to be 18 or older, but no age
 ## What this repository deliberately does not include
 
 - Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no evidence, target or date has been published. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
-- Real names, Steam profile links, alleged alt accounts, or anyone's private messages.
-- Screenshots of individuals' Discord messages. (Official announcements posted by the operator's own Discord app are included, cropped to the announcement.)
+- Real names, Steam profile links, alleged alt accounts, or private messages between other people.
+- Ordinary players' messages or names. Owners and staff are referred to only by the names they use as staff, and only for what they did in that role, never their private lives. (Official announcements posted by the operator's own Discord app are included, cropped to the announcement.)
 - The Dino Den's software or other copyrighted material — only findings about it.
 
 ## Contents
