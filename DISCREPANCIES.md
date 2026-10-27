@@ -10,22 +10,26 @@ Every place where two sources disagree, side by side. Each item names both sourc
 |---|---|
 | Apex tier **description** in the site's tier configuration — <https://api.dinoden.gg/patreon/tiers> (field `description`) | *"Maximum 3.5x Clawcoin boost"* |
 | Apex tier **configured value**, same endpoint (field `clawcoinBoost`) | `4.5` |
-| The site's own code, which builds the perk badge shown on Dino Den's Patreon pages from `clawcoinBoost` (template `` `${clawcoinBoost}x Clawcoin Boost` ``, seen in the site's JavaScript on 27 Oct 2026) | would display **4.5x** |
-| Patreon tier page for [patreon.com/TheDinoDen](https://www.patreon.com/TheDinoDen), as captured in the author's screenshots for the 26 Oct 2026 report to Patreon | 3.5x |
+| The site's own Patreon page — <https://main.dinoden.gg/patreon> (Apex card, read 27 Oct 2026) | shows both, on the same card: the description *"Maximum 3.5x Clawcoin boost"* and the perk line *"4.5x Clawcoin multiplier"* |
+| Patreon tier page for [patreon.com/TheDinoDen](https://www.patreon.com/TheDinoDen), as captured in the author's screenshots for the 26 Oct 2026 report to Patreon, and re-checked by the author on 27 Oct 2026 | 3.5x |
 
-**Can be concluded:** Dino Den states two different multipliers for the same tier. The other four tiers' descriptions match their configured values (Sub "double" = 2, Adult "2.5x" = 2.5, Elder "triple" = 3).
+**Can be concluded:** Dino Den states two different multipliers for the same tier: Patreon (where people pay) says 3.5x, while the website's Patreon page shows both 3.5x and 4.5x. The other four tiers' descriptions match their configured values (Sub "double" = 2, Adult "2.5x" = 2.5, Elder "triple" = 3).
 **Cannot be concluded:** which multiplier members actually receive — earnings are calculated on Dino Den's servers. The configured value is *higher* than advertised, so if it is applied, members get more than promised. This is an inconsistency, not evidence of members being short-changed.
 
 ## 2. Patreon prices vs the site's tier minimums
 
 | Source | Juvie | Sub | Adult | Elder | Apex |
 |---|---|---|---|---|---|
-| Site setting `minCents` — <https://api.dinoden.gg/patreon/tiers> | $12 | $22 | $33 | $44 | $55 |
-| Patreon page, discounted price shown during a 40% promotion (author's screenshots, Oct 2026) | $10.50 | $18.90 | $28.50 | $37.80 | $47.40 |
+| The site's Patreon page — <https://main.dinoden.gg/patreon> (from `minCents` at <https://api.dinoden.gg/patreon/tiers>; the site's code always adds a £ sign) | £12.00 / month | £22.00 | £33.00 | £44.00 | £55.00 |
+| Site price converted at 1 GBP = 1.3313 USD ([rate on 27 Oct 2026](http://www.currency-converter.org.uk/currency-rates/convert/GBP-USD-rate.html?amount=1.00); calculated) | $15.98 | $29.29 | $43.93 | $58.58 | $73.22 |
+| Patreon page viewed from the US, discounted price during a 40% promotion (author's screenshots, Oct 2026) | $10.50 | $18.90 | $28.50 | $37.80 | $47.40 |
 | Patreon full price implied by the 40% discount (calculated) | $17.50 | $31.50 | $47.50 | $63.00 | $79.00 |
+| Patreon full price vs converted site price | +9.5% | +7.5% | +8.1% | +7.5% | +7.9% |
 
-**Can be concluded:** the site's per-tier minimums do not match the prices Patreon displays.
-**Cannot be concluded:** what `minCents` is used for. It may be a threshold the site uses to match pledges to tiers rather than a price. The Patreon screenshots are not reproduced here; check current prices on [the Patreon page](https://www.patreon.com/TheDinoDen).
+The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest tier: *"Access exclusive benefits starting at $17.50/month"* (<https://www.patreon.com/TheDinoDen>).
+
+**Can be concluded:** the site lists tier prices in pounds, and Patreon charges US viewers 7.5–9.5% more than those prices converted at the market rate. The gap is similar for every tier, which suggests a single cause applied to all of them rather than prices set separately.
+**Cannot be concluded:** the cause. It could be Patreon's own conversion rate or fees, tax, or prices set in dollars by the creator. The repository has no evidence for any one of these.
 
 ## 3. Age requirement changed
 
@@ -63,11 +67,14 @@ Every place where two sources disagree, side by side. Each item names both sourc
 
 | Source | Says |
 |---|---|
-| Games menu in the site footer — <https://main.dinoden.gg> | Roll, Crash, Blackjack, Crates, Coinflip |
-| Feature switches — <https://api.dinoden.gg/features> | also `game.jackpot: true` and `game.poker: true`; `game.slots`, `game.viking`, `game.mines` false |
+| Main navigation menu ("Games") — <https://main.dinoden.gg> (menu definition in the site's JavaScript, 27 Oct 2026) | Roll, Crash, Blackjack, Coinflip, **Jackpot** (*"One pot, one winner"*), Crates; Mines is defined but hidden while switched off. No poker entry |
+| Games list in the site footer | Roll, Crash, Blackjack, Crates, Coinflip (no Jackpot) |
+| Feature switches — <https://api.dinoden.gg/features> | `game.jackpot: true` and `game.poker: true`; `game.slots`, `game.viking`, `game.mines` false |
+| Poker page — <https://main.dinoden.gg/games/poker> | titled *"Texas Hold'em — Provably Fair"*; the page's code sends any account below role level 40 back to the home page (guests are redirected). The author, signed in as an ordinary player, could not see it |
 | Current Terms §2 — <https://main.dinoden.gg/tos> | games *"including crates, coinflip, crash, mines, blackjack, roll and similar"*: names mines (switched off), does not name jackpot or poker (switched on) |
 
-**Can be concluded:** jackpot and poker are enabled but not listed in the menu or named in the Terms; mines is named in the Terms but switched off. **Cannot be concluded:** whether they are reachable by ordinary players (the site's code contains routes for both).
+**Can be concluded:** jackpot is live and open to ordinary players, including through the main menu (the page loads even without signing in), but it is missing from the footer list and from the games named in the Terms. Poker is built and switched on but limited to high-role accounts, which appear to be staff. Mines is named in the Terms but switched off.
+**Cannot be concluded:** what role level 40 corresponds to, or whether poker will be opened to players.
 
 ## 7. Server-browser player counts vs measured behaviour
 
@@ -136,6 +143,18 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 **Cannot be concluded:** whether the Online Safety Act applies to The Dino Den, whether it complies, or whether a Discord-only ticket process meets s.20–21. Risk and access assessments do not have to be published, so their absence from the site proves nothing. Whether "a significant number of children" use the service is a question of evidence for Ofcom. Ofcom says it *"cannot respond to or investigate individual complaints"* but uses them to decide whether to act ([Ofcom](https://www.ofcom.org.uk/complaints/online-services-sites-apps/sites-and-apps/safety-measures)). This is not legal advice.
 
 **UK gambling law, for completeness:** under the [Gambling Act 2005, s.6](https://www.legislation.gov.uk/ukpga/2005/19/section/6), a gaming prize must be *"money or money's worth."* The Gambling Commission treats virtual currency as money's worth when it *"can be exchanged for cash or traded for items of value"* ([Gambling Commission](https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/digital-and-virtual-currencies)). Dino Den has no cash-out, and its Terms ban real-money trading between players. Whether trading Patreon-funded dinosaurs for ClawCoins on the operator's own Marketplace counts as "traded for items of value" has not been decided by any authority found. Loot boxes are covered only by a voluntary 2023 industry code. Patreon's own Commerce Guidelines, which cover gambling for an exchange of value including digital currencies (see [README](README.md#why-it-matters)), are broader than UK law.
+
+## 11. Patreon perks: Discord announcement vs the site's Patreon page
+
+| Source | Says |
+|---|---|
+| Announcement posted by the operator's Discord app in `#support-the-server`, 8 December 2025 ([screenshot](evidence/screenshots/2025-12-08-discord-support-the-server.png), cropped to the announcement; time shown in the author's time zone) | *"Support the server on Patreon and unlock powerful perks that give you the edge in the wild!"* Perks include *"Queue skip – join instantly even when full"*, *"Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!"*, *"Unlock currently locked dinos"*, and *"Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked"*. Tiers bring *"greater power on the island. Choose your path to dominance."* |
+| The site's Patreon page — <https://main.dinoden.gg/patreon> (27 Oct 2026) | Each tier lists only AmberShards every 2 weeks, a ClawCoin multiplier and *"Unlimited Dino parking"*. No queue skip, locked-dino or Rex access listed |
+| Patreon creator page — <https://www.patreon.com/TheDinoDen> (fetched 27 Oct 2026) | *"From Amber Shards every 2 weeks, to queue skip, to VIP-only access and event invites."* |
+| Player reports — [community-reports.md](community-reports.md#restricted-dinosaurs-unlocked-by-paying) | Rex and big carnivores restricted, with unrestricted play for Apex members (Mar 2026); a former trial admin says Rex access on lower tiers did not work (Nov 2025) |
+
+**Can be concluded:** in December 2025 the operator itself advertised paid access to dinosaurs that are otherwise locked, including Rex for the Apex tier, and described AmberShards as a way to *"instantly purchase full-grown dinos."* The current Patreon page on the website does not list the access perks, while Patreon itself still advertises queue skip and *"VIP-only access."*
+**Cannot be concluded:** whether locked-dinosaur and Rex access are still offered (the announcement is still visible in the channel; the individual Patreon tier descriptions could not be loaded for this check), or whether they worked as advertised.
 
 ---
 

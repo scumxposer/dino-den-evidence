@@ -6,15 +6,15 @@ All figures captured 27 October 2026 from The Dino Den's public API, without log
 
 Source: <https://api.dinoden.gg/patreon/tiers>
 
-| Tier | Minimum pledge (site setting) | AmberShards every 14 days | Troodons this buys (1,000 AS each) | ClawCoin earning multiplier |
+| Tier | Price on the site's Patreon page | AmberShards every 14 days | Troodons this buys (1,000 AS each) | ClawCoin earning multiplier |
 |---|---|---|---|---|
-| Juvie | $12 | 18,000 | 18 | 1.5x |
-| Sub | $22 | 28,000 | 28 | 2x |
-| Adult | $33 | 40,000 | 40 | 2.5x |
-| Elder | $44 | 60,000 | 60 | 3x |
-| Apex | $55 | 80,000 | 80 | 4.5x |
+| Juvie | £12 | 18,000 | 18 | 1.5x |
+| Sub | £22 | 28,000 | 28 | 2x |
+| Adult | £33 | 40,000 | 40 | 2.5x |
+| Elder | £44 | 60,000 | 60 | 3x |
+| Apex | £55 | 80,000 | 80 | 4.5x |
 
-- The pledge column is the site's own `minCents` setting, not the price on Patreon. Patreon displayed different prices in October 2026 ($10.50–$47.40 during a 40% promotion). See [DISCREPANCIES.md §2](../DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums).
+- The price column is shown on <https://main.dinoden.gg/patreon> (from the `minCents` setting; the site always shows it in pounds). Patreon charges US viewers $17.50–$79 a month, 7.5–9.5% more than these prices converted at the market rate. See [DISCREPANCIES.md §2](../DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums).
 - The operator's FAQ (<https://main.dinoden.gg/faq>): *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."*
 - **Apex multiplier is stated inconsistently.** The multiplier column shows the configured `clawcoinBoost` values. For Apex, the tier's own description says *"Maximum 3.5x Clawcoin boost"* and Patreon showed 3.5x, while the configured value is `4.5`. Which rate members actually receive can't be verified, and the configured value is in members' favour. Sources: [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x).
 
@@ -27,6 +27,8 @@ Patreon is not the only source. The operator's weekly "Daily Rewards" posts offe
 Source: <https://api.dinoden.gg/shop/dinos>
 
 The Dino Shop sells 22 species priced in AmberShards: from 1,000 AS (Troodon, Pteranodon, Beipiaosaurus, Dryosaurus, Hypsilophodon) up to 6,000 AS for a Tyrannosaurus or Triceratops (7,000 AS as a prime). Full price list in the snapshot. The site's purchase code deducts the price from the account's AmberShard balance.
+
+The operator's own Discord announcement (8 Dec 2025) describes this step for patrons: *"Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!"* ([screenshot](screenshots/2025-12-08-discord-support-the-server.png); see [DISCREPANCIES.md §11](../DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page)).
 
 ## Step 3 — Shop dinosaurs are sold to other players for ClawCoins
 
@@ -46,6 +48,8 @@ Source: <https://api.dinoden.gg/market/listings>
 
 Example listing ids: 913900, 913902–913906 (six Troodons listed within four minutes by one seller), 913963 (Allosaurus), 913976 (Deinosuchus).
 
+Dinosaurs are also sold for ClawCoins through **Auctions** (<https://api.dinoden.gg/auctions>; 10% fee seen). On 27 Oct 2026 at about 10:40 UTC, 2 of 17 active auctions were dinosaurs with `shop-` IDs, one of them a Tyrannosaurus (`shop-21-`). Not in the 08:33 UTC snapshot.
+
 **Limits of this step:**
 - Reading `shop-` as "bought from the Dino Shop" is an interpretation of the ID format. The second part matches the shop's offer numbers and the third part matches the seller's account number; the site does not document the format.
 - Listings show asking prices, not completed sales.
@@ -60,4 +64,4 @@ Every tier multiplies the ClawCoins a player earns from playtime, quests and rew
 
 ## Worked example
 
-A Juvie member ($12 minimum) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. Each can be listed on the Marketplace for ClawCoins, which can then be wagered.
+A Juvie member (£12 a month on the site; $17.50 on Patreon for US viewers) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. Each can be listed on the Marketplace for ClawCoins, which can then be wagered.

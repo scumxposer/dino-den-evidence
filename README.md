@@ -19,11 +19,12 @@ If you have something that supports, disproves or adds to anything here, **[open
 Patreon money reaches The Dino Den's casino games through a loop that runs entirely on the operator's own site:
 
 ```
-Patreon pledge (5 tiers; site minimums $12–$55, Patreon's displayed prices differ, see DISCREPANCIES §2)
+Patreon pledge (5 tiers, £12–£55 a month as shown on the site)
   └─► AmberShards (18,000–80,000 every 14 days)
         └─► Dino Shop: dinosaurs for 1,000–7,000 AmberShards each
-              └─► Marketplace: dinosaurs resold to other players for ClawCoins
-                    └─► ClawCoins wagered on roll, crash, blackjack, coinflip and crates (jackpot and poker also switched on)
+              └─► Marketplace and Auctions: dinosaurs resold to other players for ClawCoins
+                    └─► ClawCoins wagered on roll, crash, blackjack, coinflip, jackpot and crates
+                          (jackpot: players' bets go into one pot, one player wins it, the site keeps 2.5%)
                           └─► every 100,000 ClawCoins wagered = 1 entry in a weekly 100,000,000-ClawCoin raffle
 
 Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second, direct route)
@@ -42,15 +43,18 @@ Every place where two sources disagree is listed side by side, with links, in **
 | ClawCoins are wagered on casino-style games the operator itself calls "casino games" | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Weekly raffle gives more entries the more a player wagers | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
 | Outage compensation can be gambled on a double-or-nothing coin flip; only active patrons can claim it | **Documented** (operator's FAQ) | [evidence/02](evidence/02-casino-games-and-raffle.md) |
-| Apex ClawCoin boost stated inconsistently: 3.5x in the tier description and on Patreon, 4.5x in the site's configuration (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
+| Apex ClawCoin boost stated inconsistently: Patreon says 3.5x; the site's own Patreon page shows "Maximum 3.5x" and "4.5x" on the same tier card (in members' favour; rate actually applied can't be verified) | **Documented inconsistency** |
+| Patreon charges US viewers 7.5–9.5% more than the site's £ tier prices converted at the market rate | **Documented** (cause unknown) | [DISCREPANCIES.md §2](DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums) | [DISCREPANCIES.md §1](DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x) |
 | Age rule changed from "minors with parental consent" (Jan 2026 Terms) to 18+ (June 2026 Terms) | **Documented** | [DISCREPANCIES.md §3](DISCREPANCIES.md#3-age-requirement-changed) |
 | EU Digital Services Act contact point and legal-representative wording removed from the Terms in June 2026; none published | **Documented** (whether DSA duties apply is for regulators) | [DISCREPANCIES.md §9](DISCREPANCIES.md#9-eu-digital-services-act-contact-point-and-legal-representative-removed) |
 | Terms require 18+, but no age verification at sign-in; reports and ban appeals go through Discord tickets only, and the Terms call moderation decisions "final" (relevant to the UK Online Safety Act) | **Documented** (whether the Act applies is for Ofcom) | [DISCREPANCIES.md §10](DISCREPANCIES.md#10-uk-online-safety-act-18-rule-with-no-age-check-reporting-and-appeals) |
-| Jackpot and poker switched on but not shown in the Games menu | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md) |
+| Player-vs-player jackpot with rooms up to 25,000,000 ClawCoins a round; the site takes 2.5% of each pot | **Documented** | [evidence/02](evidence/02-casino-games-and-raffle.md#jackpot) |
+| Poker (Texas Hold'em) is built and switched on but limited to high-role (apparently staff) accounts | **Documented** (site code) | [DISCREPANCIES.md §6](DISCREPANCIES.md#6-games-menu-vs-games-switched-on) |
+| Dec 2025 Discord announcement advertised patron access to locked dinosaurs, Apex access to Rex "even when it's locked", queue skip, and AmberShards to "instantly purchase full-grown dinos" | **Documented** (operator's Discord; screenshot) | [DISCREPANCIES.md §11](DISCREPANCIES.md#11-patreon-perks-discord-announcement-vs-the-sites-patreon-page) |
 | Terms say the games are "not gambling for money or anything of monetary value" | **Documented** (their position) | [evidence/03](evidence/03-operator-statements.md) |
 | Server-browser player counts inflated on Dino Den (and NERF) servers | **Supported** by two independent technical analyses (late 2025, Oct 2026); not conclusive | [community-reports.md](community-reports.md#inflated-player-counts) |
 | DinoDen Client reads game memory or injects code | **Not supported** — static analysis found no such code | [evidence/04](evidence/04-client-analysis.md) |
-| Patreon perks advertised but not delivered; paid-only access to restricted dinosaurs; weak anti-cheat moderation; bans after criticism | **Player claims**, several independent sources, unverified | [community-reports.md](community-reports.md) |
+| Patreon perks advertised but not delivered; weak anti-cheat moderation; bans after criticism | **Player claims**, several independent sources, unverified | [community-reports.md](community-reports.md) |
 
 ## Why it matters
 
@@ -62,7 +66,7 @@ The Dino Den's Terms of Service also require users to be 18 or older, but no age
 
 - Accusations of crimes (for example, DDoS attacks on rival servers). Rumours of this circulate on forums, but no evidence, target or date has been published. See [community-reports.md](community-reports.md#claims-we-do-not-repeat).
 - Real names, Steam profile links, alleged alt accounts, or anyone's private messages.
-- Screenshots of individuals' Discord messages.
+- Screenshots of individuals' Discord messages. (Official announcements posted by the operator's own Discord app are included, cropped to the announcement.)
 - The Dino Den's software or other copyrighted material — only findings about it.
 
 ## Contents

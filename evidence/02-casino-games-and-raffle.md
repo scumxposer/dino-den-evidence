@@ -12,7 +12,7 @@ From The Dino Den's FAQ (<https://main.dinoden.gg/faq>):
 
 The earlier Terms of Service (20 January 2026, [archived](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)) had a section titled *"Chance-Based Games (Entertainment Only)"* covering *"coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics."*
 
-The site's Games menu (footer of <https://main.dinoden.gg>) lists Roll, Crash, Blackjack, Crates and Coinflip.
+The site's main navigation menu lists Roll, Crash, Blackjack, Coinflip, Jackpot and Crates; the footer list leaves out Jackpot.
 
 ## Games switched on
 
@@ -22,7 +22,17 @@ Source: <https://api.dinoden.gg/features>
 |---|---|
 | blackjack, coinflip, crash, crates, roll, **jackpot**, **poker** | mines, slots, "viking" (a second slot machine) |
 
-Jackpot and poker are switched on but do not appear in the Games menu as of 27 October 2026. Slots and the "viking" slot machine exist in the site's code but are switched off.
+Jackpot is live and in the main menu. Poker (*"Texas Hold'em — Provably Fair"*) is switched on but not in any menu, and its page sends any account below role level 40 (apparently staff) back to the home page, so ordinary players cannot use it. Slots, the "viking" slot machine and mines exist in the site's code but are switched off. See [DISCREPANCIES.md §6](../DISCREPANCIES.md#6-games-menu-vs-games-switched-on).
+
+## Jackpot
+
+Source: <https://main.dinoden.gg/games/jackpot> and its "How it works" panel, read 27 Oct 2026 (the page loads without signing in).
+
+- *"Every bet goes into one shared pot… Your chance to win is your share of the pot, and one player wins all of it."* Players bet against each other, not against the house.
+- Three rooms: *"Low 10,000 to 250,000 CC, Mid 250,000 to 2,500,000 CC, High 2,500,000 to 25,000,000 CC"* per player per round.
+- *"The winner receives the pot minus a 2.5% tax."* The site keeps a cut of every pot.
+- The draw is "provably fair": a server seed is combined with the hash of a future block on the EOS blockchain to pick the winning ticket.
+- The round counter shown in the Low room read #17,088 at about 10:40 UTC on 27 Oct 2026.
 
 ## A double-or-nothing flip only for patrons
 

@@ -11,6 +11,9 @@ Every documented figure here comes from public pages and public API endpoints th
 | <https://main.dinoden.gg/privacy> | data collected, "intended for adults" |
 | [Earlier Terms, archived 2 Apr 2026](https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms) | §4 minors allowed with parental consent; §7 "Chance-Based Games" |
 | <https://main.dinoden.gg/dinoden-client> | client claims (no injection, free) |
+| <https://main.dinoden.gg/patreon> | tier prices in £, perks, and the Apex card showing both 3.5x and 4.5x |
+| <https://main.dinoden.gg/games/jackpot> | rooms and limits; "How it works" (2.5% tax) |
+| <https://api.dinoden.gg/auctions> | dinosaur auctions; look for `dino.uniqueID` values starting `shop-` |
 | <https://find-and-update.company-information.service.gov.uk/company/16970676> | THE DINO DEN LTD company record |
 | <https://www.patreon.com/TheDinoDen> | current tier prices and stated perks (compare with `/patreon/tiers`) |
 | <https://thespoofingisle.com> | third-party player-count analysis (search "DINO DEN") |
@@ -21,7 +24,7 @@ These pages load their content with JavaScript, so use a normal browser.
 
 | Endpoint | What it shows |
 |---|---|
-| <https://api.dinoden.gg/patreon/tiers> | Tier pledges (`minCents`), AmberShards (`amberShardsBiWeekly` ÷ 100), ClawCoin multiplier (`clawcoinBoost`) |
+| <https://api.dinoden.gg/patreon/tiers> | Tier prices (`minCents` ÷ 100, shown on the site in £), AmberShards (`amberShardsBiWeekly` ÷ 100), ClawCoin multiplier (`clawcoinBoost`) |
 | <https://api.dinoden.gg/shop/dinos> | Dino Shop prices (`priceNormal` ÷ 100 = AmberShards) and offer ids |
 | <https://api.dinoden.gg/market/listings?page=1&limit=100&sort=newest> | Marketplace listings; look for `dino.uniqueID` values starting `shop-` |
 | <https://api.dinoden.gg/features> | Which games are switched on |
