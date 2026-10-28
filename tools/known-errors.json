@@ -111,5 +111,9 @@
  {
   "pattern": "multipl\\w+ the ClawCoins a player earns from",
   "why": "the FAQ says only that Patreon tiers 'add a ClawCoin boost on top'; which earnings it applies to is not stated"
+ },
+ {
+  "pattern": "invites? (?:people|members|players) to (?:post|type)",
+  "why": "the #sent-to-hell description ('Type here and join them') reads as a joke on an anti-spam trap; the notice itself says not to type there"
  }
 ]

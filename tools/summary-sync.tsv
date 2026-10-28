@@ -1,9 +1,9 @@
 detail file	hash	note
-DISCREPANCIES.md	a6e7dfbd3afbc37b	README Apex row says rate actually applied can't be verified; consistent with the added §1 note
-community-reports.md	4ba7e374abea5e02	no summary names the account or quotes it; README and DISCREPANCIES §7 mention only the two analyses
+DISCREPANCIES.md	ee9f559cc97aa29f	README staff bullets and rows 80-81, DISCREPANCIES §12 and community-reports bullet all now carry the same unban hedge and the same joke/anti-spam reading of #sent-to-hell
+community-reports.md	b770d89f899404c7	README staff bullets and rows 80-81, DISCREPANCIES §12 and community-reports bullet all now carry the same unban hedge and the same joke/anti-spam reading of #sent-to-hell
 evidence/01-patreon-to-casino.md	d7883d46bba70cae	README chain now says the boost is added to each dinosaur's earning rate; DISCREPANCIES §1 cannot-be-concluded now notes the additive boost; §4 and evidence/03 only say the multiplier supplies ClawCoins directly, still true
 evidence/02-casino-games-and-raffle.md	2c939f9bd70905e2	Only the Lucky paragraph changed (perk, not consumable); no README, DISCREPANCIES or evidence/03 summary mentions it; checked by grep for Lucky/RNG
 evidence/03-operator-statements.md	e782b829fddcb9c8	Review #7: Terms §2/§3 quotes extended to where the source's sentence ends (checked on today's Terms); DISCREPANCIES §5 now quotes the same §3 wording plus 'Any perks granted in return are Virtual Items'; README staff rules and findings rows unaffected.
 evidence/04-client-analysis.md	a43a46a1489f85f8	27 Oct 2026 baseline after third full review: README 'Not supported' client row and DISCREPANCIES §8 and Checked table match v0.2.0 findings.
-evidence/05-staff-conduct.md	b8da6c389c94903e	README staff bullets and row quote only 'unbanned a guy for this'; DISCREPANCIES §12 says 'being criticised', a softer neutral description; community-reports bullet unaffected
+evidence/05-staff-conduct.md	c38eeb0fce7a8a69	README staff bullets and rows 80-81, DISCREPANCIES §12 and community-reports bullet all now carry the same unban hedge and the same joke/anti-spam reading of #sent-to-hell
 reports-filed.md	a11250c1c99dc516	README Why it matters only links reports-filed; CORRECTIONS has the new multiplier row

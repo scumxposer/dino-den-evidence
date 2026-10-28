@@ -154,3 +154,5 @@ Watch for these:
 - Describing a past error in CORRECTIONS with wording the repository never used ("closed loop" was only in an email) or more strongly than it was ("implied only the patron benefits"). Quoted old wording is now checked against the repository's history.
 - Naming an account whose claimed staff role is not confirmed (a Reddit account calling itself a former Senior Admin). Names to keep out are listed in tools/source-rules.json (hidden_names).
 - A summary of a staff finding without the counterpoint its detail file gives (the README's #wall-of-shame summaries left out that several posted messages were unsolicited sexual or harassing messages sent to the owner).
+- A detail file's hedge dropped in its summaries and its own conclusion (the owner's "unbanned a guy for this" is only most likely the player he told "Dw ill unban you").
+- Reading a joke as an invitation (the ban-trap channel's "Type here and join them", under a notice that says in capitals not to type there).

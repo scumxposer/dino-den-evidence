@@ -55,14 +55,14 @@ The channel description reads: *"Souls claimed: 403 🔥 Type here and join them
 **Can be concluded:**
 - The owner and a Head Admin use a public channel in Dino Den's Discord to post other people's messages, including private messages and support-ticket messages, for the community to react to. The owner told a banned player he *"deserve[d]"* to be posted there.
 - The owner refused a refund on the grounds of rule-breaking while saying he had *"no clue"* why the player was banned. He also suggested the player open a ticket. The player then said they had posted an accusation against the owner.
-- The owner told a permanently banned player, by private message, that he would unban him, and later wrote that he had *"unbanned a guy for this"*. This happened outside the ticket process the FAQ describes; the Terms call moderation decisions *"final."*
-- Dino Den runs a channel whose bot notice, headed *"DO NOT TYPE IN THIS CHANNEL"*, says anyone who posts in it is instantly banned, while the channel's own description invites people to post. The channel's own count is *"Souls claimed: 403"*.
+- The owner told a permanently banned player, by private message, that he would unban him, and later wrote that he had *"unbanned a guy for this"*, most likely referring to the same player. This happened outside the ticket process the FAQ describes; the Terms call moderation decisions *"final."*
+- Dino Den runs a channel whose bot notice, headed *"DO NOT TYPE IN THIS CHANNEL"*, says anyone who posts in it is instantly banned. The channel's own count is *"Souls claimed: 403"*.
 
 **Cannot be concluded:**
 - Who banned the refund player and on what exact grounds. The player's own account is that it followed an accusation they posted about the owner; the screenshot does not show whether the owner himself was involved in that decision.
 - Whether the refund was for a Patreon payment, or how other ban appeals are handled.
 - Whether the `#sent-to-hell` bans also apply to the game servers or the website, or only to Discord, and how many of the 403 were spam bots or hacked accounts rather than players.
-- Counterpoint: [trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel, and the 403 may include many of those. The concern is that this channel's description invites people to type there.
+- Counterpoint: [trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel, and the 403 may include many of those. The description's *"Type here and join them"* reads as a joke rather than a real invitation, since the notice warns in capitals not to type there.
 - Counterpoint: the refund player had posted an accusation against the owner and wished the server would die, then apologised. The owner's *"no clue"* came before the player explained.
 - Counterpoint: several of the private messages the owner posted were unsolicited sexual or harassing messages sent to him. Posting them may be how he responds to harassment, rather than an attempt to shame players.
 

@@ -30,6 +30,13 @@
    "exclude": [
     "evidence/05-staff-conduct.md"
    ]
+  },
+  {
+   "name": "the owner's 'unbanned a guy for this'",
+   "pattern": "unbanned a guy for this",
+   "require": "(?i)likely|not visible|not shown",
+   "scope": "line",
+   "why": "the image he referred to is not visible, so it is only most likely the player he told 'Dw ill unban you'"
   }
  ],
  "identify": {
