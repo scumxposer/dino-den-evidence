@@ -12,8 +12,9 @@
   {
    "name": "Apex tier dino-cap bypass",
    "pattern": "(?i)bypass\\w*[^.;|]{0,25}\\b(?:dino[- ]?)?cap|cap[^.;|]{0,10}bypass",
-   "require": "(?i)\\bauthor|report",
-   "why": "the only source is the author's 26 Oct 2026 report to Patreon, summarising his screenshots of the tier pages; the tier page itself has not been re-checked"
+   "require": "(?i)\\bauthor|report|screenshot",
+   "why": "the source is the author's screenshot of Patreon's Apex tier card (and his 26 Oct 2026 report); say so",
+   "scope": "line"
   },
   {
    "name": "the Honest Opinion author's two claims",

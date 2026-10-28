@@ -82,7 +82,8 @@
    "Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
    "Unlock currently locked dinos": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
    "benefits EVERYBODY involved": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
-   "have more access to trex": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye"
+   "have more access to trex": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Bypass All Dino Cap Locks": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)"
   },
   "https://steamcommunity.com/app/376210/discussions/14/582805931178577143/": {
    "BEHIND PAYWALLS before the release of the Dinosaurs, putting them behind the $99.00 Patreon": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
@@ -337,7 +338,8 @@
    "asking in chat will normally get them unlocked, though access to trex is a bit more difficult. Allo is not hard to get at all.": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes",
    "VIP-only access": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes",
    "they unlock it for EVERYONE. Not just themselves": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes",
-   "can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes"
+   "can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes",
+   "Bypass All Dino Cap Locks": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)"
   },
   "DISCREPANCIES.md§12. Moderation in practice vs the Terms and FAQ (nearest link: https://main.dinoden.gg/faq)": {
    "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
@@ -473,6 +475,24 @@
   },
   "DISCREPANCIES.md§1. Apex ClawCoin boost: 3.5x or 4.5x? (nearest link: https://www.patreon.com/TheDinoDen)": {
    "Patreon boost is additive": "2026-10-28 28 Oct: 'Patreon boost is additive' read in the site's JS (Dino Rewards staff page, BPS_GmrG.js)"
+  },
+  "https://www.patreon.com/TheDinoDen": {
+   "$47.40 for one month": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "Bypass All Dino Cap Locks": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "+ 80,000 AmberShards Bi-Weekly": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "3.5x Clawcoin Boost": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "Patreon only channel": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "Special invites to staff-run custom events & tests": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "Supporter Discord Role": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)",
+   "In-Game Overlay": "2026-10-28 compared by eye with the author's Apex tier card screenshot (published as evidence/screenshots/patreon-apex-tier-card.png; OCR check passes)"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/573793023877691970/": {
+   "immediately disconnected from the client": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
+   "started calling the guy out in chat, trying to get him to stop": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
+   "literally replied with a Spongebob meme": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
+   "Chat Toxicity": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
+   "the full, unedited 3GB video recording of this entire session": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
+   "We do not disclose actions taken to other players, feel free to open an appeal.": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies"
   }
  },
  "sections": {
@@ -529,7 +549,15 @@
   "APEX+": "patron's screenshot (28 Sep-27 Oct 2026)",
   "Online": "site JS / patron screenshot",
   "Playable": "patron's screenshot",
-  "Type here and join them": "15 Aug #sent-to-hell screenshot (channel description)"
+  "Type here and join them": "15 Aug #sent-to-hell screenshot (channel description)",
+  "$47.40 for one month": "Apex tier card screenshot",
+  "Bypass All Dino Cap Locks": "Apex tier card screenshot",
+  "+ 80,000 AmberShards Bi-Weekly": "Apex tier card screenshot",
+  "3.5x Clawcoin Boost": "Apex tier card screenshot",
+  "Patreon only channel": "Apex tier card screenshot",
+  "Special invites to staff-run custom events & tests": "Apex tier card screenshot",
+  "Supporter Discord Role": "Apex tier card screenshot",
+  "In-Game Overlay": "Apex tier card screenshot"
  },
  "_about_stable_quotes": "Quotes whose own source is fixed even though they sit in a section or line classed live (screenshots, forum posts, sent emails, archived pages). Once verified they are skipped."
 }

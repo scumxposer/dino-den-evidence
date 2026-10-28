@@ -1,6 +1,6 @@
 detail file	hash	note
-DISCREPANCIES.md	0267a0ec892d17df	README player-count row still 'Supported... not conclusive'; consistent with scores moving between 27 and 28 Oct
-community-reports.md	7436806c34473716	README player paragraph and Player claims row now include the strike claim (one player); DISCREPANCIES §7 has the same dated 28 Oct tracker re-read
+DISCREPANCIES.md	c56718fb82c9cbcc	README unlock row and community-reports now quote the Apex tier card 'Bypass All Dino Cap Locks' from the published screenshot, as §11 does
+community-reports.md	49f667a11d604c91	README unlock row and community-reports now quote the Apex tier card 'Bypass All Dino Cap Locks' from the published screenshot, as §11 does
 evidence/01-patreon-to-casino.md	d7883d46bba70cae	README chain now says the boost is added to each dinosaur's earning rate; DISCREPANCIES §1 cannot-be-concluded now notes the additive boost; §4 and evidence/03 only say the multiplier supplies ClawCoins directly, still true
 evidence/02-casino-games-and-raffle.md	2c939f9bd70905e2	Only the Lucky paragraph changed (perk, not consumable); no README, DISCREPANCIES or evidence/03 summary mentions it; checked by grep for Lucky/RNG
 evidence/03-operator-statements.md	e782b829fddcb9c8	Review #7: Terms §2/§3 quotes extended to where the source's sentence ends (checked on today's Terms); DISCREPANCIES §5 now quotes the same §3 wording plus 'Any perks granted in return are Virtual Items'; README staff rules and findings rows unaffected.
