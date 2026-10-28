@@ -107,5 +107,9 @@
  {
   "pattern": "\\ba year apart\\b",
   "why": "the two player-count analyses are about eleven months apart (~Nov 2025 and Oct 2026)"
+ },
+ {
+  "pattern": "multipl\\w+ the ClawCoins a player earns from",
+  "why": "the FAQ says only that Patreon tiers 'add a ClawCoin boost on top'; which earnings it applies to is not stated"
  }
 ]

@@ -1,7 +1,7 @@
 detail file	hash	note
 DISCREPANCIES.md	8812da0f9fe9f5f0	README player-count row gives the dates (late 2025, Oct 2026), consistent with 'about eleven months apart'
 community-reports.md	326671d86f090d67	no summary mentions the $99 claim or its counterpoint; README, DISCREPANCIES §7/§11 and evidence/01 unaffected
-evidence/01-patreon-to-casino.md	d744659781423b8c	Only the patron screenshot date changed (28 Sep-27 Oct); README short version and rows 59-75, §11 rows/conclusion and community-reports Restricted section now give the same range; §1,2,4,5 and evidence/03 unaffected
+evidence/01-patreon-to-casino.md	133a09b84b417fda	README chain, DISCREPANCIES §4, evidence/03 describe the multiplier without naming which earnings it applies to; nothing to change
 evidence/02-casino-games-and-raffle.md	2c939f9bd70905e2	Only the Lucky paragraph changed (perk, not consumable); no README, DISCREPANCIES or evidence/03 summary mentions it; checked by grep for Lucky/RNG
 evidence/03-operator-statements.md	e782b829fddcb9c8	Review #7: Terms §2/§3 quotes extended to where the source's sentence ends (checked on today's Terms); DISCREPANCIES §5 now quotes the same §3 wording plus 'Any perks granted in return are Virtual Items'; README staff rules and findings rows unaffected.
 evidence/04-client-analysis.md	a43a46a1489f85f8	27 Oct 2026 baseline after third full review: README 'Not supported' client row and DISCREPANCIES §8 and Checked table match v0.2.0 findings.

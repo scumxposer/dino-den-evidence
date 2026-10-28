@@ -83,7 +83,7 @@ ClawCoins are the stake in the site's casino-style games and the price of most c
 
 ## The second route: the ClawCoin multiplier
 
-Every tier multiplies the ClawCoins a player earns from playtime, quests and rewards (1.5x to 4.5x as configured; the Apex tier is described as 3.5x, see [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x)). The FAQ: *"Patreon tiers add a ClawCoin boost on top."* So a paying member gets more of the wagering currency directly, without going through the shop.
+Every tier has a ClawCoin multiplier (1.5x to 4.5x as configured; the Apex tier is described as 3.5x, see [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x)). The FAQ lists server playtime, daily login rewards, quests, levelling up and events as ways to earn ClawCoins, then says: *"Patreon tiers add a ClawCoin boost on top."* Which of those earnings the boost applies to is decided on Dino Den's servers and could not be checked. So a paying member gets more of the wagering currency directly, without going through the shop.
 
 ## Worked example
 
