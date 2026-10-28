@@ -552,6 +552,10 @@ def check_source_rules(files, problems):
                     if re.search(r["pattern"], sent) and not re.search(r["require"], sent):
                         problems.append(f"{f}:{n}: {r['name']} stated without saying where it comes from ({r['why']})\n    {sent.strip()[:200]}")
         sections.append((section, section_lines))
+        for nm in rules.get("hidden_names", {}).get("names", []):
+            for n, line in prose_lines(text):
+                if re.search(r"\b" + re.escape(nm) + r"\b", line, re.I):
+                    problems.append(f"{f}:{n}: names \"{nm}\", whose staff role is not confirmed (or who is a player); hide the name")
         for img in sorted(set(re.findall(r"\]\(((?:\.\./)?(?:evidence/)?screenshots/[^)\s]+\.png)\)", text))):
             path_img = os.path.normpath(os.path.join(os.path.dirname(f), img))
             words = rules.get("image_forbidden", {}).get("words", [])

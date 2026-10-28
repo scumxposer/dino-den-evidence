@@ -38,5 +38,13 @@
    "scammer",
    "fraud"
   ]
+ },
+ "hidden_names": {
+  "_about": "Names that must not appear in the repository: accounts whose staff role is not confirmed, and players.",
+  "names": [
+   "Toska",
+   "Ender Empress",
+   "Vark"
+  ]
  }
 }

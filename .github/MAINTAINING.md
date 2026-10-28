@@ -150,3 +150,4 @@ Watch for these:
 - Repeating the site's label for a mechanism ("multiplier") without checking how its code applies it (the boost is added to a per-dinosaur multiplier).
 - Hiding a player's accusation in a screenshot but leaving another person's restatement of it readable (the owner's reply in the 18 Aug image). Published screenshots are now read with OCR for listed words.
 - Describing a past error in CORRECTIONS with wording the repository never used ("closed loop" was only in an email) or more strongly than it was ("implied only the patron benefits"). Quoted old wording is now checked against the repository's history.
+- Naming an account whose claimed staff role is not confirmed (a Reddit account calling itself a former Senior Admin). Names to keep out are listed in tools/source-rules.json (hidden_names).
