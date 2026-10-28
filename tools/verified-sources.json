@@ -509,6 +509,11 @@
   },
   "DISCREPANCIES.md§13. \"In-Game Overlay\": Patreon perk vs free client (nearest link: https://api.dinoden.gg/features)": {
    "Patreon early access, then everyone.": "2026-10-28 28 Oct: quote from the 29 Sep announcement screenshot"
+  },
+  "screenshot:site-daily-quests.png": {
+   "Kill 2x any dinosaur": "2026-10-28 28 Oct: compared by eye with the Daily Quests screenshot (OCR check passes)",
+   "Daily Quests": "2026-10-28 28 Oct: compared by eye with the Daily Quests screenshot (OCR check passes)",
+   "Survive 60 min as any dino": "2026-10-28 28 Oct: compared by eye with the Daily Quests screenshot (OCR check passes)"
   }
  },
  "sections": {
