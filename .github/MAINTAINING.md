@@ -147,3 +147,4 @@ Watch for these:
 - A new check that classed quotes with no link on their line as coming from an unchanging source, which would have stopped live Terms quotes from ever being re-checked.
 - Summaries without quotes presenting one poster's claims as if from several people (the README listed "a ban after criticism" and "(one player) cheaters not dealt with" separately; both come from the Honest Opinion author). The same-person check only sees quotes, so known combinations are now a source rule.
 - Stating how a mechanism works beyond what the source says (the multiplier applying to "playtime, quests and rewards", when the FAQ only says tiers "add a ClawCoin boost on top").
+- Repeating the site's label for a mechanism ("multiplier") without checking how its code applies it (the boost is added to a per-dinosaur multiplier).

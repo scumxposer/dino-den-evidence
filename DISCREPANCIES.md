@@ -14,7 +14,7 @@ The places found where two sources disagree, side by side. Each item names both 
 | Patreon tier page for [patreon.com/TheDinoDen](https://www.patreon.com/TheDinoDen), as captured in the author's screenshots for the 26 Oct 2026 report to Patreon, and re-checked by the author on 27 Oct 2026 | 3.5x |
 
 **Can be concluded:** Dino Den states two different multipliers for the same tier: Patreon (where people pay) says 3.5x, while the website's Patreon page shows both 3.5x and 4.5x. The other tiers' descriptions that give a number match their configured values (Sub "double" = 2, Adult "2.5x" = 2.5, Elder "triple" = 3); the Juvie description gives no number.
-**Cannot be concluded:** which multiplier members actually receive — earnings are calculated on Dino Den's servers. The configured value is *higher* than advertised, so if it is applied, members get more than promised. This is an inconsistency, not evidence of members being short-changed.
+**Cannot be concluded:** which multiplier members actually receive — earnings are calculated on Dino Den's servers. The site's code adds the Patreon boost to a per-dinosaur multiplier for playtime earnings (*"Patreon boost is additive"*, see [evidence/01](evidence/01-patreon-to-casino.md#the-second-route-the-clawcoin-multiplier)), so what either figure means for a patron's earnings depends on the dinosaur played. The configured value is *higher* than advertised, so if it is applied, members get more than promised. This is an inconsistency, not evidence of members being short-changed.
 
 ## 2. Patreon prices vs the site's tier minimums
 

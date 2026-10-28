@@ -1,9 +1,9 @@
 detail file	hash	note
-DISCREPANCIES.md	8812da0f9fe9f5f0	README player-count row gives the dates (late 2025, Oct 2026), consistent with 'about eleven months apart'
+DISCREPANCIES.md	a6e7dfbd3afbc37b	README Apex row says rate actually applied can't be verified; consistent with the added §1 note
 community-reports.md	326671d86f090d67	no summary mentions the $99 claim or its counterpoint; README, DISCREPANCIES §7/§11 and evidence/01 unaffected
-evidence/01-patreon-to-casino.md	133a09b84b417fda	README chain, DISCREPANCIES §4, evidence/03 describe the multiplier without naming which earnings it applies to; nothing to change
+evidence/01-patreon-to-casino.md	d7883d46bba70cae	README chain now says the boost is added to each dinosaur's earning rate; DISCREPANCIES §1 cannot-be-concluded now notes the additive boost; §4 and evidence/03 only say the multiplier supplies ClawCoins directly, still true
 evidence/02-casino-games-and-raffle.md	2c939f9bd70905e2	Only the Lucky paragraph changed (perk, not consumable); no README, DISCREPANCIES or evidence/03 summary mentions it; checked by grep for Lucky/RNG
 evidence/03-operator-statements.md	e782b829fddcb9c8	Review #7: Terms §2/§3 quotes extended to where the source's sentence ends (checked on today's Terms); DISCREPANCIES §5 now quotes the same §3 wording plus 'Any perks granted in return are Virtual Items'; README staff rules and findings rows unaffected.
 evidence/04-client-analysis.md	a43a46a1489f85f8	27 Oct 2026 baseline after third full review: README 'Not supported' client row and DISCREPANCIES §8 and Checked table match v0.2.0 findings.
 evidence/05-staff-conduct.md	722e9ae3fff516c7	README staff bullets and both rows, DISCREPANCIES §12, community-reports related-evidence bullet re-read: none states who made the 21 Aug / 8 Sep posts or the post count, so nothing to change
-reports-filed.md	f340ca79b42bd2a7	README Why it matters re-read: it says only that a report was filed and links reports-filed; no wording about the report's contents to change. CORRECTIONS row for review #7 added below.
+reports-filed.md	a11250c1c99dc516	README Why it matters only links reports-filed; CORRECTIONS has the new multiplier row

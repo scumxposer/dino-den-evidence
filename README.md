@@ -29,7 +29,7 @@ Patreon pledge (5 tiers, £12–£55 a month as shown on the site)
                           (jackpot: players' bets go into one pot, one player wins it, the site keeps 2.5%)
                           └─► every 100,000 ClawCoins wagered = 1 entry in a weekly 100,000,000-ClawCoin raffle
 
-Patreon pledge ──(1.5x–4.5x ClawCoin earning multiplier as configured; Apex described as 3.5x)──► ClawCoins   (a second route: ClawCoins directly, no sale needed)
+Patreon pledge ──("1.5x–4.5x" ClawCoin boost as configured, added to each dinosaur's own earning rate; Apex described as 3.5x)──► ClawCoins   (a second route: ClawCoins directly, no sale needed)
 ```
 
 Patreon is not the only way in: ClawCoins are earned by playing, and AmberShards also come from free login rewards and Twitch watching (per player, a few hundred AmberShards a week from login rewards, against 18,000–80,000 every two weeks from Patreon; Dino Den's Twitch program reports 32M AmberShards paid out in total; see [evidence/01](evidence/01-patreon-to-casino.md#other-ways-to-get-ambershards-for-balance)). This repository is about the paid route.

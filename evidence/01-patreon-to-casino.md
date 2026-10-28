@@ -6,7 +6,7 @@ Figures were captured on 27 October 2026 from The Dino Den's public API without 
 
 Source: <https://api.dinoden.gg/patreon/tiers>
 
-| Tier | Price on the site's Patreon page | AmberShards every 14 days | Troodons this buys (1,000 AS each) | ClawCoin earning multiplier |
+| Tier | Price on the site's Patreon page | AmberShards every 14 days | Troodons this buys (1,000 AS each) | ClawCoin boost (`clawcoinBoost`; added to each dinosaur's earning rate, see below) |
 |---|---|---|---|---|
 | Juvie | £12 | 18,000 | 18 | 1.5x |
 | Sub | £22 | 28,000 | 28 | 2x |
@@ -16,7 +16,7 @@ Source: <https://api.dinoden.gg/patreon/tiers>
 
 - The price column is shown on <https://main.dinoden.gg/patreon> (from the `minCents` setting; the site always shows it in pounds). Patreon charges US viewers $17.50–$79 a month, 7.5–9.5% more than these prices converted at the market rate. See [DISCREPANCIES.md §2](../DISCREPANCIES.md#2-patreon-prices-vs-the-sites-tier-minimums).
 - The operator's FAQ (<https://main.dinoden.gg/faq>): *"Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately."*
-- **Apex multiplier is stated inconsistently.** The multiplier column shows the configured `clawcoinBoost` values. For Apex, the tier's own description says *"Maximum 3.5x Clawcoin boost"* and Patreon showed 3.5x, while the configured value is `4.5`. Which rate members actually receive can't be verified, and the configured value is in members' favour. Sources: [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x).
+- **Apex multiplier is stated inconsistently.** The boost column shows the configured `clawcoinBoost` values. For Apex, the tier's own description says *"Maximum 3.5x Clawcoin boost"* and Patreon showed 3.5x, while the configured value is `4.5`. Which rate members actually receive can't be verified, and the configured value is in members' favour. Sources: [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x).
 
 ### Other patron perks
 
@@ -83,8 +83,8 @@ ClawCoins are the stake in the site's casino-style games and the price of most c
 
 ## The second route: the ClawCoin multiplier
 
-Every tier has a ClawCoin multiplier (1.5x to 4.5x as configured; the Apex tier is described as 3.5x, see [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x)). The FAQ lists server playtime, daily login rewards, quests, levelling up and events as ways to earn ClawCoins, then says: *"Patreon tiers add a ClawCoin boost on top."* Which of those earnings the boost applies to is decided on Dino Den's servers and could not be checked. So a paying member gets more of the wagering currency directly, without going through the shop.
+Every tier has what the site calls a ClawCoin boost or multiplier (1.5x to 4.5x as configured; the Apex tier is described as 3.5x, see [DISCREPANCIES.md §1](../DISCREPANCIES.md#1-apex-clawcoin-boost-35x-or-45x)). The FAQ lists server playtime, daily login rewards, quests, levelling up and events as ways to earn ClawCoins, then says: *"Patreon tiers add a ClawCoin boost on top."* For playtime, the site's code (the staff page for *"Dino Rewards"*, which *"Configure[s] clawcoin earning multipliers per dinosaur class"*; read 28 Oct 2026) gives the formula *"minutes × [base rate] × (dinoMultiplier + patreonBoost)"*, with *"Payouts every 5 minutes · Patreon boost is additive"*. So each dinosaur class earns at its own rate, and the Patreon boost is added to that dinosaur's multiplier rather than multiplying the total. The author's own experience is that smaller and weaker dinosaurs earn more. The multipliers themselves, the base rate, and how a tier's "1.5x"–"4.5x" becomes the added boost are not public, so how much more a patron earns per hour could not be calculated. Whether the boost also applies to other earnings (quests, login rewards) could not be checked. So a paying member gets more of the wagering currency directly, without going through the shop.
 
 ## Worked example
 
-A Juvie member (£12 a month on the site; $17.50 on Patreon for US viewers) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. The member can play them, or list them on the Marketplace for ClawCoins, which can then be wagered. Separately, the 1.5x multiplier raises the ClawCoins they earn by playing.
+A Juvie member (£12 a month on the site; $17.50 on Patreon for US viewers) receives 18,000 AmberShards every two weeks. That buys 18 Troodons from the Dino Shop. The member can play them, or list them on the Marketplace for ClawCoins, which can then be wagered. Separately, the tier's ClawCoin boost (shown as 1.5x) raises the ClawCoins they earn from playtime.
