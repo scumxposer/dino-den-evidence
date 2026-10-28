@@ -194,9 +194,10 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | The DinoDen Client page — <https://main.dinoden.gg/dinoden-client> (read 28 Oct 2026) | The client provides *"a live minimap, quest tracking, your inventory in 3D, friends and clan chat. All of it as an overlay on top of The Isle"*; *"Does it cost anything? No. The client is free for every DinoDen player."*; *"Free for every Dino Den player. Sign in once, play with the overlay forever."* |
 | Feature switches — <https://api.dinoden.gg/features> | `client.patreonOnly: false` |
 | The author's own observation (October 2026) | He is not a patron and uses the client's overlay |
+| Announcement by HEX, who posts Dino Den's official news, in Dino Den's Discord, 29 Sep 2026 ([screenshot](evidence/screenshots/2026-09-29-discord-client-announcement.png); channel not shown) | *"THE DINODEN CLIENT IS HERE — v0.1.0"*, an overlay *"on top of the game"*; *"Patreon early access, then everyone."* |
 
-**Can be concluded:** Patreon lists an in-game overlay as a paid perk of every tier, while Dino Den's own client page says the overlay client is free for every player, and the author uses it without being a patron.
-**Cannot be concluded:** whether the Patreon perk means something more than the free client (for example extra overlay features for patrons), or whether the Patreon text dates from before the client was made free. The client's code reads the player's Patreon tier ([evidence/04](evidence/04-client-analysis.md)), but what that changes was not checked.
+**Can be concluded:** Patreon still lists an in-game overlay as a perk of every tier, while Dino Den's own client page says the overlay client is free for every player, and the author uses it without being a patron. When the client launched on 29 September 2026, the announcement said: *"Patreon early access, then everyone."* The Patreon perk text most likely dates from that early-access period and was not updated.
+**Cannot be concluded:** whether patrons still get anything more in the overlay than other players. The client's code reads the player's Patreon tier ([evidence/04](evidence/04-client-analysis.md)), but what that changes was not checked.
 
 ---
 
@@ -205,5 +206,5 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | Claim by Dino Den | Source | Result |
 |---|---|---|
 | The client *"does not inject anything into The Isle, does not read game memory and does not modify game files"* — <https://main.dinoden.gg/dinoden-client> | Static review of v0.2.0 ([evidence/04](evidence/04-client-analysis.md)) | No such code found |
-| Client is *"Free for every Dino Den player"* | `client.patreonOnly: false` at <https://api.dinoden.gg/features> | Consistent (but Patreon sells an *"In-Game Overlay"* perk: see [§13](#13-in-game-overlay-patreon-perk-vs-free-client)) |
+| Client is *"Free for every Dino Den player"* | `client.patreonOnly: false` at <https://api.dinoden.gg/features> | Consistent (Patreon's tier cards still list an *"In-Game Overlay"* perk, most likely left over from the client's Patreon early access: see [§13](#13-in-game-overlay-patreon-perk-vs-free-client)) |
 | *"the only real-money support is our Patreon"* (FAQ) | Site code and API | No other real-money store found |

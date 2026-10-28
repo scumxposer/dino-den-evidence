@@ -501,6 +501,14 @@
   "screenshot:patreon-adult-tier-card.png patreon-apex-tier-card.png patreon-elder-tier-card.png patreon-juvie-tier-card.png patreon-sub-tier-card.png": {
    "In-Game Overlay": "2026-10-28 28 Oct: compared by eye with all five tier card screenshots ('In-Game Overlay' on each; 'you'll unlock exclusive perks')",
    "unlock": "2026-10-28 28 Oct: compared by eye with all five tier card screenshots ('In-Game Overlay' on each; 'you'll unlock exclusive perks')"
+  },
+  "screenshot:2026-09-29-discord-client-announcement.png": {
+   "on top of the game": "2026-10-28 28 Oct: compared by eye with the published announcement screenshot (OCR check passes)",
+   "Patreon early access, then everyone.": "2026-10-28 28 Oct: compared by eye with the published announcement screenshot (OCR check passes)",
+   "THE DINODEN CLIENT IS HERE — v0.1.0": "2026-10-28 28 Oct: compared by eye with the published announcement screenshot (OCR check passes)"
+  },
+  "DISCREPANCIES.md§13. \"In-Game Overlay\": Patreon perk vs free client (nearest link: https://api.dinoden.gg/features)": {
+   "Patreon early access, then everyone.": "2026-10-28 28 Oct: quote from the 29 Sep announcement screenshot"
   }
  },
  "sections": {
@@ -565,7 +573,8 @@
   "Patreon only channel": "Apex tier card screenshot",
   "Special invites to staff-run custom events & tests": "Apex tier card screenshot",
   "Supporter Discord Role": "Apex tier card screenshot",
-  "In-Game Overlay": "Apex tier card screenshot"
+  "In-Game Overlay": "Apex tier card screenshot",
+  "Patreon early access, then everyone.": "29 Sep 2026 HEX announcement screenshot"
  },
  "_about_stable_quotes": "Quotes whose own source is fixed even though they sit in a section or line classed live (screenshots, forum posts, sent emails, archived pages). Once verified they are skipped."
 }
