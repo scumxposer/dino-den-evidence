@@ -120,4 +120,4 @@ The text, analysis and data compilations in this repository are licensed under [
 
 **Not covered by this license:** material owned by others and quoted or reproduced here for reporting and criticism. That includes text, data and images from The Dino Den's website, Terms, FAQ, API and Discord (including the screenshots in `evidence/screenshots/`), and quotes from Patreon, Steam forum posts, regulators and legislation. Those remain the property of their owners.
 
-*Last updated: 27 October 2026.*
+*Last updated: 28 October 2026.*
