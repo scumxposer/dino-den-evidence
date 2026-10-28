@@ -271,6 +271,17 @@ def check_dates(problems):
         problems.append("README.md: no '*Last updated: …*' line")
     elif log and m.group(1)[:-5].split()[0] + " " + m.group(1).split()[1][:3] + m.group(1)[-5:] != log[-1]:
         problems.append(f"README.md: 'Last updated: {m.group(1)}' but the latest correction is {log[-1]}")
+    # A log row added since the last commit must carry today's date (the owner's time zone: US Pacific).
+    import datetime, subprocess
+    try:
+        changed = subprocess.run(["git", "diff", "--quiet", "HEAD", "--", "CORRECTIONS.md"]).returncode == 1
+    except OSError:
+        changed = False
+    if changed and log:
+        pacific = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=7)
+        today = f"{pacific.day} {pacific.strftime('%b')} {pacific.year}"
+        if log[-1] != today:
+            problems.append(f"CORRECTIONS.md: the newest log row is dated {log[-1]} but today is {today} (US Pacific)")
 
 
 def says_column_hits(path, text):
