@@ -715,6 +715,8 @@ def quotes_due(groups, reg, today=None):
         for loc, qs in items:
             for q in qs:
                 rec = done.get(q)
+                if rec and q in reg.get("stable_quotes", {}):
+                    continue  # this quote's own source is fixed (a screenshot, forum post or sent email)
                 if rec and cls == "stable":
                     continue
                 if rec and cls == "live" and rec[:10] == today.isoformat():

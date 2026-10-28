@@ -14,6 +14,12 @@
    "pattern": "(?i)bypass\\w*[^.;|]{0,25}\\b(?:dino[- ]?)?cap|cap[^.;|]{0,10}bypass",
    "require": "(?i)\\bauthor|report",
    "why": "the only source is the author's 26 Oct 2026 report to Patreon, summarising his screenshots of the tier pages; the tier page itself has not been re-checked"
+  },
+  {
+   "name": "the Honest Opinion author's two claims",
+   "pattern": "(?i)ban after critici\\w*[^|]*cheaters|cheaters[^|]*ban after critici\\w*",
+   "require": "(?i)Honest Opinion|same player",
+   "why": "the ban after criticism and the cheaters complaint come from one person; a summary listing both must say so"
   }
  ],
  "identify": {
