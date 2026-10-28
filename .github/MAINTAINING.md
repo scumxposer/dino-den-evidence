@@ -88,6 +88,8 @@ Reddit posts and replies, YouTube or Steam comments, and emails to platforms rep
 
 ## 7. Full review
 
+Scope (the owner's instruction, 28 Oct 2026): the Patreon, currency and games sections are settled, so a review re-checks them only where they changed or a live figure they quote is due. Each review concentrates on the staff and owner conduct material (README staff section, DISCREPANCIES §12, evidence/05, community-reports), on everything changed since the last review, and on the automated checks. Keep reviews short.
+
 A request for a full review means every step below, in order. Report what was done, with the numbers, not just "reviewed".
 
 1. `git pull`, then run `python3 tools/check.py`. Fix everything it reports, including every wording flag (section 4).
