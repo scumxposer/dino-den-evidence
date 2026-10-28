@@ -549,7 +549,10 @@ def check_source_rules(files, problems):
                     if m and re.search(month, near) and not re.search(r["allowed"], sent):
                         problems.append(f"{f}:{n}: {r['name']} dated differently from its source ({r['why']}); use \"{r['allowed']}\"…\n    {sent.strip()[:200]}")
                 for r in rules.get("attribution", []):
-                    if re.search(r["pattern"], sent) and not re.search(r["require"], sent):
+                    if f in r.get("exclude", []):
+                        continue
+                    unit = line if r.get("scope") == "line" else sent
+                    if re.search(r["pattern"], sent) and not re.search(r["require"], unit):
                         problems.append(f"{f}:{n}: {r['name']} stated without saying where it comes from ({r['why']})\n    {sent.strip()[:200]}")
         sections.append((section, section_lines))
         for nm in rules.get("hidden_names", {}).get("names", []):
