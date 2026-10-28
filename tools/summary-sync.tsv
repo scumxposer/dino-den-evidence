@@ -1,9 +1,9 @@
 detail file	hash	note
-DISCREPANCIES.md	b950338c03b5fd33	Review #6: README bullets/rows and §12 now carry the notice heading; trial admin dating consistent in README row, community-reports and §11; 'Dw ill unban you' unchanged elsewhere.
-community-reports.md	a5d2d6b7c33fad25	Review #6: README bullets/rows and §12 now carry the notice heading; trial admin dating consistent in README row, community-reports and §11; 'Dw ill unban you' unchanged elsewhere.
-evidence/01-patreon-to-casino.md	dd38f09ab3513665	Review #4: 'can also be sold through Auctions'; README diagram and rows unchanged in meaning.
-evidence/02-casino-games-and-raffle.md	b1e7ef9edcc82e62	Review #5: summaries re-read after quote-ending, wording and caption fixes; README and DISCREPANCIES rows say the same with the same strength (incl. 'Dw ill unban you', three uploaders, 'pays a fixed amount').
-evidence/03-operator-statements.md	81f7638b6b50b740	Review #5: summaries re-read after quote-ending, wording and caption fixes; README and DISCREPANCIES rows say the same with the same strength (incl. 'Dw ill unban you', three uploaders, 'pays a fixed amount').
+DISCREPANCIES.md	a9aada0c7ca95afe	§11 subscriber-page row: Glitch quote ending and context only; README row 75 does not quote it
+community-reports.md	d16d2b725127bc97	Changes: screenshot date range, bypass attributed to the author's report, Senior Admin quote ending, Cheaters player named as the Honest Opinion author; README row 75 and staff paragraph ('from one player'), §11 player and conclusion rows, evidence/01 perks paragraph re-read and match
+evidence/01-patreon-to-casino.md	d744659781423b8c	Only the patron screenshot date changed (28 Sep-27 Oct); README short version and rows 59-75, §11 rows/conclusion and community-reports Restricted section now give the same range; §1,2,4,5 and evidence/03 unaffected
+evidence/02-casino-games-and-raffle.md	2c939f9bd70905e2	Only the Lucky paragraph changed (perk, not consumable); no README, DISCREPANCIES or evidence/03 summary mentions it; checked by grep for Lucky/RNG
+evidence/03-operator-statements.md	e782b829fddcb9c8	Review #7: Terms §2/§3 quotes extended to where the source's sentence ends (checked on today's Terms); DISCREPANCIES §5 now quotes the same §3 wording plus 'Any perks granted in return are Virtual Items'; README staff rules and findings rows unaffected.
 evidence/04-client-analysis.md	a43a46a1489f85f8	27 Oct 2026 baseline after third full review: README 'Not supported' client row and DISCREPANCIES §8 and Checked table match v0.2.0 findings.
 evidence/05-staff-conduct.md	3cae3e4853b0240f	Review #6: README bullets/rows and §12 now carry the notice heading; trial admin dating consistent in README row, community-reports and §11; 'Dw ill unban you' unchanged elsewhere.
-reports-filed.md	25e17c302a773f69	27 Oct 2026 baseline after third full review: README 'Why it matters' (report filed, no cash-out balance) matches reports-filed.
+reports-filed.md	f340ca79b42bd2a7	README Why it matters re-read: it says only that a report was filed and links reports-filed; no wording about the report's contents to change. CORRECTIONS row for review #7 added below.

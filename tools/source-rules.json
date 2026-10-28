@@ -1,0 +1,23 @@
+{
+ "_about": "Rules for sources whose date or origin must be stated the same way everywhere. Checked by tools/check.py on every run; they cannot be cleared with --ack. 'dated': any sentence that mentions the source and gives a date must give the allowed one. 'attribution': any sentence matching 'pattern' must also match 'require' (for claims whose only source is the author's own description). 'identify': in every section that quotes this poster (labels from tools/sources.json), the section must say who they are.",
+ "dated": [
+  {
+   "name": "patron's screenshot of the patron-only page",
+   "mention": "(?i)patron'?s?[^.;|]{0,40}screenshot|screenshot[^.;|]{0,30}(?:from )?(?:a )?(?:Patreon supporter|patron)",
+   "allowed": "28 Sep",
+   "why": "it shows the Halloween event banner (event start 28 Sep 2026, halloweenStartsAt) and was received on 27 Oct 2026; it is not dated more precisely"
+  }
+ ],
+ "attribution": [
+  {
+   "name": "Apex tier dino-cap bypass",
+   "pattern": "(?i)bypass\\w*[^.;|]{0,25}\\b(?:dino[- ]?)?cap|cap[^.;|]{0,10}bypass",
+   "require": "(?i)\\bauthor|report",
+   "why": "the only source is the author's 26 Oct 2026 report to Patreon, summarising his screenshots of the tier pages; the tier page itself has not been re-checked"
+  }
+ ],
+ "identify": {
+  "honest-opinion-author": "author of the Honest Opinion",
+  "trial-admin": "trial admin"
+ }
+}

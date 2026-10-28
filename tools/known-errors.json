@@ -1,0 +1,107 @@
+[
+ {
+  "pattern": "\\b(?:said|says|wrote|writes) (?:that )?he (?:had )?(?:lifted|reversed|unbanned)\\b|\\blifted (?:a |the |his )?(?:permanent )?ban\\b|\\bhad lifted\\b",
+  "why": "the owner wrote \"Dw ill unban you\" and, about \"a guy\", \"unbanned a guy for this\"; which ban he lifted is not shown"
+ },
+ {
+  "pattern": "Dw i will",
+  "match_quotes": true,
+  "why": "the screenshot reads \"Dw ill unban you\""
+ },
+ {
+  "pattern": "\"dino-cap bypass",
+  "match_quotes": true,
+  "why": "no source contains the words \"dino-cap bypass\" as a quote"
+ },
+ {
+  "pattern": "patron-only (?:coin[- ]?)?flip|flip only for patrons|only (?:active )?(?:patreon members|patrons) can",
+  "why": "the FAQ offers the coin flip to \"everyone who was an active patron during the outage\" without saying \"only\""
+ },
+ {
+  "pattern": "\\bPatreon-funded\\b|\\bfunded by Patreon\\b",
+  "why": "where a dinosaur's AmberShards came from cannot be known"
+ },
+ {
+  "pattern": "\\bclosed loop\\b",
+  "why": "selling shop dinosaurs is a player's choice; there is no closed loop"
+ },
+ {
+  "pattern": "\\b(?:are|get|do get|gets) sold (?:for|that way|on)\\b|\\bthose dinos sell\\b|\\bwhich sell for\\b|\\bsells? for ClawCoins\\b",
+  "why": "listings are asking prices, not completed sales; dinosaurs \"can be\" sold"
+ },
+ {
+  "pattern": "(?<!can )(?<!could )(?<!may )\\bends? up (?:bet|wagered|gambled)\\b",
+  "why": "Patreon currency only \"can end up\" wagered, if a player chooses"
+ },
+ {
+  "pattern": "\\btwo Rexes\\b",
+  "why": "the reviewer's reading of video footage, not the uploader's words"
+ },
+ {
+  "pattern": "\\bevery public (?:The Isle )?server\\b",
+  "why": "TheSpoofingIsle tracks public servers, not shown to be every one"
+ },
+ {
+  "pattern": "\\bdefined by (?:its|their) AmberShards\\b",
+  "why": "tiers also set price, ClawCoin boost and slots"
+ },
+ {
+  "pattern": "\\ball (?:the )?(?:conflicts|discrepancies)\\b",
+  "why": "only the conflicts found are listed"
+ },
+ {
+  "pattern": "\\bno (?:published )?evidence has been published\\b",
+  "why": "the repository can only say none \"has been found\""
+ },
+ {
+  "pattern": "\\bthe creator made\\b",
+  "why": "Graphtreon does not say who made the counts private"
+ },
+ {
+  "pattern": "\\b82 laughing\\b",
+  "why": "posts drew up to 86 laughing reactions"
+ },
+ {
+  "pattern": "\\bother four tiers\\b",
+  "why": "three other tiers give a number; Juvie gives none"
+ },
+ {
+  "pattern": "\\b(?:it'?s|it is) still the case\\b",
+  "why": "the Dec 2025 announcement's wording is not repeated in Oct 2026; say what is documented in Oct 2026 instead"
+ },
+ {
+  "pattern": "\\brules say it shouldn'?t\\b|\\b(?:goes|go|appears to go) against Patreon'?s (?:own )?rules\\b",
+  "why": "whether Patreon's rules apply is for Patreon to decide"
+ },
+ {
+  "pattern": "\\ba short by the same YouTuber\\b|\\bwarning being enforced\\b",
+  "why": "the 23 Oct video is 7:53 long, and it shows a warning being issued"
+ },
+ {
+  "pattern": "\\bevery claim links\\b",
+  "why": "some claims rest on screenshots held by the author, which readers cannot open"
+ },
+ {
+  "pattern": "(?<!possible )\\bplayer-count spoofing\\b",
+  "why": "spoofing is supported but not conclusive: \"possible player-count spoofing\""
+ },
+ {
+  "pattern": "\\beverything comes from\\b",
+  "why": "most, not all, comes from Dino Den's own site, Discord and public data"
+ },
+ {
+  "pattern": "purchases of Virtual Items\\.\"",
+  "match_quotes": true,
+  "why": "Terms §3 continue: \"…Virtual Items, and Virtual Items received through a membership carry no monetary value\""
+ },
+ {
+  "pattern": "real-world value\\.\"",
+  "match_quotes": true,
+  "why": "Terms §2 continue: \"…real-world value and are not redeemable for money, goods or anything of value outside the service\""
+ },
+ {
+  "pattern": "self-exclude from all casino games\\.\"",
+  "match_quotes": true,
+  "why": "the FAQ continues: \"…all casino games - contact support or use the self-exclusion option\""
+ }
+]

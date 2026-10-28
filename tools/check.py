@@ -7,6 +7,16 @@ Run from the repository root:
     python3 tools/check.py --ack FILE:LINE "why it is accurate"
                                               record that a flagged line was reviewed
     python3 tools/check.py --prune            drop review records for lines that no longer exist
+    python3 tools/check.py --synced FILE "what you checked"
+                                              record that a changed detail file's summaries were re-read
+    python3 tools/check.py --quotes           list the quotes the audit still has to check (unverified, changed,
+                                              or from a live page), by the page they come from
+    python3 tools/check.py --quotes --all     list every quote, verified or not
+    python3 tools/check.py --verified SOURCE "how you checked"
+                                              record every quote currently listed under SOURCE as checked
+                                              (SOURCE is a URL, or FILE§HEADING for quotes with no link on the line)
+    python3 tools/check.py --acks [CATEGORY]  list recorded reviews with their reasons, to re-check in a full review
+    python3 tools/check.py --outside FILES    scan posts, replies and emails before (and after) they go out
 
 Checks:
   1. Links: internal links point to existing files and headings.
@@ -21,6 +31,10 @@ Checks:
      under a Documented label) must have been reviewed. A review is recorded
      with --ack and stored in tools/reviewed-wording.tsv. Editing a reviewed
      line invalidates its review, so changed lines are always looked at again.
+
+  7. Known errors: wording corrected once (tools/known-errors.json) must not
+     come back anywhere, in the repository or in outside text. These cannot
+     be cleared with --ack.
 
 Exits with status 1 if any problem is found.
 """
@@ -45,14 +59,19 @@ FACTS_FILE = "tools/facts.json"
 RISKY = {
     "certainty": r"\b(prove[sn]?|proof|confirm(?:s|ed)?|definitely|clearly|obviously|certainly|undeniabl\w*)\b",
     "automatic route": r"\b(end(?:s|ed)? up|convert(?:s|ed)?|turns? into|closed loop|feeds?|Patreon-funded|funded by|paid for by|sells? on|sells? for|are (?:\w+ )?sold|get sold)\b",
-    "absolute": r"\b(everything|always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only|all (?:the )?(?:conflicts|discrepancies|evidence|claims|figures|sources|players|staff|admins|patrons|members))\b",
+    "absolute": r"\b(unrestricted|everything|always|never|every|none|nobody|no one|everyone|all of|entirely|completely|only|all (?:the )?(?:conflicts|discrepancies|evidence|claims|figures|sources|players|staff|admins|patrons|members))\b",
     "motive": r"\b(spoof\w*|mock\w*|laugh(?:ed)? at|deliberately|intentionally|on purpose|in order to|scam\w*|fraud\w*|rigged|lie[sd]?|lying|faked?|illegal\w*|crimes?)\b",
     "generalisation": r"\b(many players|most players|routinely|regularly|repeatedly|often|usually|typically|pattern)\b",
     "completed action": r"\b(lifted|reversed|overturned|unbanned|refused|banned|removed|wiped|stripped|muted|kicked|deleted)\b",
     "actor": r"\b(?:the creator|the owner|the operator|staff|admins?|Dino Den)\b[^.;|]{0,40}?\b(?:made|set|chose|decided|hid|changed|turned)\b",
     "completeness": r"\b(covering|in full|complete(?:ly)?|entire|exhaustive|comprehensive)\b",
     "staleness": r"\b(so far|currently|not yet|not re-tested|still|recently|today|now)\b",
+    # Whether something breaks a platform's rules or the law is for that platform or a regulator to decide.
+    "verdict": r"\b(?:go(?:es)?|going|went|is|are|runs?) against\b[^.;|]{0,30}\b(?:rules|guidelines|polic(?:y|ies)|law|terms)\b|\bbreak(?:s|ing)?\b[^.;|]{0,30}\b(?:rules|guidelines|polic(?:y|ies)|law)\b|\bviolat\w+|\bin breach\b|\bunlawful\b|\bshouldn't\b|\bnot allowed\b",
 }
+KNOWN_ERRORS_FILE = "tools/known-errors.json"
+# Files that record past errors on purpose.
+KNOWN_ERRORS_EXEMPT = {"CORRECTIONS.md", ".github/MAINTAINING.md"}
 CLAIM_WORDS = r"\b(players? say|player reports?|reportedly|alleged\w*|claims?|unverified)\b"
 
 ALLOWED_REPEATS = {"Money Money", "that that", "had had"}  # crate name; grammatical repeats
@@ -96,6 +115,25 @@ def line_key(path, line):
     return hashlib.sha1(f"{path}\n{line.strip()}".encode()).hexdigest()[:16]
 
 
+# Checks added after a line was reviewed must still be looked at: a review records the kinds of hit it
+# covered (5th column). Records made before kinds were recorded cover everything except these.
+KINDS_ADDED_LATER = {"quote punctuation"}
+
+
+def hit_kind(hit):
+    if hit.startswith("quote punctuated differently"):
+        return "quote punctuation"
+    return hit.split(":")[0].split("(")[0].strip()[:40]
+
+
+def review_covers(row, hits):
+    cols = row.split("\t")
+    kinds = {hit_kind(h) for h in hits}
+    if len(cols) >= 5:
+        return kinds <= set(cols[4].split(","))
+    return not (kinds & KINDS_ADDED_LATER)
+
+
 def load_reviews():
     reviews = {}
     if os.path.exists(REVIEW_FILE):
@@ -108,7 +146,7 @@ def load_reviews():
 
 def save_reviews(reviews):
     with open(REVIEW_FILE, "w", encoding="utf-8") as f:
-        f.write("key\tfile\tline excerpt\treview note\n")
+        f.write("key\tfile\tline excerpt\treview note\tchecks covered\n")
         for row in sorted(reviews.values(), key=lambda r: (r.split("\t")[1], r)):
             f.write(row + "\n")
 
@@ -300,6 +338,41 @@ def linked_quote_hits(path, line, texts):
     return out
 
 
+def _quote_words(q):
+    return " ".join(re.findall(r"[a-z0-9#@']+", q.replace("’", "'").lower()))
+
+
+def quote_variant_hits(texts):
+    """The same quote must be punctuated the same way everywhere. A quote that ends with a full stop
+    (or ? !) is flagged when another quote of the same words, or a longer quote containing them,
+    shows no such punctuation at that point: one of the two is wrong, so check the source. Summaries
+    do not always link the detail file on the same line, so the comparison is across all files."""
+    quotes = []
+    for f, text in texts.items():
+        if f in ROOT_FILES_EXCLUDED_FROM_WORDING:
+            continue
+        for n, line in prose_lines(text):
+            # pair quotation marks in order, so a short quote ("locked") can't shift the pairing
+            for q in [q for q in re.findall(r'"([^"]*)"', line) if len(q) >= 8]:
+                quotes.append((f, n, norm_quote(q), _quote_words(q)))
+    out = {}
+    for f, n, raw, words in quotes:
+        if not re.search(r"(?<!\.)[.!?]$", raw) or len(words.split()) < 3:
+            continue  # no end punctuation to check, or an ellipsis
+        mark = raw[-1]
+        pat = re.compile(r"\W+".join(re.escape(w) for w in words.split()) + r"(?P<after>\W*)")
+        for f2, n2, raw2, words2 in quotes:
+            if (f2, n2) == (f, n) or words not in words2:
+                continue
+            m = pat.search(raw2)
+            after = re.sub(r"[^.!?]", "", m.group("after")) if m else ""
+            if m and not after.startswith(mark) and (after or m.end() < len(raw2) or raw2 == raw2.rstrip(".!?")):
+                out.setdefault(f, {})[n] = (f"quote punctuated differently from {f2}:{n2} "
+                                           f"(\"…{raw[-30:]}\" ends with '{mark}' where the other has '{after[:1] or "nothing"}'): check the source and make them agree")
+                break
+    return out
+
+
 SAME_PERSON = (r"(?i)\bsame (player|poster|person|uploader)\b|\bone player\b|\bthe player who\b|\bthe same\b"
                r"|former trial admin|author of the Honest Opinion thread|same Reddit player")
 PLURAL = r"\b(Players|other players|another (?:player|poster)|a (?:third|second|frequent)\b|several)"
@@ -405,6 +478,53 @@ def screenshot_quote_hits(path, text):
     return out
 
 
+SOURCE_RULES_FILE = "tools/source-rules.json"
+
+
+def _sentences(line):
+    return re.split(r"(?<=[.;!?])\s+(?=[A-Z*(\[])|\s*\|\s*", line)
+
+
+def check_source_rules(files, problems):
+    """Dates and origins of particular sources must be stated the same way everywhere, and a poster
+    who is quoted in several sections must be identified in each one (tools/source-rules.json)."""
+    if not os.path.exists(SOURCE_RULES_FILE):
+        return
+    rules = json.load(open(SOURCE_RULES_FILE, encoding="utf-8"))
+    month = r"\b(?:\d{1,2} )?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? \d{4}\b|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b"
+    reg = {k: v for k, v in json.load(open("tools/sources.json", encoding="utf-8")).items() if not k.startswith("_")}
+    for f in files:
+        if f in ROOT_FILES_EXCLUDED_FROM_WORDING:
+            continue
+        text = open(f, encoding="utf-8").read()
+        section, section_lines = "", []
+        sections = []
+        for n, line in prose_lines(text):
+            if re.match(r"#{1,3} ", line):
+                sections.append((section, section_lines))
+                section, section_lines = line, []
+            section_lines.append((n, line))
+            for sent in _sentences(line):
+                for r in rules.get("dated", []):
+                    m = re.search(r["mention"], sent)
+                    near = sent[max(0, m.start() - 45):m.end() + 45] if m else ""
+                    if m and re.search(month, near) and not re.search(r["allowed"], sent):
+                        problems.append(f"{f}:{n}: {r['name']} dated differently from its source ({r['why']}); use \"{r['allowed']}\"…\n    {sent.strip()[:200]}")
+                for r in rules.get("attribution", []):
+                    if re.search(r["pattern"], sent) and not re.search(r["require"], sent):
+                        problems.append(f"{f}:{n}: {r['name']} stated without saying where it comes from ({r['why']})\n    {sent.strip()[:200]}")
+        sections.append((section, section_lines))
+        for heading, lines in sections:
+            body = "\n".join(l for _, l in lines)
+            for label, phrase in rules.get("identify", {}).items():
+                for n, line in lines:
+                    quotes = " ".join(re.findall(r'"([^"]+)"', line)).lower()
+                    if any(fr.lower() in quotes for fr in reg.get(label, [])) and phrase.lower() not in body.lower():
+                        problems.append(f"{f}:{n}: quotes {label} but the section ({heading.strip('# ')[:50]}) never says so "
+                                        f"(add \"{phrase}\"), so one person can read as several")
+                        break
+
+
 def check_hedges(problems):
     """README findings rows that are not Documented must not read as established fact."""
     for n, line in enumerate(open("README.md", encoding="utf-8").read().split("\n"), 1):
@@ -471,13 +591,62 @@ def synced(detail, note):
     return 0
 
 
+def load_known_errors():
+    if not os.path.exists(KNOWN_ERRORS_FILE):
+        return []
+    return json.load(open(KNOWN_ERRORS_FILE, encoding="utf-8"))
+
+
+def known_error_hits(line, known=None):
+    """Wording that was corrected once must never come back, anywhere. These cannot be cleared with --ack."""
+    hits = []
+    for e in (known if known is not None else load_known_errors()):
+        text = line if e.get("match_quotes") else re.sub(r'\*"[^"]*"\*|"[^"]*"', "QUOTE", line)
+        if re.search(e["pattern"], text, re.I):
+            hits.append(f"KNOWN ERROR: {e['why']}")
+    return hits
+
+
+def check_known_errors(files, problems):
+    known = load_known_errors()
+    found = []
+    for f in files:
+        if f in KNOWN_ERRORS_EXEMPT or f.startswith("evidence/snapshots"):
+            continue
+        for n, line in prose_lines(open(f, encoding="utf-8").read()):
+            for h in known_error_hits(line, known):
+                found.append(f"{f}:{n}: [{h}]\n    {line.strip()[:300]}")
+    if found:
+        problems.append(f"{len(found)} line(s) repeat wording that was already corrected (tools/known-errors.json). "
+                        "Fix them; these cannot be recorded as reviewed.\n" + "\n".join(found))
+
+
+def list_acks(category=""):
+    """Every recorded wording review that still applies, with its reason, for re-checking in a full review."""
+    reviews = load_reviews()
+    texts = {f: open(f, encoding="utf-8").read() for f in md_files()}
+    count = 0
+    for f in md_files():
+        for n, line in prose_lines(texts[f]):
+            k = line_key(f, line)
+            if k not in reviews:
+                continue
+            hits = risky_hits(f, line)
+            if category and not any(h.startswith(category) for h in hits):
+                continue
+            count += 1
+            print(f"{f}:{n}: [{'; '.join(hits) or 'other check'}]\n    LINE: {line.strip()[:400]}\n    REASON: {reviews[k].split(chr(9))[3]}")
+    print(f"{count} recorded review(s). Re-read each line against its source: is the reason still true, and does it cover every flagged word?")
+    return 0
+
+
 def scan_outside(paths):
     """Run the wording scan on text that lives outside the repository (posts, replies, emails).
     Nothing is recorded: every hit must be checked against the repository before posting."""
     total = 0
     for p in paths:
         for n, line in enumerate(open(p, encoding="utf-8").read().split("\n"), 1):
-            hits = risky_hits("outside", line)
+            hits = known_error_hits(line) + risky_hits("outside", line)
             if hits:
                 total += 1
                 print(f"{p}:{n}: [{'; '.join(hits)}]\n    {line.strip()[:300]}")
@@ -485,25 +654,127 @@ def scan_outside(paths):
     return 0
 
 
-def list_quotes():
-    """Every quote on a line that cites an outside web page, grouped by the pages that line cites.
-    In a full review, open each page and confirm each quote appears there word for word."""
+VERIFIED_FILE = "tools/verified-sources.json"
+
+
+def load_verified():
+    if not os.path.exists(VERIFIED_FILE):
+        return {"stability": [], "verified": {}}
+    return json.load(open(VERIFIED_FILE, encoding="utf-8"))
+
+
+def source_class(source, reg):
+    """stable: old forum posts, videos, archives, legislation, screenshots (checked once, then only if
+    the quote changes); slow: re-check after N days; live: re-check in every full review."""
+    sec = reg.get("sections", {}).get(source)
+    if sec:
+        return sec["class"], sec.get("recheck_days", 0)
+    for rule in reg.get("stability", []):
+        if re.search(rule["match"], source):
+            return rule["class"], rule.get("recheck_days", 0)
+    return "live", 0
+
+
+def quote_groups():
     groups = {}
     for f in md_files():
         if f in ROOT_FILES_EXCLUDED_FROM_WORDING:
             continue
+        heading, last_url = "", None
         for n, line in prose_lines(open(f, encoding="utf-8").read()):
+            if line.startswith("#"):
+                heading, last_url = line.strip("# ").strip(), None
             urls = sorted(set(re.findall(r"https?://[^\s)>\]\"*]+", line)))
-            quotes = re.findall(r'\*"([^"]{6,})"\*', line)
-            if urls and quotes:
-                groups.setdefault(" ".join(urls), []).append((f"{f}:{n}", quotes))
-    print(json.dumps(groups, indent=1, ensure_ascii=False))
+            quotes = re.findall(r'\*"([^"]{2,})"\*', line)
+            if quotes:
+                # A quote with no outside link on its line still has a source (the nearest link above in
+                # the section, a screenshot, a file in this repository, or a source the line names): it is
+                # keyed by file and section, and classed by that nearest link, so a live page stays live.
+                # A line that links a published screenshot and no web page is keyed by the image: images
+                # don't change, and the OCR check compares those quotes with the image on every run.
+                shots = sorted(set(re.findall(r"\((?:\.\./)?(?:evidence/)?screenshots/([^)\s]+)\)", line)))
+                if urls:
+                    key = " ".join(urls)
+                elif shots:
+                    key = "screenshot:" + " ".join(shots)
+                else:
+                    key = f"{f}§{heading}" + (f" (nearest link: {last_url})" if last_url else "")
+                groups.setdefault(key, []).append((f"{f}:{n}", quotes))
+            if urls:
+                last_url = urls[-1]
+    return groups
+
+
+def quotes_due(groups, reg, today=None):
+    import datetime
+    today = today or datetime.date.today()
+    due = {}
+    for key, items in groups.items():
+        cls, days = source_class(key, reg)
+        done = reg.get("verified", {}).get(key, {})
+        for loc, qs in items:
+            for q in qs:
+                rec = done.get(q)
+                if rec and cls == "stable":
+                    continue
+                if rec and cls == "live" and rec[:10] == today.isoformat():
+                    continue  # live pages: once per day
+                if rec and cls == "slow":
+                    when = datetime.date.fromisoformat(rec[:10])
+                    if (today - when).days < days:
+                        continue
+                due.setdefault(key, []).append((loc, q, cls, rec or "never checked"))
+    return due
+
+
+def list_quotes(show_all=False):
+    """The quote audit. In a full review, open each listed page (or image) and confirm each quote
+    appears there word for word, written by the person and on the date the repository says."""
+    reg = load_verified()
+    groups = quote_groups()
+    if show_all:
+        print(json.dumps(groups, indent=1, ensure_ascii=False))
+        return 0
+    due = quotes_due(groups, reg)
+    total = sum(len(qs) for v in groups.values() for _, qs in v)
+    n_due = sum(len(v) for v in due.values())
+    for key, items in due.items():
+        print(key)
+        for loc, q, cls, rec in items:
+            print(f"    [{cls}; last: {rec[:60]}] {loc}: \"{q[:90]}\"")
+    print(f"{n_due} of {total} quotes to check. Stable sources already verified are skipped "
+          f"(record new checks with --verified SOURCE \"how\").")
+    return 0
+
+
+def verified(source, how):
+    import datetime
+    if len(how.strip()) < 15:
+        print("Say how the quotes were checked (page opened, author and date, image compared).")
+        return 1
+    groups = quote_groups()
+    if source not in groups:
+        print(f"No quotes are listed under {source}; run --quotes --all to see the source keys.")
+        return 1
+    reg = load_verified()
+    rec = reg.setdefault("verified", {}).setdefault(source, {})
+    stamp = f"{datetime.date.today().isoformat()} {how.strip()}"
+    qs = {q for _, qq in groups[source] for q in qq}
+    for q in qs:
+        rec[q] = stamp
+    # drop records for quotes no longer in the repository under this source
+    for q in [q for q in rec if q not in qs]:
+        del rec[q]
+    json.dump(reg, open(VERIFIED_FILE, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    open(VERIFIED_FILE, "a", encoding="utf-8").write("\n")
+    print(f"Recorded {len(qs)} quote(s) under {source} as checked")
     return 0
 
 
 def check_wording(files, problems):
     reviews = load_reviews()
     texts = {f: open(f, encoding="utf-8").read() for f in files}
+    variants = quote_variant_hits(texts)
     unreviewed = []
     for f in files:
         text = open(f, encoding="utf-8").read()
@@ -512,9 +783,10 @@ def check_wording(files, problems):
         shots = screenshot_quote_hits(f, text)
         for n, line in prose_lines(text):
             hits = (risky_hits(f, line) + ([says[n]] if n in says else []) + ([posters[n]] if n in posters else [])
+                    + ([variants[f][n]] if n in variants.get(f, {}) else [])
                     + shots.get(n, [])
                     + count_hits(line) + linked_quote_hits(f, line, texts))
-            if hits and line_key(f, line) not in reviews:
+            if hits and not (line_key(f, line) in reviews and review_covers(reviews[line_key(f, line)], hits)):
                 unreviewed.append(f"{f}:{n}: [{'; '.join(hits)}]\n    {line.strip()[:300]}")
     if unreviewed:
         problems.append(
@@ -533,15 +805,25 @@ def ack(target, note):
     if (not risky_hits(path, line) and int(n) not in says_column_hits(path, "\n".join(lines))
             and not count_hits(line) and not linked_quote_hits(path, line, texts)
             and int(n) not in poster_hits(path, "\n".join(lines))
+            and int(n) not in quote_variant_hits(texts).get(path, {})
             and int(n) not in screenshot_quote_hits(path, "\n".join(lines))):
         print(f"{target} has no high-risk wording; nothing to record")
         return 0
     if len(note.strip()) < 15:
         print("Give a real reason (what source supports the wording).")
         return 1
+    text = "\n".join(lines)
+    hits = (risky_hits(path, line) + ([says_column_hits(path, text)[int(n)]] if int(n) in says_column_hits(path, text) else [])
+            + count_hits(line) + linked_quote_hits(path, line, texts)
+            + ([poster_hits(path, text)[int(n)]] if int(n) in poster_hits(path, text) else [])
+            + screenshot_quote_hits(path, text).get(int(n), [])
+            + ([quote_variant_hits(texts)[path][int(n)]] if int(n) in quote_variant_hits(texts).get(path, {}) else []))
     reviews = load_reviews()
+    old = reviews.get(line_key(path, line), "").split("\t")
+    kinds = {hit_kind(h) for h in hits} | (set(old[4].split(",")) if len(old) >= 5 else set())
     excerpt = line.strip()[:80].replace("\t", " ")
-    reviews[line_key(path, line)] = f"{line_key(path, line)}\t{path}\t{excerpt}\t{note.strip()}"
+    note = note.strip() if len(old) < 4 or note.strip() in old[3] else (old[3] + " | " + note.strip() if old[0] else note.strip())
+    reviews[line_key(path, line)] = f"{line_key(path, line)}\t{path}\t{excerpt}\t{note}\t{','.join(sorted(kinds))}"
     save_reviews(reviews)
     print(f"Recorded review of {target}")
     return 0
@@ -565,7 +847,11 @@ def main(argv):
     if argv[:1] == ["--synced"] and len(argv) == 3:
         return synced(argv[1], argv[2])
     if argv[:1] == ["--quotes"]:
-        return list_quotes()
+        return list_quotes(show_all="--all" in argv)
+    if argv[:1] == ["--verified"] and len(argv) == 3:
+        return verified(argv[1], argv[2])
+    if argv[:1] == ["--acks"]:
+        return list_acks(argv[1] if len(argv) > 1 else "")
     if argv[:1] == ["--outside"] and len(argv) > 1:
         return scan_outside(argv[1:])
     files = md_files()
@@ -575,7 +861,9 @@ def main(argv):
     check_facts(files, problems)
     check_dates(problems)
     check_wording(files, problems)
+    check_known_errors(files, problems)
     check_hedges(problems)
+    check_source_rules(files, problems)
     check_summaries(problems)
     live = {line_key(f, l) for f in files for _, l in prose_lines(open(f, encoding="utf-8").read())}
     stale = [k for k in load_reviews() if k not in live]

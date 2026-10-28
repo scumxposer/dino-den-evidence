@@ -6,7 +6,7 @@ Most documented figures come from public pages and public API endpoints that any
 
 | Page | What to look for |
 |---|---|
-| <https://main.dinoden.gg/faq> | "casino games", self-exclusion, Patreon AmberShard payouts, patron-only coin flip |
+| <https://main.dinoden.gg/faq> | "casino games", self-exclusion, Patreon AmberShard payouts, the coin flip offered to active patrons |
 | Account settings on main.dinoden.gg (signed in) | the "Gambling Self-Exclusion" section |
 | <https://main.dinoden.gg/subscriber> (signed in as a patron) | per-species online counts and caps, tier badges such as "APEX+", species unlocks ("Unlocks on [server] only" or "Respawns you as [dino]"; whether an unlock lets other players spawn as that species can be checked in-game) |
 | <https://main.dinoden.gg/tos> | §1 age requirement, §2 virtual items and games, §3 Patreon |

@@ -8,7 +8,7 @@ From The Dino Den's FAQ (<https://main.dinoden.gg/faq>):
 
 - *"A casino game crashed or did not pay out."* — the heading of one FAQ entry.
 - *"How do I earn ClawCoins? … Patreon tiers add a ClawCoin boost on top. You can also win (or lose...) ClawCoins in our casino games."*
-- *"Can I set gambling limits or exclude myself? Yes. You can self-exclude from all casino games."*
+- *"Can I set gambling limits or exclude myself? Yes. You can self-exclude from all casino games - contact support or use the self-exclusion option. Take this seriously: self-exclusions are not lifted early, no matter how nicely you ask."*
 
 The account settings shown to signed-in players (text from the site's JavaScript, read 27 Oct 2026) go further. A section titled *"Gambling Self-Exclusion"* says: *"Lock yourself out of all gambling games (Crash, Roll, Mines, Blackjack) for a fixed period."* Once set, it shows *"Gambling locked"*. The list names four games, while the FAQ says self-exclusion covers *"all casino games"*; whether it also blocks Coinflip, Jackpot and Crates could not be checked. See [DISCREPANCIES.md §4](../DISCREPANCIES.md#4-not-gambling-vs-the-operators-own-descriptions).
 
@@ -36,7 +36,9 @@ Source: <https://main.dinoden.gg/games/jackpot> and its "How it works" panel, re
 - The draw is described as "provably fair": a secret server seed is combined with the hash of *"a future EOS block"* (EOS appears to mean the EOS blockchain) to pick the winning ticket.
 - The round counter shown in the Low room read #17,088 at about 10:40 UTC on 27 Oct 2026.
 
-## A double-or-nothing flip only for patrons
+<a id="a-double-or-nothing-flip-only-for-patrons"></a>
+
+## A double-or-nothing flip offered to patrons
 
 From the FAQ: after server downtime, *"everyone who was an active patron during the outage can claim compensation… take it straight up, or flip a coin up to 3 times to double it each time. Careful: one lost flip and it is gone."*
 
@@ -80,4 +82,4 @@ Source: The Dino Den's own news posts (<https://api.dinoden.gg/news>) and Item S
 
 ## An item that changes odds
 
-The site's code defines a consumable labelled *"Lucky — Better RNG on lucky bags & games."* How players obtain it could not be confirmed.
+The site's code defines a dinosaur perk labelled *"Lucky"* and described as *"Better RNG on lucky bags & games"* (re-read 27 Oct 2026). The admin panel's code lets staff grant it, like the other perks (*"2x Clawcoins"*, *"2x Amber"*), to a player's dinosaur with a multiplier and an optional expiry date. What it does on the server, and whether players can get it any other way, could not be confirmed.

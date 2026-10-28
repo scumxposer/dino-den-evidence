@@ -13,7 +13,7 @@ This repository documents a dispute that involves real people. It only works if 
 
 - Harassment, threats or abuse of anyone, including The Dino Den's owners, staff and players.
 - Calls to raid, spam, review-bomb, DDoS or otherwise attack the server, its Discord, its website or anyone's accounts.
-- Posting personal information: real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people. Players' usernames and avatars are hidden in anything published; evidence about staff is limited to what they did as staff.
+- Posting personal information: real names, addresses, Steam profiles, alleged alt accounts, or private messages between other people (unless the owner or staff posted them in a public channel; see [CONTRIBUTING.md](CONTRIBUTING.md#messages-from-the-public-dino-den-discord)). Players' usernames and avatars are hidden in anything published; evidence about staff is limited to what they did as staff.
 - Accusing named people of crimes without published evidence.
 - Impersonating the operators, staff or anyone else.
 

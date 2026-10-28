@@ -1,0 +1,493 @@
+{
+ "_about": "Which quotes have been checked against their source, and how often each kind of source must be re-checked. 'stable' sources (old forum posts, YouTube videos, archived pages, legislation, screenshots) are checked once and then only when a quote changes or is added; 'slow' sources are re-checked after recheck_days; 'live' sources (Dino Den's site and API, Patreon, trackers) are re-checked in every full review. The first matching rule wins. Record checks with: python3 tools/check.py --verified SOURCE \"how\".",
+ "stability": [
+  {
+   "match": "^screenshot:",
+   "class": "stable",
+   "why": "published screenshots do not change; the OCR check compares their quotes on every run"
+  },
+  {
+   "match": "steamcommunity\\.com",
+   "class": "stable",
+   "why": "old forum posts; authors and post dates are fixed. Re-check a quote only if it is new or changed"
+  },
+  {
+   "match": "youtube\\.com|youtu\\.be",
+   "class": "stable",
+   "why": "published videos and descriptions"
+  },
+  {
+   "match": "web\\.archive\\.org",
+   "class": "stable",
+   "why": "archived copies do not change"
+  },
+  {
+   "match": "legislation\\.gov\\.uk|eur-lex\\.europa\\.eu",
+   "class": "stable",
+   "why": "enacted legislation"
+  },
+  {
+   "match": "graphtreon\\.com",
+   "class": "stable",
+   "why": "history frozen since the counts were made private on 29 Mar 2026"
+  },
+  {
+   "match": "ofcom\\.org\\.uk|gamblingcommission\\.gov\\.uk|lewissilkin\\.com|discordbotlist\\.com|company-information\\.service\\.gov\\.uk|theisle-game\\.com|thetoprat\\.github\\.io|patreon\\.com/policy",
+   "class": "slow",
+   "recheck_days": 30,
+   "why": "official or reference pages that change rarely"
+  },
+  {
+   "match": "dinoden\\.gg|patreon\\.com|thespoofingisle\\.com",
+   "class": "live",
+   "why": "the operator's live site, API and Patreon page, and a live tracker"
+  },
+  {
+   "match": "^[^ ]+\\.md§",
+   "class": "live",
+   "why": "quotes with no outside link in their section: the source can't be classed from a link, so they are re-checked every review unless the section is listed under 'sections' as stable"
+  }
+ ],
+ "verified": {
+  "README.md§Staff and owner conduct": {
+   "Where reasonable, we may provide notice or an opportunity to appeal via our support channels.": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible.": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "I got no clue what you did to get banned": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "Dw ill unban you": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "may extend across the website, our game servers, and connected community spaces such as our Discord.": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "Moderation decisions are made at our sole discretion and are final.": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "unbanned a guy for this": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "with or without reason, and without prior notice or compensation": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "We dont refund for players breaking rules": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)",
+   "You deserve the #wall-of-shame tbh xD": "2026-10-27 screenshot quotes compared by eye with the 18 Aug and 15 Aug images (review #7 for the no-clue ending); Terms/FAQ quotes match DISCREPANCIES and evidence/03 (punctuation check)"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/669474588663616129/": {
+   "The entire system currently doesn't work": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "get past the cap (Pop Control)": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "You get it when it's active": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "Apex=Rex": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "Priority Queue": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/802343728582771226/": {
+   "But dinoden restrict the Rexs and big carnivore.": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "BUT, if your apex (paying monthly) your able to play watever you want.": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "community-reports.md§Restricted dinosaurs unlocked by paying (nearest link: https://steamcommunity.com/app/376210/discussions/14/802343728582771226/)": {
+   "for EVERYONE. Not just themselves": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "asking in chat will normally get them unlocked, though access to trex is a bit more difficult": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "is a smart decision": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "access to any Dino that the paying players have.": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Allo is not hard to get at all": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Unlock currently locked dinos": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "benefits EVERYBODY involved": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "have more access to trex": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/582805931178577143/": {
+   "BEHIND PAYWALLS before the release of the Dinosaurs, putting them behind the $99.00 Patreon": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "community-reports.md§Restricted dinosaurs unlocked by paying (nearest link: https://steamcommunity.com/app/376210/discussions/14/582805931178577143/)": {
+   "even when it's locked": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "dinos that are not released yet": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "never had to pay for anything": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/573793348713953746/ https://steamcommunity.com/app/376210/discussions/14/581678695778932381/ https://steamcommunity.com/app/376210/discussions/14/582804934666261638/": {
+   "they all are Offline in the morning / daytime": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "they are only 'Chat admins'": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "it only last for a day or two then they're back cheating": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "community-reports.md§Cheaters not dealt with; admins absent (nearest link: https://steamcommunity.com/app/376210/discussions/14/582804934666261638/)": {
+   "at times": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "I got probably around 300hrs on the server and 60% of the time it's alright": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "Admins have always been reasonable in my interactions": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye"
+  },
+  "community-reports.md§Bans after criticism": {
+   "unbanned a guy for this": "2026-10-27 owner's words from the 18 Aug screenshot, compared by eye (reviews #5-#7)",
+   "no clue": "2026-10-27 owner's words from the 18 Aug screenshot, compared by eye (reviews #5-#7)"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/582804934666261638/": {
+   "Some of the Admins saw my post here and decided to Ban me from their server": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "The owners of Dookie Den are the same owners as NERF servers": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "community-reports.md§Bans after criticism (nearest link: https://steamcommunity.com/app/376210/discussions/14/669474588663616129/)": {
+   "I was among the people that reported your constant overpacking": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye",
+   "you got banned because you were constantly livestreaming yourself breaking the rules (no overpacking)": "2026-10-27 review #7: Steam quotes found in their threads (browser, authors and dates checked); Reddit quotes OCR-matched to the author's originals; Discord quotes compared with the published screenshots by eye"
+  },
+  "https://www.youtube.com/watch?v=0STn7iH4oGE": {
+   "spawned in perfect place to bait": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7",
+   "goes behind the rock so other admin can spawn without being seen lol": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7",
+   "i got banned after reporting them": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7"
+  },
+  "https://www.youtube.com/watch?v=bkJ9nfLP20E": {
+   "Other admin tp with baryonx too": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7",
+   "This is probably another admin too": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7",
+   "with teleporting": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7",
+   "Here admin spawning with baryonx": "2026-10-27 on-screen captions read from video frames in the 27 Oct research round; upload date and length re-checked from page data in review #7"
+  },
+  "https://www.youtube.com/watch?v=f13kG96m66k": {
+   "Admin hides not far from me, then goes into admin spectator mode to escape. Was reported and told it was fine and not admin abuse.": "2026-10-27 review #7: video description, upload date and length read from the watch page data"
+  },
+  "https://www.youtube.com/watch?v=3brSWU7IQIA": {
+   "This admin protects their friends while they safelog, got reported and the admin was not punished and is still a staff member.": "2026-10-27 review #7: video description, upload date and length read from the watch page data",
+   "Shortly after uploading these videos I was perma banned.": "2026-10-27 review #7: video description, upload date and length read from the watch page data",
+   "Got perma banned after I uploaded these videos lol": "2026-10-27 review #7: video description, upload date and length read from the watch page data"
+  },
+  "https://www.youtube.com/watch?v=KewF37jDCCs https://www.youtube.com/watch?v=XeGscXc0eGw": {
+   "an official warning to split up": "2026-10-27 review #7: video description, upload date and length read from the watch page data"
+  },
+  "https://steamcommunity.com/app/376210/discussions/14/573793348713953746/": {
+   "When it says 450/450 - true numbers could be around 100": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "the server IMMEDIATELY has almost close to cap players right away.": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp",
+   "servers showing full players count are empty most of time": "2026-10-27 review #7: thread pages fetched in the browser; each quote found word for word, author compared with the poster registry, post date from data-timestamp"
+  },
+  "evidence/05-staff-conduct.md§`#wall-of-shame`": {
+   "Yall gotta stop sending me this shit": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Don't be this guy folks.": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "I appreciate the humility W": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Yes, they seem quite nice 🤣": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "WHAT THE FUCK": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7"
+  },
+  "evidence/05-staff-conduct.md§Two banned players, shown in the channel on 18 August": {
+   "Maybe you shouldnt believe everything you hear online xD": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "You deserve the #wall-of-shame tbh xD": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "horrible staff hope your server dies like it should": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "for misinformation": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "What did you do?": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "We dont refund for players breaking rules": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "no warnings": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "I appreciate the humility W": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Dw ill unban you": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "I would open a ticket and explain your side": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "an apex patreon member for a year i think.": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "disgruntled staff": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "What did you say?": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "cause i unbanned a guy for this xD": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "I got no clue what you did to get banned": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7"
+  },
+  "evidence/05-staff-conduct.md§`#sent-to-hell`: a ban trap": {
+   "This is a ban trap. Sending anything here — a message, a meme, a sticker, a GIF, even a single letter — gets you instantly banned.": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Instant ban, zero exceptions": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "No warnings. No second chances.": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "The whole server gets told about it": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "DO NOT TYPE IN THIS CHANNEL": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Your last 7 days of messages get deleted from the whole server": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7"
+  },
+  "evidence/05-staff-conduct.md§What can and cannot be concluded": {
+   "final.": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "DO NOT TYPE IN THIS CHANNEL": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "deserve[d]": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "unbanned a guy for this": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "no clue": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7",
+   "Souls claimed: 403": "2026-10-27 screenshot quotes: OCR plus by-eye comparison with the redacted images and the author's originals (reviews #5-#6); 'I got no clue' ending re-checked by eye in review #7"
+  },
+  "https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms": {
+   "If you are a minor, you may use the Service only with the consent of a parent or legal guardian (where required by law).": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "If you are located in the European Union, you may contact us electronically via contact@dinoden.gg for matters related to the EU Digital Services Act (DSA). If we are legally required to appoint an EU legal representative, we will publish the representative's contact details in an easily accessible place on the Service.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Any chance-based features (including, without limitation, coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics) are provided solely for entertainment and use only virtual in-service currency or virtual items.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Chance-Based Games (Entertainment Only)": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "You must be at least 18 years old to use the service.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Any chance-based features (including, without limitation, coin flips, jackpots, loot boxes, plinko, spins, raffles, or similar mechanics)…": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "DISCREPANCIES.md§9. EU Digital Services Act: contact point and legal representative removed (nearest link: https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)": {
+   "Where reasonable, we may provide notice or an opportunity to appeal via our support channels.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "DISCREPANCIES.md§9. EU Digital Services Act: contact point and legal representative removed (nearest link: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2065)": {
+   "a clear and specific statement of reasons": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "the targeting of activities towards one or more Member States.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "chat messages, names, profile content and uploads": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "irrespective of where the providers… have their place of establishment": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "a significant number of recipients": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "substantial connection to the Union": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "by electronic means and in a user-friendly manner… which shall not solely rely on automated tools.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "which do not have an establishment in the Union but which offer services in the Union shall designate, in writing": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "exclusively by electronic means.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "DISCREPANCIES.md§10. UK Online Safety Act: 18+ rule with no age check; reporting and appeals (nearest link: https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)": {
+   "Moderation decisions are made at our sole discretion and are final.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "with or without reason, and without prior notice": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.legislation.gov.uk/ukpga/2023/50/section/4": {
+   "links with the United Kingdom": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "one of the target markets for the service": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.legislation.gov.uk/ukpga/2023/50/section/20": {
+   "systems and processes that allow users and affected persons to easily report content": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.legislation.gov.uk/ukpga/2023/50/section/21": {
+   "easy to access, easy to use (including by children) and transparent": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.legislation.gov.uk/ukpga/2023/50/section/35 https://www.lewissilkin.com/insights/2025/01/16/a-new-age-ofcom-publishes-final-version-of-age-assurance-guidance-102ju6k": {
+   "children are not normally able to access the service": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "self-declaration of age… [is] not highly effective": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "DISCREPANCIES.md§10. UK Online Safety Act: 18+ rule with no age check; reporting and appeals (nearest link: https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/important-dates-for-online-safety-compliance)": {
+   "final.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "the exact reason": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "with or without reason": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.ofcom.org.uk/complaints/online-services-sites-apps/sites-and-apps/safety-measures": {
+   "cannot respond to or investigate individual complaints": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/page/digital-and-virtual-currencies https://www.legislation.gov.uk/ukpga/2005/19/section/6": {
+   "can be exchanged for cash or traded for items of value": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "means money or money's worth": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://discordbotlist.com/bots/honeypot/upvote": {
+   "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "unbanned a guy for this": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "No warnings. No second chances.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "DO NOT TYPE IN THIS CHANNEL": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "evidence/01-patreon-to-casino.md§How many people pay (nearest link: https://graphtreon.com/creator/TheDinoDen)": {
+   "Patreon stats set to private on Mar 29, 2026.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://find-and-update.company-information.service.gov.uk/company/16970676": {
+   "not affiliated with or endorsed by Afterthought LLC.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "evidence/03-operator-statements.md§The operator's position, and the evidence (nearest link: https://web.archive.org/web/20260402000811/https://na.dinoden.gg/terms)": {
+   "ClawCoins are earned by playing - the only real-money support is our Patreon.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Moderation decisions are made at our sole discretion and are final.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Where reasonable, we may provide notice or an opportunity to appeal via our support channels.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "with or without reason, and without prior notice or compensation": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
+   "Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "evidence/05-staff-conduct.md§What can and cannot be concluded (nearest link: https://discordbotlist.com/bots/honeypot/upvote)": {
+   "no clue": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+  },
+  "https://api.dinoden.gg/patreon/tiers": {
+   "Maximum 3.5x Clawcoin boost": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/patreon": {
+   "Maximum 3.5x Clawcoin boost": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "4.5x Clawcoin multiplier": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Unlimited Dino parking": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/tos": {
+   "Moderation decisions are made at our sole discretion and are final.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "including crates, coinflip, crash, mines, blackjack, roll and similar": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "memberships are not purchases of Virtual Items, and Virtual Items received through a membership carry no monetary value": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "are played exclusively with virtual currency, are provided for entertainment only and are not gambling for money or anything of monetary value.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "with or without reason, and without prior notice or compensation": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Reach us through our Discord or in writing to": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Any perks granted in return are Virtual Items as described above.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "You must be at least 18 years old to use the service.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/privacy": {
+   "The service is intended for adults and not directed at anyone under 18.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "chat messages, names, profile content and uploads": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/faq": {
+   "Open a rulebreak ticket on our Discord": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Video links only": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Video links only… no raw files, mp4 uploads, or screenshots.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Can I set gambling limits or exclude myself?": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "we will tell you the exact reason and show the evidence where possible.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Open an appeal ticket on our Discord and we will tell you the exact reason and show the evidence where possible.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "You can also win (or lose...) ClawCoins in our casino games.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "a rulebreak ticket on our Discord": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "an appeal ticket on our Discord": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "A casino game crashed or did not pay out.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Active patrons receive their tier's AmberShards every 14 days… Tier upgrades grant the difference between the tiers immediately.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "DISCREPANCIES.md§4. \"Not gambling\" vs the operator's own descriptions (nearest link: https://main.dinoden.gg/faq)": {
+   "You're locked out of gambling until": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "gambling games": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "all casino games": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Lock yourself out of all gambling games (Crash, Roll, Mines, Blackjack) for a fixed period.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Gambling Self-Exclusion": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Gambling locked": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg": {
+   "One pot, one winner": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/games/poker": {
+   "Texas Hold'em — Provably Fair": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "DISCREPANCIES.md§9. EU Digital Services Act: contact point and legal representative removed (nearest link: https://main.dinoden.gg/tos)": {
+   "with or without reason, and without prior notice": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Moderation decisions are made at our sole discretion and are final.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/subscriber": {
+   "Already unlocked on this server": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "unlock": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "On cooldown for this server": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Unlocks on [server] only": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "[dino] unlocked on [server]": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Glitch skins are reserved for the APEX tier": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Playable for [time]": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Allo is not hard to get at all": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "[tier]+": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Online": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Respawns you as [dino] on [server]": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Requires [tier] or higher": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "respawn": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Live server population, species unlocks and the skin designer for patrons.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://api.dinoden.gg/platform-config": {
+   "Playable": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "APEX+": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "DISCREPANCIES.md§11. Patreon perks: Discord announcement vs the site's Patreon page (nearest link: https://api.dinoden.gg/platform-config)": {
+   "instantly purchase full-grown dinos": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "how do we unlock the allow…": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "asking in chat will normally get them unlocked, though access to trex is a bit more difficult. Allo is not hard to get at all.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "VIP-only access": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "they unlock it for EVERYONE. Not just themselves": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "DISCREPANCIES.md§12. Moderation in practice vs the Terms and FAQ (nearest link: https://main.dinoden.gg/faq)": {
+   "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "You deserve the #wall-of-shame tbh xD": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Dw ill unban you": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "We dont refund for players breaking rules": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "DO NOT TYPE IN THIS CHANNEL": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "cause i unbanned a guy for this xD": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "This is a ban trap… No warnings. No second chances.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "I would open a ticket and explain your side": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "I got no clue what you did to get banned": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Maybe you shouldnt believe everything you hear online xD": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://main.dinoden.gg/dinoden-client": {
+   "does not inject anything into The Isle, does not read game memory and does not modify game files": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "https://api.dinoden.gg/features": {
+   "Free for every Dino Den player": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "DISCREPANCIES.md§Checked, no discrepancy found (nearest link: https://api.dinoden.gg/features)": {
+   "the only real-money support is our Patreon": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/01-patreon-to-casino.md§Step 1 — Patreon tiers pay AmberShards (nearest link: https://main.dinoden.gg/faq)": {
+   "Maximum 3.5x Clawcoin boost": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/01-patreon-to-casino.md§Step 2 — AmberShards buy dinosaurs (nearest link: https://api.dinoden.gg/shop/dinos)": {
+   "Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/02-casino-games-and-raffle.md§The operator calls them casino games (nearest link: https://main.dinoden.gg/faq)": {
+   "How do I earn ClawCoins? … Patreon tiers add a ClawCoin boost on top. You can also win (or lose...) ClawCoins in our casino games.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "all casino games": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Can I set gambling limits or exclude myself? Yes. You can self-exclude from all casino games - contact support or use the self-exclusion option. Take this seriously: self-exclusions are not lifted early, no matter how nicely you ask.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Gambling locked": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Gambling Self-Exclusion": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "A casino game crashed or did not pay out.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Lock yourself out of all gambling games (Crash, Roll, Mines, Blackjack) for a fixed period.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/02-casino-games-and-raffle.md§Games switched on (nearest link: https://api.dinoden.gg/features)": {
+   "Texas Hold'em — Provably Fair": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/02-casino-games-and-raffle.md§Jackpot (nearest link: https://main.dinoden.gg/games/jackpot)": {
+   "Low 10,000 to 250,000 CC, Mid 250,000 to 2,500,000 CC, High 2,500,000 to 25,000,000 CC": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "a future EOS block": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "Every bet goes into one shared pot… Your chance to win is your share of the pot, and one player wins all of it.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending",
+   "The winner receives the pot minus a 2.5% tax.": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
+  },
+  "evidence/02-casino-games-and-raffle.md§Lucky Bags (nearest link: https://api.dinoden.gg/shop/items)": {
+   "Clawcoin prizes up to 20000k CC jackpot.": "2026-10-27 review #7 (28 Oct): Edition #17 news post fetched from api.dinoden.gg/news; quotes found in its excerpt and rendered table",
+   "Up to 5k CC · Jackpot: 500k CC": "2026-10-27 review #7 (28 Oct): Edition #17 news post fetched from api.dinoden.gg/news; quotes found in its excerpt and rendered table",
+   "Up to 50k CC · Jackpot: 5000k CC": "2026-10-27 review #7 (28 Oct): Edition #17 news post fetched from api.dinoden.gg/news; quotes found in its excerpt and rendered table"
+  },
+  "evidence/02-casino-games-and-raffle.md§An item that changes odds": {
+   "Lucky": "2026-10-27 review #7 (28 Oct): site JS bundle Calr6cdE.js (admin user page): perk list LUCKY 'Better RNG on lucky bags & games', 2x Clawcoins, 2x Amber; grant with multiplier and expiresAt",
+   "Better RNG on lucky bags & games": "2026-10-27 review #7 (28 Oct): site JS bundle Calr6cdE.js (admin user page): perk list LUCKY 'Better RNG on lucky bags & games', 2x Clawcoins, 2x Amber; grant with multiplier and expiresAt",
+   "2x Clawcoins": "2026-10-27 review #7 (28 Oct): site JS bundle Calr6cdE.js (admin user page): perk list LUCKY 'Better RNG on lucky bags & games', 2x Clawcoins, 2x Amber; grant with multiplier and expiresAt",
+   "2x Amber": "2026-10-27 review #7 (28 Oct): site JS bundle Calr6cdE.js (admin user page): perk list LUCKY 'Better RNG on lucky bags & games', 2x Clawcoins, 2x Amber; grant with multiplier and expiresAt"
+  },
+  "evidence/03-operator-statements.md§The operator's position, and the evidence": {
+   "grant the difference between the tiers immediately.": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js",
+   "have no monetary or real-world value and are not redeemable for money, goods or anything of value outside the service": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js",
+   "all gambling games": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js",
+   "Gambling Self-Exclusion": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js",
+   "memberships are not purchases of Virtual Items, and Virtual Items received through a membership carry no monetary value": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js",
+   "are played exclusively with virtual currency, are provided for entertainment only and are not gambling for money or anything of monetary value.": "2026-10-27 review #7 (28 Oct): live Terms (11 Jun 2026) and FAQ text read in the browser; settings text found in JS bundle C3eQMghP.js"
+  },
+  "reports-filed.md§Reports filed (nearest link: https://www.patreon.com/TheDinoDen)": {
+   "converts": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "feed the casino games": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "everyone who was an active patron during the outage": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "a closed loop": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "are sold": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "is defined by the AmberShards it pays": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ",
+   "only active Patreon members can use": "2026-10-27 review #7: sent report PDF and both emails read in Gmail (ticket 4333142); FAQ wording re-read on the live FAQ"
+  },
+  "screenshot:2025-12-08-discord-support-the-server.png": {
+   "Apex Role access to Rex – Apex tier supporters can play Rex even when it's locked": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6",
+   "Support the server on Patreon and unlock powerful perks that give you the edge in the wild!": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6",
+   "Bi-weekly Amber Shards – use them to instantly purchase full-grown dinos!": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6",
+   "Unlock currently locked dinos": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6",
+   "greater power on the island. Choose your path to dominance.": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6",
+   "Queue skip – join instantly even when full": "2026-10-27 OCR check passes against the published image; compared by eye in reviews #5-#6"
+  },
+  "screenshot:2026-10-09-discord-senior-admin-apex-unlock.png": {
+   "how do we unlock the allow…": "2026-10-27 OCR check passes; compared by eye with the author's original (*_af24aff4) in review #7",
+   "Allos and rexes can be unlock if you are APEX patreon, otherwise its popcontrol on them": "2026-10-27 OCR check passes; compared by eye with the author's original (*_af24aff4) in review #7"
+  },
+  "screenshot:2026-08-18-discord-wall-of-shame-refund-and-unban.png": {
+   "We dont refund for players breaking rules": "2026-10-27 OCR check passes; compared by eye with the author's original (*_d51079c4) in reviews #5-#7",
+   "Maybe you shouldnt believe everything you hear online xD": "2026-10-27 OCR check passes; compared by eye with the author's original (*_d51079c4) in reviews #5-#7",
+   "I would open a ticket and explain your side": "2026-10-27 OCR check passes; compared by eye with the author's original (*_d51079c4) in reviews #5-#7",
+   "I got no clue what you did to get banned": "2026-10-27 OCR check passes; compared by eye with the author's original (*_d51079c4) in reviews #5-#7",
+   "You deserve the #wall-of-shame tbh xD": "2026-10-27 OCR check passes; compared by eye with the author's original (*_d51079c4) in reviews #5-#7"
+  },
+  "DISCREPANCIES.md§11. Patreon perks: Discord announcement vs the site's Patreon page (nearest link: https://www.patreon.com/TheDinoDen)": {
+   "and bypass of all dino cap locks": "2026-10-27 review #7: report wording read in the author's report PDF; trial admin quotes found in his Steam post (browser, author checked)",
+   "Apex=Rex": "2026-10-27 review #7: report wording read in the author's report PDF; trial admin quotes found in his Steam post (browser, author checked)",
+   "get past the cap (Pop Control)": "2026-10-27 review #7: report wording read in the author's report PDF; trial admin quotes found in his Steam post (browser, author checked)",
+   "The entire system currently doesn't work": "2026-10-27 review #7: report wording read in the author's report PDF; trial admin quotes found in his Steam post (browser, author checked)"
+  },
+  "README.md§Key findings": {
+   "everyone who was an active patron during the outage": "2026-10-27 review #7 (28 Oct): live FAQ read in the browser"
+  },
+  "README.md§Why it matters (nearest link: https://patreon.com/policy/benefits)": {
+   "with or without reason": "2026-10-27 review #7 (28 Oct): live Terms §5 read in the browser",
+   "remove Virtual Items": "2026-10-27 review #7 (28 Oct): live Terms §5 read in the browser",
+   "final.": "2026-10-27 review #7 (28 Oct): live Terms §5 read in the browser"
+  },
+  "https://patreon.com/policy/benefits": {
+   "raffles, casinos and casino games": "2026-10-27 review #7 (28 Oct): page fetched, both quotes found word for word under §5",
+   "Fans and creators may not use Patreon to access, provide, or facilitate gambling for money or an exchange of value, including digital currencies.": "2026-10-27 review #7 (28 Oct): page fetched, both quotes found word for word under §5"
+  },
+  "https://api.dinoden.gg/news/daily-rewards-2026-10-26 https://den.dinoden.gg/twitch/leaderboard": {
+   "earn ClawCoins and AmberShards": "2026-10-27 review #7 (28 Oct): news post text and the den.dinoden.gg/twitch page description",
+   "up to 58.0k Clawcoins, 786 AmberShards": "2026-10-27 review #7 (28 Oct): news post text and the den.dinoden.gg/twitch page description"
+  },
+  "evidence/01-patreon-to-casino.md§Step 4 — ClawCoins can be wagered": {
+   "You can also win (or lose...) ClawCoins in our casino games.": "2026-10-27 review #7 (28 Oct): live FAQ"
+  },
+  "evidence/01-patreon-to-casino.md§The second route: the ClawCoin multiplier": {
+   "Patreon tiers add a ClawCoin boost on top.": "2026-10-27 review #7 (28 Oct): live FAQ"
+  },
+  "evidence/02-casino-games-and-raffle.md§A double-or-nothing flip offered to patrons": {
+   "everyone who was an active patron during the outage can claim compensation… take it straight up, or flip a coin up to 3 times to double it each time. Careful: one lost flip and it is gone.": "2026-10-27 review #7 (28 Oct): live FAQ, full sentence including 'take it straight up' and ending"
+  },
+  "https://github.com/scumxposer/dino-den-evidence": {
+   "The Dino Den evidence repository, https://github.com/scumxposer/dino-den-evidence": "2026-10-27 the repository's own suggested attribution text, not a quote of an outside source"
+  }
+ },
+ "sections": {
+  "evidence/05-staff-conduct.md§`#wall-of-shame`": {
+   "class": "stable",
+   "why": "captions read from the author's Discord screenshots (images do not change)"
+  },
+  "evidence/05-staff-conduct.md§Two banned players, shown in the channel on 18 August": {
+   "class": "stable",
+   "why": "the 18 Aug screenshot"
+  },
+  "evidence/05-staff-conduct.md§`#sent-to-hell`: a ban trap": {
+   "class": "stable",
+   "why": "the 15 Aug screenshot"
+  },
+  "community-reports.md§Bans after criticism": {
+   "class": "stable",
+   "why": "Steam posts (Petits Pieds poster)"
+  },
+  "reports-filed.md§Reports filed (nearest link: https://www.patreon.com/TheDinoDen)": {
+   "class": "stable",
+   "why": "quotes from the author's sent report and emails (Gmail ticket 4333142 thread) and the FAQ wording already checked under its own key"
+  }
+ },
+ "_about_sections": "Link-less sections whose quotes all come from fixed sources (screenshots, old forum posts). Add a section here only if every quote in it comes from such a source."
+}
