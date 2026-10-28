@@ -236,10 +236,11 @@
    "means money or money's worth": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
   },
   "https://discordbotlist.com/bots/honeypot/upvote": {
-   "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
-   "unbanned a guy for this": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
-   "No warnings. No second chances.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending",
-   "DO NOT TYPE IN THIS CHANNEL": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
+   "Souls claimed: 403 🔥 Type here and join them 😈": "2026-10-28 quote is the channel description in the published 15 Aug screenshot (OCR check passes), not from the linked page",
+   "unbanned a guy for this": "2026-10-28 quote is the channel description in the published 15 Aug screenshot (OCR check passes), not from the linked page",
+   "No warnings. No second chances.": "2026-10-28 quote is the channel description in the published 15 Aug screenshot (OCR check passes), not from the linked page",
+   "DO NOT TYPE IN THIS CHANNEL": "2026-10-28 quote is the channel description in the published 15 Aug screenshot (OCR check passes), not from the linked page",
+   "Type here and join them": "2026-10-28 quote is the channel description in the published 15 Aug screenshot (OCR check passes), not from the linked page"
   },
   "evidence/01-patreon-to-casino.md§How many people pay (nearest link: https://graphtreon.com/creator/TheDinoDen)": {
    "Patreon stats set to private on Mar 29, 2026.": "2026-10-27 review #5 quote audit (27 Oct 2026): page fetched, quote found word for word including its ending"
@@ -469,6 +470,9 @@
   },
   "https://github.com/scumxposer/dino-den-evidence": {
    "The Dino Den evidence repository, https://github.com/scumxposer/dino-den-evidence": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes"
+  },
+  "DISCREPANCIES.md§1. Apex ClawCoin boost: 3.5x or 4.5x? (nearest link: https://www.patreon.com/TheDinoDen)": {
+   "Patreon boost is additive": "2026-10-28 28 Oct: 'Patreon boost is additive' read in the site's JS (Dino Rewards staff page, BPS_GmrG.js)"
   }
  },
  "sections": {
@@ -524,7 +528,8 @@
   "Where reasonable, we may provide notice or an opportunity to appeal via our support channels.": "archived January 2026 Terms (web.archive.org)",
   "APEX+": "patron's screenshot (28 Sep-27 Oct 2026)",
   "Online": "site JS / patron screenshot",
-  "Playable": "patron's screenshot"
+  "Playable": "patron's screenshot",
+  "Type here and join them": "15 Aug #sent-to-hell screenshot (channel description)"
  },
  "_about_stable_quotes": "Quotes whose own source is fixed even though they sit in a section or line classed live (screenshots, forum posts, sent emails, archived pages). Once verified they are skipped."
 }
