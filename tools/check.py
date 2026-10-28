@@ -263,6 +263,21 @@ def check_facts(files, problems):
                 problems.append(f"{FACTS_FILE}: fact '{fact['name']}' expects {fact['expected']} but the snapshot says {vals}")
 
 
+def check_corrections_history(problems):
+    """Each quoted old wording in the CORRECTIONS table's 'What was wrong' column must have appeared in
+    the repository's own files at some point (not only in emails or posts)."""
+    import subprocess
+    for row in re.findall(r"^\| \d+ \w+ \d{4} \|([^|]*)\|", open("CORRECTIONS.md", encoding="utf-8").read(), re.M):
+        for q in re.findall(r'"([^"]{4,})"', row):
+            try:
+                out = subprocess.run(["git", "log", "--format=%h", "-S" + q, "--", "*.md", ":!CORRECTIONS.md",
+                                      ":!reports-filed.md", ":!.github/MAINTAINING.md"], capture_output=True, text=True).stdout
+            except OSError:
+                return
+            if not out.strip():
+                problems.append(f"CORRECTIONS.md: \"{q}\" is quoted as earlier wording, but no version of the repository's files contains it")
+
+
 def check_dates(problems):
     """README 'Last updated' must not be earlier than the newest correction, and must be today (US Pacific)
     whenever content files have changed since the last commit; a new correction row must carry today's date."""
@@ -893,6 +908,7 @@ def main(argv):
     check_sentences(files, problems)
     check_facts(files, problems)
     check_dates(problems)
+    check_corrections_history(problems)
     check_wording(files, problems)
     check_known_errors(files, problems)
     check_hedges(problems)
