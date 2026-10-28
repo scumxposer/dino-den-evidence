@@ -88,7 +88,7 @@ The live Patreon page, fetched from the US on 27 Oct 2026, confirms the lowest t
 | [TheSpoofingIsle — NA #1](https://thespoofingisle.com/server/51.222.255.170%3A7777), [EU #2](https://thespoofingisle.com/server/45.88.230.190%3A7777) (read ~09:00 UTC, 27 Oct 2026) | "Spoofing" scores 75 and 83; join bursts up to +173 players in 3 minutes; refills faster than clients can load after restarts; ~15-minute repeating curve |
 | Kadin's EOS session check (Discord post, ~Nov 2025; screenshot held by the author) | most listed players on "The Dino Den" and "NERF Official" were not real |
 
-**Can be concluded:** two independent analyses, a year apart, flag Dino Den's displayed counts as inflated.
+**Can be concluded:** two independent analyses, about eleven months apart (~Nov 2025 and Oct 2026), flag Dino Den's displayed counts as inflated.
 **Cannot be concluded:** that counts are definitely faked. The tracker's restart check also fires on an official developer server ([Official US 1](https://thespoofingisle.com/server/172.237.147.22%3A31067)), and the 15-minute pattern appears on unrelated servers (e.g. [ORIGIN](https://thespoofingisle.com/server/216.39.241.102%3A7777)). Dino Den's own public data (raffle tickets, playtime leaderboard) neither confirms nor rules out the displayed counts. Full detail, and a way to test it directly with Dino Den's own patron-only population page: [community-reports.md](community-reports.md#inflated-player-counts).
 
 ## 8. Privacy policy vs the DinoDen Client

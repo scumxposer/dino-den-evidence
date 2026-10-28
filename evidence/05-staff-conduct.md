@@ -20,7 +20,7 @@ The channel starts on 15 August 2026. In the posts captured (15 August – 22 Oc
 | 21 Oct 2026 | Vire | A player's in-game chat message to the owner |
 | 22 Oct 2026 | Vire | A player's private message to the owner offering something sexual in exchange for a dinosaur |
 
-Two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and one from HEX, who posts as staff on Dino Den's website news. They are not about players.
+Vire's two other posts in the period (21 Aug and 8 Sep) show a message from CHUGGY and one from HEX, who posts as staff on Dino Den's website news. They are not about players.
 
 ### Two banned players, shown in the channel on 18 August
 

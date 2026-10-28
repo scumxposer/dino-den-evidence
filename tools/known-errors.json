@@ -103,5 +103,9 @@
   "pattern": "self-exclude from all casino games\\.\"",
   "match_quotes": true,
   "why": "the FAQ continues: \"…all casino games - contact support or use the self-exclusion option\""
+ },
+ {
+  "pattern": "\\ba year apart\\b",
+  "why": "the two player-count analyses are about eleven months apart (~Nov 2025 and Oct 2026)"
  }
 ]

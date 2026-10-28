@@ -43,7 +43,7 @@ From the repository root, run `python3 tools/check.py`. It must print `OK` befor
 - **Links and tables:** every internal link and anchor exists; every table row has the right number of columns.
 - **Sentences:** broken sentences left by edits (a lowercase word after a full stop, a missing full stop after a closing quote, doubled words, unbalanced quotes, brackets or italics, stray punctuation).
 - **Facts:** figures that appear in more than one file match `tools/facts.json`; facts with a `snapshot` path must also match the API snapshot. When a figure changes, change it in every file and in `facts.json` together. When a new figure appears in two or more files, add it to `facts.json`.
-- **Dates:** the README's "Last updated" matches the latest entry in CORRECTIONS.md.
+- **Dates:** the README's "Last updated" is not earlier than the latest entry in CORRECTIONS.md, is today's date (US Pacific) whenever files have changed, and a new CORRECTIONS row carries today's date. (Only when rewording existing rows without adding corrections, run with `RESTRUCTURE_CORRECTIONS=1` and say so in the commit message.)
 - **Finding labels:** a README findings row labelled **Supported**, **Player claim(s)** or **Unconfirmed** must say who says it, or use "appear"/"may"; it cannot read as established fact.
 - **Summaries:** `tools/summaries.json` lists, for each detail file, every place that summarises it. When a detail file changes, the check fails until those summaries have been re-read for the same content, context and strength, and recorded with `python3 tools/check.py --synced FILE "what you checked"`. This is what stops a detail file being corrected while the README keeps the old version.
 - **Counts:** "four tiers (A, B and C)" is flagged when the number doesn't match the items listed.
@@ -69,7 +69,7 @@ Then re-read the README from top to bottom as a first-time reader. The summary, 
 
 ## 5. Log and commit
 
-- Add a row to the log in [CORRECTIONS.md](../CORRECTIONS.md) describing the change. If an earlier version was wrong, say so plainly and say what was wrong.
+- If an earlier version was significantly wrong (a finding, figure, quote, date or attribution that would change what a reader takes away), add a row to [CORRECTIONS.md](../CORRECTIONS.md): what was wrong and what it says now, plainly. Do not log reviews, checks, small wording fixes or additions there; the commit message describes those. Update the README's "Last updated" date whenever content changes.
 - Commit messages describe the change and end with a `Co-Authored-By:` line where applicable. Never include chat or session links.
 
 ## 6. Anything that leaves the repository
@@ -91,13 +91,13 @@ Reddit posts and replies, YouTube or Steam comments, and emails to platforms rep
 A request for a full review means every step below, in order. Report what was done, with the numbers, not just "reviewed".
 
 1. `git pull`, then run `python3 tools/check.py`. Fix everything it reports, including every wording flag (section 4).
-2. Read every file in full, top to bottom: README, DISCREPANCIES, evidence/01–05, community-reports, verify-yourself, reports-filed, CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS (policy and the last ten log rows), this file and the issue templates. Count them.
+2. Read every file in full, top to bottom: README, DISCREPANCIES, evidence/01–05, community-reports, verify-yourself, reports-filed, CONTRIBUTING, CODE_OF_CONDUCT, CORRECTIONS, this file and the issue templates. Count them.
 3. For each row of the README's key findings table, open the file it links to and check that the finding, its status label and its wording match the detail.
 4. Re-open the live sources for anything time-sensitive (FAQ, Terms, tier configuration, Patreon page) and compare them with the repository.
 4a. **Quote audit:** run `python3 tools/check.py --quotes`. It lists only the quotes still to check: new or changed quotes, quotes from live sources (Dino Den's site and API, Patreon, trackers), and slow-changing pages after 30 days. Sources that don't change (old forum posts, YouTube videos, archived pages, legislation, published screenshots, the author's sent emails) are checked once and then skipped while the quote is unchanged; `tools/verified-sources.json` records how and when each was checked (`--quotes --all` lists everything). A section with no web link is treated as live unless it is listed there as screenshot-only, and a single quote whose own source is fixed (a screenshot, forum post or sent email inside a live section) is listed under "stable_quotes" so it is not re-checked every day. After checking a source, record it with `python3 tools/check.py --verified SOURCE "how you checked"`, saying what was opened and compared. Open each page and confirm each quote appears there word for word, including where it ends (a full stop inside the quotation marks must be in the source), and that it was written by the person the repository says (forum threads: check each post's author, and date each claim by when that post or edit was made, not when the thread started). Do the same for screenshots: compare each quote with the image itself (zoom in; OCR and memory both misread). Do not complete bot checks or CAPTCHAs to reach a page; note it as not re-checked instead.
 5. Read it as a hostile critic would, and as a fair one: for each finding about the operator or staff, is there an innocent explanation or common practice the reader should know (a counterpoint)? Is anything said by the operator that cuts the other way left out? For each claim, what would someone defending The Dino Den say is overstated or missing? Fix anything they would be right about.
 6. Check everything outside the repository (section 6): every item in reports-filed (the original report as well as later emails; keep the text of each in the outside-text folder and run `--outside` on it) and any drafts.
-7. Log the review in CORRECTIONS.md with what was checked and what was found. Say plainly if an earlier review missed something.
+7. Report the review to the owner (what was checked, with numbers, and what was found). Add only significant mistakes to CORRECTIONS.md (section 5); describe the rest in the commit message.
 
 ## 8. Publish
 
@@ -106,7 +106,7 @@ A request for a full review means every step below, in order. Report what was do
 
 ## Mistakes this procedure exists to prevent
 
-These all happened once and were corrected (see the log in CORRECTIONS.md):
+Watch for these:
 
 - Saying no reporting or appeal process existed when the FAQ describes one.
 - Saying jackpot was missing from the menu when the main menu lists it.

@@ -264,24 +264,36 @@ def check_facts(files, problems):
 
 
 def check_dates(problems):
+    """README 'Last updated' must not be earlier than the newest correction, and must be today (US Pacific)
+    whenever content files have changed since the last commit; a new correction row must carry today's date."""
+    import datetime, subprocess
     readme = open("README.md", encoding="utf-8").read()
     m = re.search(r"\*Last updated: (\d+ \w+ \d{4})\.\*", readme)
     log = re.findall(r"^\| (\d+ \w+ \d{4}) \|", open("CORRECTIONS.md", encoding="utf-8").read(), re.M)
+    parse = lambda d: datetime.datetime.strptime(d[:-5].split()[0] + " " + d.split()[1][:3] + d[-5:], "%d %b %Y").date()
+    pacific = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=7)).date()
     if not m:
         problems.append("README.md: no '*Last updated: …*' line")
-    elif log and m.group(1)[:-5].split()[0] + " " + m.group(1).split()[1][:3] + m.group(1)[-5:] != log[-1]:
-        problems.append(f"README.md: 'Last updated: {m.group(1)}' but the latest correction is {log[-1]}")
-    # A log row added since the last commit must carry today's date (the owner's time zone: US Pacific).
-    import datetime, subprocess
+        return
+    updated = parse(m.group(1))
+    if log and updated < max(parse(d) for d in log):
+        problems.append(f"README.md: 'Last updated: {m.group(1)}' is earlier than the newest correction ({log[-1]})")
+    def changed(paths):
+        try:
+            return subprocess.run(["git", "diff", "--quiet", "HEAD", "--"] + paths).returncode == 1
+        except OSError:
+            return False
+    if changed(md_files()) and updated != pacific:
+        problems.append(f"README.md: content has changed, so 'Last updated' should be today ({pacific.day} {pacific.strftime('%B')} {pacific.year})")
     try:
-        changed = subprocess.run(["git", "diff", "--quiet", "HEAD", "--", "CORRECTIONS.md"]).returncode == 1
+        old = subprocess.run(["git", "show", "HEAD:CORRECTIONS.md"], capture_output=True, text=True).stdout
     except OSError:
-        changed = False
-    if changed and log:
-        pacific = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=7)
-        today = f"{pacific.day} {pacific.strftime('%b')} {pacific.year}"
-        if log[-1] != today:
-            problems.append(f"CORRECTIONS.md: the newest log row is dated {log[-1]} but today is {today} (US Pacific)")
+        old = ""
+    old_rows = set(re.findall(r"^\|.*$", old, re.M))
+    for row in re.findall(r"^\| \d+ \w+ \d{4} \|.*$", open("CORRECTIONS.md", encoding="utf-8").read(), re.M):
+        d = re.match(r"^\| (\d+ \w+ \d{4})", row).group(1)
+        if old and not os.environ.get("RESTRUCTURE_CORRECTIONS") and row not in old_rows and parse(d) != pacific and not any(r.startswith("| " + d) and r[len(d) + 5:][:60] == row[len(d) + 5:][:60] for r in old_rows):
+            problems.append(f"CORRECTIONS.md: a new row is dated {d} but today is {pacific.day} {pacific.strftime('%b')} {pacific.year} (US Pacific)")
 
 
 def says_column_hits(path, text):

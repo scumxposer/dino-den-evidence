@@ -47,7 +47,7 @@ Messages posted in public channels of the Dino Den Discord can be used as eviden
 1. Every submission is checked against its source before anything is added.
 2. What is added is labelled by how well it is supported: **Documented** (from the operator's own pages, data, terms or official announcements, or evidence anyone can check directly), **Supported** (independent technical evidence, not conclusive), **Player claims** (unverified, listed with counterpoints), **Unconfirmed**, or **Not supported** (checked and not borne out).
 3. Conflicts between sources go in [DISCREPANCIES.md](DISCREPANCIES.md), with both sources and what can and cannot be concluded.
-4. Every change is logged in [CORRECTIONS.md](CORRECTIONS.md), including mistakes in earlier versions.
+4. Significant mistakes in earlier versions are listed in [CORRECTIONS.md](CORRECTIONS.md); every change is in the repository's commit history.
 5. Every change follows the same procedure, written down in [.github/MAINTAINING.md](.github/MAINTAINING.md).
 
 Submissions that can't be checked are not added, but they may be kept open in case more evidence turns up.
