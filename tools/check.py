@@ -537,6 +537,14 @@ def check_source_rules(files, problems):
                     if re.search(r["pattern"], sent) and not re.search(r["require"], sent):
                         problems.append(f"{f}:{n}: {r['name']} stated without saying where it comes from ({r['why']})\n    {sent.strip()[:200]}")
         sections.append((section, section_lines))
+        for img in sorted(set(re.findall(r"\]\(((?:\.\./)?(?:evidence/)?screenshots/[^)\s]+\.png)\)", text))):
+            path_img = os.path.normpath(os.path.join(os.path.dirname(f), img))
+            words = rules.get("image_forbidden", {}).get("words", [])
+            if os.path.exists(path_img) and words:
+                seen_text = ocr_text(path_img).lower()
+                for w in words:
+                    if re.search(r"\b" + re.escape(w), seen_text):
+                        problems.append(f"{path_img}: the word \"{w}\" is readable in a published screenshot; hide it (no unproven accusations)")
         for heading, lines in sections:
             body = "\n".join(l for _, l in lines)
             for label, phrase in rules.get("identify", {}).items():

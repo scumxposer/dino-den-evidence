@@ -26,7 +26,7 @@ Vire's two other posts in the period (21 Aug and 8 Sep) show a message from CHUG
 
 ![The two exchanges as shown in the channel on 18 Aug 2026; players' names, avatars and two offensive lines hidden](screenshots/2026-08-18-discord-wall-of-shame-refund-and-unban.png)
 
-*Screenshot provided by the author. Players' names, avatars and clan tags, and two offensive lines (described below), are hidden. Staff handles are shown.*
+*Screenshot provided by the author. Players' names, avatars and clan tags, two offensive lines (described below), and the owner's restatement of what he was being accused of are hidden; this repository does not repeat unproven accusations of crimes. Staff handles are shown.*
 
 **A refund request.** In a Discord channel, a banned player tagged the owner and three staff members (Harry_, a Server Director, and the Head Admins CHUGGY and ColdHeart), asked for their money back, said they were banned *"for misinformation"* with *"no warnings"*, and said they would not open a ticket. The owner replied:
 
@@ -36,7 +36,7 @@ Vire's two other posts in the period (21 Aug and 8 Sep) show a message from CHUG
 
 The player then said what they had posted: an accusation against the owner, which they attributed to *"disgruntled staff"*. (In the same chat the owner linked accusations of this kind to the unban described below.) They added *"horrible staff hope your server dies like it should"*. The owner replied *"Maybe you shouldnt believe everything you hear online xD"*. The player apologised twice and said they were embarrassed; the owner's reply to that was *"You deserve the #wall-of-shame tbh xD"*. When CHUGGY posted the exchange in `#wall-of-shame`, his caption, tagging the player, was *"I appreciate the humility W"*.
 
-**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw ill unban you"*. In the refund exchange above, the owner had posted an image with a message saying he was being criticised *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
+**A permanent ban, and a promise to lift it, over private messages.** A player messaged the owner directly (16 August 2026) to say he had been permanently banned for one offensive remark to a cheater, and that he had been *"an apex patreon member for a year i think."* The owner asked *"What did you do?"* and *"What did you say?"*, replied to the explanation with three laughing emojis, then wrote *"Dw ill unban you"*. In the refund exchange above, the owner had posted an image with a message saying what he was being accused of (hidden here) *"cause i unbanned a guy for this xD"*. The image is not visible in the screenshot, but the timing makes it most likely this player.
 
 ## `#sent-to-hell`: a ban trap
 

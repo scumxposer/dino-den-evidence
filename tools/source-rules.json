@@ -25,5 +25,18 @@
  "identify": {
   "honest-opinion-author": "author of the Honest Opinion",
   "trial-admin": "trial admin"
+ },
+ "image_forbidden": {
+  "_about": "Words that must not be readable (OCR) in any published screenshot: unproven accusations of crimes are not repeated.",
+  "words": [
+   "rapist",
+   "rape",
+   "pedo",
+   "paedo",
+   "groomer",
+   "ddos",
+   "scammer",
+   "fraud"
+  ]
  }
 }
