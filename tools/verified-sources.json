@@ -354,10 +354,14 @@
    "Maybe you shouldnt believe everything you hear online xD": "2026-10-27 review #7: live page text (FAQ, Terms 11 Jun 2026, Privacy, jackpot, client) or the site's JS bundles (settings, subscriber page, Patreon cards, poker, menu) and api.dinoden.gg re-read in the browser; every quote found with the same ending"
   },
   "https://main.dinoden.gg/dinoden-client": {
-   "does not inject anything into The Isle, does not read game memory and does not modify game files": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes"
+   "does not inject anything into The Isle, does not read game memory and does not modify game files": "2026-10-28 28 Oct: client page read in the browser, FAQ item expanded; quotes found word for word",
+   "Does it cost anything? No. The client is free for every DinoDen player.": "2026-10-28 28 Oct: client page read in the browser, FAQ item expanded; quotes found word for word",
+   "a live minimap, quest tracking, your inventory in 3D, friends and clan chat. All of it as an overlay on top of The Isle": "2026-10-28 28 Oct: client page read in the browser, FAQ item expanded; quotes found word for word",
+   "Free for every Dino Den player. Sign in once, play with the overlay forever.": "2026-10-28 28 Oct: client page read in the browser, FAQ item expanded; quotes found word for word"
   },
   "https://api.dinoden.gg/features": {
-   "Free for every Dino Den player": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes"
+   "Free for every Dino Den player": "2026-10-28 28 Oct: 'In-Game Overlay' on line 208 is the Patreon tier cards' wording (screenshots); client.patreonOnly false re-read in /features today; 'Free for every Dino Den player' re-read on the client page",
+   "In-Game Overlay": "2026-10-28 28 Oct: 'In-Game Overlay' on line 208 is the Patreon tier cards' wording (screenshots); client.patreonOnly false re-read in /features today; 'Free for every Dino Den player' re-read on the client page"
   },
   "DISCREPANCIES.md§Checked, no discrepancy found (nearest link: https://api.dinoden.gg/features)": {
    "the only real-money support is our Patreon": "2026-10-28 review #8 (28 Oct): site, API and Twitch quotes re-found in the rendered pages, page bundles (incl. jackpot How it works, subscriber) and API JSON; any screenshot, forum or email quotes in this group were checked earlier and are listed in stable_quotes"
@@ -493,6 +497,10 @@
    "Chat Toxicity": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
    "the full, unedited 3GB video recording of this entire session": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies",
    "We do not disclose actions taken to other players, feel free to open an appeal.": "2026-10-28 28 Oct: OP of the thread read in the browser; all six quotes found word for word, posted 19 Jun 2026 16:48 PDT, 2 replies"
+  },
+  "screenshot:patreon-adult-tier-card.png patreon-apex-tier-card.png patreon-elder-tier-card.png patreon-juvie-tier-card.png patreon-sub-tier-card.png": {
+   "In-Game Overlay": "2026-10-28 28 Oct: compared by eye with all five tier card screenshots ('In-Game Overlay' on each; 'you'll unlock exclusive perks')",
+   "unlock": "2026-10-28 28 Oct: compared by eye with all five tier card screenshots ('In-Game Overlay' on each; 'you'll unlock exclusive perks')"
   }
  },
  "sections": {

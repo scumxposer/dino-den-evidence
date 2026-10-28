@@ -22,7 +22,7 @@ The places found where two sources disagree, side by side. Each item names both 
 |---|---|---|---|---|---|
 | The site's Patreon page — <https://main.dinoden.gg/patreon> (from `minCents` at <https://api.dinoden.gg/patreon/tiers>; the site's code always adds a £ sign) | £12.00 / month | £22.00 | £33.00 | £44.00 | £55.00 |
 | Site price converted at 1 GBP = 1.3313 USD ([rate on 27 Oct 2026](http://www.currency-converter.org.uk/currency-rates/convert/GBP-USD-rate.html?amount=1.00); calculated) | $15.98 | $29.29 | $43.93 | $58.58 | $73.22 |
-| Patreon page viewed from the US, discounted price during a 40% promotion (author's screenshots, Oct 2026) | $10.50 | $18.90 | $28.50 | $37.80 | $47.40 |
+| Patreon page viewed from the US, discounted price during a 40% promotion (author's screenshots, Oct 2026: [Juvie](evidence/screenshots/patreon-juvie-tier-card.png), [Sub](evidence/screenshots/patreon-sub-tier-card.png), [Adult](evidence/screenshots/patreon-adult-tier-card.png), [Elder](evidence/screenshots/patreon-elder-tier-card.png), [Apex](evidence/screenshots/patreon-apex-tier-card.png)) | $10.50 | $18.90 | $28.50 | $37.80 | $47.40 |
 | Patreon full price implied by the 40% discount (calculated) | $17.50 | $31.50 | $47.50 | $63.00 | $79.00 |
 | Patreon full price vs converted site price | +9.5% | +7.5% | +8.1% | +7.5% | +7.9% |
 
@@ -186,6 +186,18 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 **Can be concluded:** in these cases, the owner refused a refund for "breaking rules" while saying he did not know why the player was banned (he also suggested opening a ticket; the player then said they had posted an accusation against him), and he told a permanently banned player by private message that he would unban him, later writing that he had *"unbanned a guy for this"* (most likely the same player), outside the appeal-ticket process, despite the Terms calling decisions "final." Dino Den also runs a channel whose bot notice says anyone who posts is banned; [trap channels](https://discordbotlist.com/bots/honeypot/upvote) are a known Discord tool against spam bots and hacked accounts that post in every channel, and the description's *"Type here and join them"* reads as a joke. Details: [evidence/05](evidence/05-staff-conduct.md).
 **Cannot be concluded:** how typical these cases are, who banned the refund player and on what exact grounds (including whether the owner decided a ban over an accusation against himself), or whether the refund concerned a Patreon payment.
 
+## 13. "In-Game Overlay": Patreon perk vs free client
+
+| Source | Says |
+|---|---|
+| Patreon tier cards for all five tiers (the author's screenshots: [Juvie](evidence/screenshots/patreon-juvie-tier-card.png), [Sub](evidence/screenshots/patreon-sub-tier-card.png), [Adult](evidence/screenshots/patreon-adult-tier-card.png), [Elder](evidence/screenshots/patreon-elder-tier-card.png), [Apex](evidence/screenshots/patreon-apex-tier-card.png)) | Each lists *"In-Game Overlay"* among the perks you *"unlock"* by pledging |
+| The DinoDen Client page — <https://main.dinoden.gg/dinoden-client> (read 28 Oct 2026) | The client provides *"a live minimap, quest tracking, your inventory in 3D, friends and clan chat. All of it as an overlay on top of The Isle"*; *"Does it cost anything? No. The client is free for every DinoDen player."*; *"Free for every Dino Den player. Sign in once, play with the overlay forever."* |
+| Feature switches — <https://api.dinoden.gg/features> | `client.patreonOnly: false` |
+| The author's own observation (October 2026) | He is not a patron and uses the client's overlay |
+
+**Can be concluded:** Patreon lists an in-game overlay as a paid perk of every tier, while Dino Den's own client page says the overlay client is free for every player, and the author uses it without being a patron.
+**Cannot be concluded:** whether the Patreon perk means something more than the free client (for example extra overlay features for patrons), or whether the Patreon text dates from before the client was made free. The client's code reads the player's Patreon tier ([evidence/04](evidence/04-client-analysis.md)), but what that changes was not checked.
+
 ---
 
 ## Checked, no discrepancy found
@@ -193,5 +205,5 @@ THE DINO DEN LTD is registered in England ([Companies House](https://find-and-up
 | Claim by Dino Den | Source | Result |
 |---|---|---|
 | The client *"does not inject anything into The Isle, does not read game memory and does not modify game files"* — <https://main.dinoden.gg/dinoden-client> | Static review of v0.2.0 ([evidence/04](evidence/04-client-analysis.md)) | No such code found |
-| Client is *"Free for every Dino Den player"* | `client.patreonOnly: false` at <https://api.dinoden.gg/features> | Consistent |
+| Client is *"Free for every Dino Den player"* | `client.patreonOnly: false` at <https://api.dinoden.gg/features> | Consistent (but Patreon sells an *"In-Game Overlay"* perk: see [§13](#13-in-game-overlay-patreon-perk-vs-free-client)) |
 | *"the only real-money support is our Patreon"* (FAQ) | Site code and API | No other real-money store found |
